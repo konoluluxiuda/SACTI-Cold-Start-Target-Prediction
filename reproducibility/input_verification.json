@@ -1,0 +1,285 @@
+{
+  "passed": true,
+  "datasets": 4,
+  "split_partitions": 8,
+  "outer_folds": 40,
+  "historical_inner_outer_folds_matched": 20,
+  "evidence_pairs": 685,
+  "evidence_compounds": 332,
+  "evidence_model_graph_overlap": 0,
+  "optimizer_steps": 0,
+  "rows": [
+    {
+      "dataset": "tcmsuite",
+      "seed": 52026,
+      "folds": 5,
+      "compounds": 1187,
+      "record_counts": [
+        [
+          60794,
+          9076,
+          17468
+        ],
+        [
+          64836,
+          5034,
+          17468
+        ],
+        [
+          55610,
+          14260,
+          17468
+        ],
+        [
+          66884,
+          2986,
+          17468
+        ],
+        [
+          63912,
+          5960,
+          17466
+        ]
+      ],
+      "assignment_sha256": "ad3d3a232b9956774d480dd1a4a339a66f066e30a3a7d885cbc46e4535cc19bc"
+    },
+    {
+      "dataset": "tcmsuite",
+      "seed": 901026,
+      "folds": 5,
+      "compounds": 1187,
+      "record_counts": [
+        [
+          60714,
+          9156,
+          17468
+        ],
+        [
+          64892,
+          4978,
+          17468
+        ],
+        [
+          55312,
+          14558,
+          17468
+        ],
+        [
+          66784,
+          3086,
+          17468
+        ],
+        [
+          64572,
+          5300,
+          17466
+        ]
+      ],
+      "assignment_sha256": "b00ead1760de5469ce17efc28b1d5627fd5a6e0b8fb0e4a4948229dfdae7363d"
+    },
+    {
+      "dataset": "tcmsp",
+      "seed": 52026,
+      "folds": 5,
+      "compounds": 6929,
+      "record_counts": [
+        [
+          81308,
+          8454,
+          22442
+        ],
+        [
+          80350,
+          9412,
+          22442
+        ],
+        [
+          81606,
+          8158,
+          22440
+        ],
+        [
+          81530,
+          8234,
+          22440
+        ],
+        [
+          80776,
+          8988,
+          22440
+        ]
+      ],
+      "assignment_sha256": "f06f8856802bd58a495da05e217aa90bf1c6d36d9949bdbd641b4b84d054a5b6"
+    },
+    {
+      "dataset": "tcmsp",
+      "seed": 901026,
+      "folds": 5,
+      "compounds": 6929,
+      "record_counts": [
+        [
+          81030,
+          8732,
+          22442
+        ],
+        [
+          80770,
+          8992,
+          22442
+        ],
+        [
+          81760,
+          8004,
+          22440
+        ],
+        [
+          81240,
+          8524,
+          22440
+        ],
+        [
+          80986,
+          8778,
+          22440
+        ]
+      ],
+      "assignment_sha256": "2b315af2523f730b8aa21f0279f300dadc146fc0d2ff78f41e9717f4c4e1e830"
+    },
+    {
+      "dataset": "symmap",
+      "seed": 52026,
+      "folds": 5,
+      "compounds": 1618,
+      "record_counts": [
+        [
+          53828,
+          6956,
+          15198
+        ],
+        [
+          54070,
+          6716,
+          15196
+        ],
+        [
+          53238,
+          7548,
+          15196
+        ],
+        [
+          53144,
+          7642,
+          15196
+        ],
+        [
+          56336,
+          4450,
+          15196
+        ]
+      ],
+      "assignment_sha256": "5c792d6d68f9dfa4c275fc01e2ec7a07dd4f8d0d0049d5fead791609cfacba56"
+    },
+    {
+      "dataset": "symmap",
+      "seed": 901026,
+      "folds": 5,
+      "compounds": 1618,
+      "record_counts": [
+        [
+          53612,
+          7172,
+          15198
+        ],
+        [
+          54060,
+          6726,
+          15196
+        ],
+        [
+          52960,
+          7826,
+          15196
+        ],
+        [
+          52996,
+          7790,
+          15196
+        ],
+        [
+          56480,
+          4306,
+          15196
+        ]
+      ],
+      "assignment_sha256": "b0ab4d61819286d2b26691a7adbfc739fb03cba03ee299606414c32ca5df222c"
+    },
+    {
+      "dataset": "etcm_mention10",
+      "seed": 52026,
+      "folds": 5,
+      "compounds": 9519,
+      "record_counts": [
+        [
+          127362,
+          14126,
+          35374
+        ],
+        [
+          127380,
+          14110,
+          35372
+        ],
+        [
+          127968,
+          13522,
+          35372
+        ],
+        [
+          127300,
+          14190,
+          35372
+        ],
+        [
+          126982,
+          14508,
+          35372
+        ]
+      ],
+      "assignment_sha256": "97a2d10cd26a9e77ff537d66af689383f2e0261200dbeff4685923144f9b3326"
+    },
+    {
+      "dataset": "etcm_mention10",
+      "seed": 901026,
+      "folds": 5,
+      "compounds": 9519,
+      "record_counts": [
+        [
+          127506,
+          13982,
+          35374
+        ],
+        [
+          127232,
+          14258,
+          35372
+        ],
+        [
+          127434,
+          14056,
+          35372
+        ],
+        [
+          127416,
+          14074,
+          35372
+        ],
+        [
+          126450,
+          15040,
+          35372
+        ]
+      ],
+      "assignment_sha256": "a3cf759537cff3af6be80943ce0c9a85ec65e46542b3d8165b0e1aabc1532848"
+    }
+  ]
+}

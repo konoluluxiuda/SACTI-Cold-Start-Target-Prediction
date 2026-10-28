@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "processed_archive_MB": 35.45,
+  "release_data_tests_passed": 4,
+  "SACTI_model_smoke_tests_passed": 8,
+  "real_dataset_training_smoke": {
+    "dataset": "TCM-Suite",
+    "epochs": 1,
+    "optimizer_batches": 31,
+    "outer_test_scored": false
+  },
+  "checkpoint_replay": {
+    "dataset": "TCM-Suite",
+    "fold": 1,
+    "device": "CPU",
+    "optimizer_steps": 0,
+    "checkpoint_source": "Existing local historical checkpoint; binary not included in the release",
+    "metrics": {
+      "AUPR": {
+        "historical": 0.7908256657712193,
+        "CPU_replay": 0.7908241774479339,
+        "absolute_difference": 1.48832328539239e-06
+      },
+      "AUC": {
+        "historical": 0.7602173353568925,
+        "CPU_replay": 0.7602158671351621,
+        "absolute_difference": 1.4682217304162748e-06
+      },
+      "MRR": {
+        "historical": 0.20695995493156158,
+        "CPU_replay": 0.2070357007160205,
+        "absolute_difference": 7.574578445893043e-05
+      },
+      "Recall@20": {
+        "historical": 0.08832062894052661,
+        "CPU_replay": 0.08832062894052661,
+        "absolute_difference": 0.0
+      }
+    },
+    "tolerance": 0.0001
+  },
+  "MVCL_fold_input_preparation": "PASS",
+  "MVCL_CPU_model_preflight": "PASS; no encoder forward or optimizer steps",
+  "external_baseline_configurations_verified": 16,
+  "ETCM_replay_protocol": "PASS; 685 pairs, 332 compounds, 509 candidates",
+  "frozen_tables_regenerated": 4,
+  "full_experiments_retrained": false,
+  "clean_directory_checks": {
+    "archive_install": true,
+    "all_released_partitions_verified": true,
+    "regenerated_tables_byte_identical": true,
+    "five_model_entry_points_import": true
+  }
+}

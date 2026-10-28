@@ -1,0 +1,396 @@
+{
+  "protocol": "etcm_confirmed_target_context_inner_training_v2",
+  "status": "FROZEN_POST_HOC_DESCRIPTIVE_AUDIT",
+  "dataset": "ETCM2.0_core_mention10",
+  "support_population": "verified_inner_training_positive_compounds",
+  "training_or_optimizer_steps": 0,
+  "model_selection_reopened": false,
+  "overall": {
+    "compounds": 332,
+    "evidence_pairs": 685,
+    "methods": {
+      "NoContext": {
+        "MRR": 0.006818728158589536,
+        "Recall@20": 0.006454388984509466
+      },
+      "Hctx-P": {
+        "MRR": 0.10475570420309921,
+        "Recall@20": 0.33303930005737237
+      },
+      "SACTI": {
+        "MRR": 0.13339298955354378,
+        "Recall@20": 0.37742756741250716
+      }
+    },
+    "deltas": {
+      "Hctx-P_minus_NoContext": {
+        "MRR": 0.09793697604450967,
+        "Recall@20": 0.32658491107286286
+      },
+      "SACTI_minus_Hctx-P": {
+        "MRR": 0.028637285350444568,
+        "Recall@20": 0.044388267355134826
+      },
+      "SACTI_minus_NoContext": {
+        "MRR": 0.12657426139495423,
+        "Recall@20": 0.3709731784279977
+      }
+    }
+  },
+  "strata": {
+    "transfer_coverage": {
+      "covered": {
+        "compounds": 332,
+        "evidence_pairs": 685,
+        "methods": {
+          "NoContext": {
+            "MRR": 0.006818728158589536,
+            "Recall@20": 0.006454388984509466
+          },
+          "Hctx-P": {
+            "MRR": 0.10475570420309921,
+            "Recall@20": 0.33303930005737237
+          },
+          "SACTI": {
+            "MRR": 0.13339298955354378,
+            "Recall@20": 0.37742756741250716
+          }
+        },
+        "deltas": {
+          "Hctx-P_minus_NoContext": {
+            "MRR": 0.09793697604450967,
+            "Recall@20": 0.32658491107286286
+          },
+          "SACTI_minus_Hctx-P": {
+            "MRR": 0.028637285350444568,
+            "Recall@20": 0.044388267355134826
+          },
+          "SACTI_minus_NoContext": {
+            "MRR": 0.12657426139495423,
+            "Recall@20": 0.3709731784279977
+          }
+        }
+      }
+    },
+    "supported_neighbor_count": {
+      "1-5": {
+        "compounds": 16,
+        "evidence_pairs": 42,
+        "methods": {
+          "NoContext": {
+            "MRR": 0.002924731014590082,
+            "Recall@20": 0.0
+          },
+          "Hctx-P": {
+            "MRR": 0.10929366107684671,
+            "Recall@20": 0.25
+          },
+          "SACTI": {
+            "MRR": 0.09997216930331222,
+            "Recall@20": 0.125
+          }
+        },
+        "deltas": {
+          "Hctx-P_minus_NoContext": {
+            "MRR": 0.10636893006225663,
+            "Recall@20": 0.25
+          },
+          "SACTI_minus_Hctx-P": {
+            "MRR": -0.009321491773534491,
+            "Recall@20": -0.125
+          },
+          "SACTI_minus_NoContext": {
+            "MRR": 0.09704743828872213,
+            "Recall@20": 0.125
+          }
+        }
+      },
+      "6-20": {
+        "compounds": 43,
+        "evidence_pairs": 93,
+        "methods": {
+          "NoContext": {
+            "MRR": 0.010882994870911631,
+            "Recall@20": 0.011627906976744186
+          },
+          "Hctx-P": {
+            "MRR": 0.05081833519654238,
+            "Recall@20": 0.2591362126245847
+          },
+          "SACTI": {
+            "MRR": 0.05946631325204362,
+            "Recall@20": 0.3543743078626799
+          }
+        },
+        "deltas": {
+          "Hctx-P_minus_NoContext": {
+            "MRR": 0.039935340325630744,
+            "Recall@20": 0.24750830564784052
+          },
+          "SACTI_minus_Hctx-P": {
+            "MRR": 0.008647978055501248,
+            "Recall@20": 0.09523809523809523
+          },
+          "SACTI_minus_NoContext": {
+            "MRR": 0.048583318381131994,
+            "Recall@20": 0.3427464008859358
+          }
+        }
+      },
+      ">=21": {
+        "compounds": 273,
+        "evidence_pairs": 550,
+        "methods": {
+          "NoContext": {
+            "MRR": 0.006406788545674303,
+            "Recall@20": 0.006017791732077446
+          },
+          "Hctx-P": {
+            "MRR": 0.11298537291116507,
+            "Recall@20": 0.349546485260771
+          },
+          "SACTI": {
+            "MRR": 0.1469958474472002,
+            "Recall@20": 0.39585295656724223
+          }
+        },
+        "deltas": {
+          "Hctx-P_minus_NoContext": {
+            "MRR": 0.10657858436549078,
+            "Recall@20": 0.34352869352869353
+          },
+          "SACTI_minus_Hctx-P": {
+            "MRR": 0.034010474536035146,
+            "Recall@20": 0.0463064713064713
+          },
+          "SACTI_minus_NoContext": {
+            "MRR": 0.14058905890152593,
+            "Recall@20": 0.38983516483516484
+          }
+        }
+      }
+    },
+    "ingredient_herb_corroboration": {
+      "all_model_herbs": {
+        "compounds": 332,
+        "evidence_pairs": 685,
+        "methods": {
+          "NoContext": {
+            "MRR": 0.006818728158589536,
+            "Recall@20": 0.006454388984509466
+          },
+          "Hctx-P": {
+            "MRR": 0.10475570420309921,
+            "Recall@20": 0.33303930005737237
+          },
+          "SACTI": {
+            "MRR": 0.13339298955354378,
+            "Recall@20": 0.37742756741250716
+          }
+        },
+        "deltas": {
+          "Hctx-P_minus_NoContext": {
+            "MRR": 0.09793697604450967,
+            "Recall@20": 0.32658491107286286
+          },
+          "SACTI_minus_Hctx-P": {
+            "MRR": 0.028637285350444568,
+            "Recall@20": 0.044388267355134826
+          },
+          "SACTI_minus_NoContext": {
+            "MRR": 0.12657426139495423,
+            "Recall@20": 0.3709731784279977
+          }
+        }
+      }
+    }
+  },
+  "checks": {
+    "expected_compounds": true,
+    "expected_evidence_pairs": true,
+    "all_folds_present": true,
+    "input_hashes_match": true,
+    "model_selection_reopened_false": true,
+    "frozen_split_hashes_match": true,
+    "method_donors_agree": true,
+    "validation_and_test_excluded": true,
+    "overall_metrics_unchanged": true
+  },
+  "interpretation": "Descriptive mechanism audit only; no Gate, parameter selection, checkpoint selection or causal claim.",
+  "reconstruction": [
+    {
+      "fold": 1,
+      "inner_supported_compounds": 6853,
+      "outer_supported_compounds": 7615,
+      "validation_compounds_excluded": 762,
+      "matched_method_reports": 3
+    },
+    {
+      "fold": 2,
+      "inner_supported_compounds": 6854,
+      "outer_supported_compounds": 7616,
+      "validation_compounds_excluded": 762,
+      "matched_method_reports": 3
+    },
+    {
+      "fold": 3,
+      "inner_supported_compounds": 6853,
+      "outer_supported_compounds": 7615,
+      "validation_compounds_excluded": 762,
+      "matched_method_reports": 3
+    },
+    {
+      "fold": 4,
+      "inner_supported_compounds": 6853,
+      "outer_supported_compounds": 7615,
+      "validation_compounds_excluded": 762,
+      "matched_method_reports": 3
+    },
+    {
+      "fold": 5,
+      "inner_supported_compounds": 6853,
+      "outer_supported_compounds": 7615,
+      "validation_compounds_excluded": 762,
+      "matched_method_reports": 3
+    }
+  ],
+  "reference_hashes": {
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/no_context/fold_1/report.json": "0ebdf032e7185ce19dbbe068cf28ec101b3a2e63cc809ed2cce6c4639bdf65f3",
+    "/home/zry/workspace/HDCTI/configs/HDCTI_etcm_mention10_no_context_seed52026_frozen.conf": "c6c9cda7dfe78bb9a42ac547d9b81821c7c3bd75a11caa5055bb016b388c9593",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/hctx/fold_1/report.json": "dfecd94819a33c3de1c8c95717826f9da95a7b44dd96bb06232c8dacd71978fa",
+    "/home/zry/workspace/HDCTI/configs/HDCTI_etcm_mention10_hctx_seed52026_frozen.conf": "fe27adcdddffe017533a52698d9485d28c31e625ef19d483ac94fa42a859de0f",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/sacti/fold_1/report.json": "dc6ecd4b363dd42378555c7427c4180a3ba14417ddf0dceadbc679d2cb8c2059",
+    "/home/zry/workspace/HDCTI/configs/SACTI_etcm_mention10_full_seed52026_frozen.conf": "06de272f02c57820e161c4b48247de827935a89feadf869744a0d1d2b716e298",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/no_context/fold_2/report.json": "f21cf311c695febed0e65fa1695d0c9f884f956727abf070b29ba1a87cbf1d37",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/hctx/fold_2/report.json": "b6205473672ac132b8b54ca414fa9882ff1d89d32eff89c380cf0b809e6030d4",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/sacti/fold_2/report.json": "12ab5d1b762e75797f05644072d58755a9b4dd86402c367fb5142bd40bb5217f",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/no_context/fold_3/report.json": "1a3b5c5806855864d3c4b8f399d128e79e42ebc9adc0bfe7b968adc6d437b92e",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/hctx/fold_3/report.json": "44b8a27195f4b4021e5cb8b380ea0cf598efa001ad8b6f8b5e31e87e1d484079",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/sacti/fold_3/report.json": "4d7b761eb61e6425ec68eddab3700035a52165b0cdaebc56058b9c9391ab1a5c",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/no_context/fold_4/report.json": "06eca667c23904b42e79b0d2b0fc17a5f53f0a82f5e59939ca9c68250a079237",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/hctx/fold_4/report.json": "932febe4be6a6a1aebaab7c8a7cfcf079e4cf75c3f665a9d16dfb70b3f83e3d3",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/sacti/fold_4/report.json": "fe0164b5d635a6d4070f37ada828a2c76469b0f3066e1521afbfed27af7b0b8a",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/no_context/fold_5/report.json": "04e46a495ee945da289826dac694482fde94a530dbba7374ad1fdb37f9c626e0",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/hctx/fold_5/report.json": "08402e9633ee7810e1c844031842b9427ad0189b0ee9fd20fa391508c1b37530",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/rankings/sacti/fold_5/report.json": "ae1655294f3a421a1ad7ea9516f295b5c64ae9c65e7c113ba6f252faf6ed0ad8"
+  },
+  "original_strata": {
+    "1-5": {
+      "compounds": 14,
+      "evidence_pairs": 34,
+      "methods": {
+        "NoContext": {
+          "MRR": 0.0028946700028277057,
+          "Recall@20": 0.0
+        },
+        "Hctx-P": {
+          "MRR": 0.11559690692054765,
+          "Recall@20": 0.2619047619047619
+        },
+        "SACTI": {
+          "MRR": 0.10929701122348982,
+          "Recall@20": 0.13095238095238096
+        }
+      },
+      "deltas": {
+        "Hctx-P_minus_NoContext": {
+          "MRR": 0.11270223691771994,
+          "Recall@20": 0.2619047619047619
+        },
+        "SACTI_minus_Hctx-P": {
+          "MRR": -0.006299895697057818,
+          "Recall@20": -0.13095238095238096
+        },
+        "SACTI_minus_NoContext": {
+          "MRR": 0.10640234122066212,
+          "Recall@20": 0.13095238095238096
+        }
+      }
+    },
+    "6-20": {
+      "compounds": 39,
+      "evidence_pairs": 88,
+      "methods": {
+        "NoContext": {
+          "MRR": 0.011547890529691532,
+          "Recall@20": 0.01282051282051282
+        },
+        "Hctx-P": {
+          "MRR": 0.048695594292079133,
+          "Recall@20": 0.2136752136752137
+        },
+        "SACTI": {
+          "MRR": 0.06029111453830192,
+          "Recall@20": 0.35836385836385837
+        }
+      },
+      "deltas": {
+        "Hctx-P_minus_NoContext": {
+          "MRR": 0.037147703762387595,
+          "Recall@20": 0.20085470085470084
+        },
+        "SACTI_minus_Hctx-P": {
+          "MRR": 0.01159552024622279,
+          "Recall@20": 0.1446886446886447
+        },
+        "SACTI_minus_NoContext": {
+          "MRR": 0.048743224008610385,
+          "Recall@20": 0.34554334554334554
+        }
+      }
+    },
+    ">=21": {
+      "compounds": 279,
+      "evidence_pairs": 563,
+      "methods": {
+        "NoContext": {
+          "MRR": 0.006354568594817808,
+          "Recall@20": 0.005888376856118791
+        },
+        "Hctx-P": {
+          "MRR": 0.11204806064928381,
+          "Recall@20": 0.35329407748762587
+        },
+        "SACTI": {
+          "MRR": 0.1448206484145301,
+          "Recall@20": 0.39246031746031745
+        }
+      },
+      "deltas": {
+        "Hctx-P_minus_NoContext": {
+          "MRR": 0.105693492054466,
+          "Recall@20": 0.34740570063150705
+        },
+        "SACTI_minus_Hctx-P": {
+          "MRR": 0.032772587765246296,
+          "Recall@20": 0.039166239972691586
+        },
+        "SACTI_minus_NoContext": {
+          "MRR": 0.1384660798197123,
+          "Recall@20": 0.38657194060419864
+        }
+      }
+    }
+  },
+  "changed_counts": 307,
+  "changed_bins": 8,
+  "model_forward_calls": 0,
+  "newly_scored_pairs": 0,
+  "input_hashes": {
+    "/home/zry/workspace/HDCTI/dataset/ETCM2.0_core_mention10/H_C.txt": "dd14683bc6706dce56c90293a87c023460edcaec0f1eebd3bf4c7db61275cf14",
+    "/home/zry/workspace/HDCTI/dataset/ETCM2.0_core_mention10/mappings/herb_id_map.csv": "4a6eef155e988261c5f17290193f08e9d81feb05cbbbf831a8885c1576715030",
+    "/home/zry/workspace/HDCTI/dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv": "97a2d10cd26a9e77ff537d66af689383f2e0261200dbeff4685923144f9b3326",
+    "/home/zry/workspace/HDCTI/dataset/ETCM2.0_validation/relations/ingredient_herb.tsv": "74838a09954191852efdfd4ec456bb70f5801d77e4e959382e6b3bf7c124a2d3",
+    "/home/zry/workspace/HDCTI/dataset/ETCM2.0_validation/validation/ETCM2.0_core_mention10/unseen_confirmed.tsv": "111a0d755c7a60cea3ddfb17c313dbdb189d46576f98930faec8c926ca8df0b6",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/confirmed_metrics/NoContext/per_compound.tsv": "345d33ee0f8d0c108211801fba4c919620ab770934a2f999944c772dae48e2d6",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/confirmed_metrics/Hctx-P/per_compound.tsv": "0dff38f9d99cfd1d544b1e6d562e290bd5034c590cf7a94945f4ce32f49924ee",
+    "/home/zry/workspace/HDCTI/results/etcm_confirmed_target_evaluation/confirmed_metrics/SACTI/per_compound.tsv": "ec53e4d5274029a552e5897900e97442dc1d3e023cf6eaa478e27b892bf52314"
+  },
+  "config_sha256": "6c43841ab06191290565d8679c688ead0be0b04bd249afb12246d356b020065d",
+  "code_hashes": {
+    "/home/zry/workspace/HDCTI/tools/rebuild_etcm_context_support.py": "5f200e873349c941275d5e45a136412605cb7cc99756aa498ced1ec67cff26af",
+    "/home/zry/workspace/HDCTI/tools/analyze_etcm_confirmed_target_context.py": "9c2d5850f6cc0b057f5ab78f520d640ba9ba85fc24a33ac813c38abd5586a241",
+    "/home/zry/workspace/HDCTI/util/support_complete_split.py": "0fd20bfe42aecbd2fd92ae7e4f136b3321b3318ba1209f11eac59e0fdd674e9b",
+    "/home/zry/workspace/HDCTI/util/dataSplit.py": "28dff40046053cb89975dfa850515752a00cc1b0b9ab911f62b7bb17a2f48613"
+  }
+}

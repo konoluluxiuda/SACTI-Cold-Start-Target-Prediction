@@ -53,8 +53,8 @@
         }
       },
       "logs": {
-        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsuite_baseline.log",
-        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsuite_candidate.log"
+        "baseline": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsuite_baseline.log",
+        "candidate": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsuite_candidate.log"
       }
     },
     {
@@ -102,8 +102,8 @@
         }
       },
       "logs": {
-        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsp_baseline.log",
-        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsp_candidate.log"
+        "baseline": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsp_baseline.log",
+        "candidate": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsp_candidate.log"
       }
     },
     {
@@ -151,8 +151,8 @@
         }
       },
       "logs": {
-        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/symmap_baseline.log",
-        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/symmap_candidate.log"
+        "baseline": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/symmap_baseline.log",
+        "candidate": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/symmap_candidate.log"
       }
     },
     {
@@ -200,8 +200,8 @@
         }
       },
       "logs": {
-        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/etcm_mention10_baseline.log",
-        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/etcm_mention10_candidate.log"
+        "baseline": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/etcm_mention10_baseline.log",
+        "candidate": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_outer_lockbox_seed901026/logs/etcm_mention10_candidate.log"
       }
     }
   ],

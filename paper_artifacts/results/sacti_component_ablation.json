@@ -26,7 +26,7 @@
             0.7823891265771316,
             0.7619919056038547
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_transfer.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_transfer.log"
         },
         "prototype_only": {
           "metrics": {
@@ -43,7 +43,7 @@
             0.7865564688156169,
             0.7659186347244
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_prototype_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_prototype_only.log"
         },
         "jaccard_only": {
           "metrics": {
@@ -60,7 +60,7 @@
             0.7879992227561587,
             0.7661433000201797
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_jaccard_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_jaccard_only.log"
         },
         "full": {
           "metrics": {
@@ -77,7 +77,7 @@
             0.7905555685622454,
             0.7684169730966801
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_full.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_full.log"
         },
         "no_support_gate": {
           "metrics": {
@@ -94,7 +94,7 @@
             0.782830165957364,
             0.7663584275039986
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_support_gate.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_support_gate.log"
         },
         "no_context_expert": {
           "metrics": {
@@ -111,7 +111,7 @@
             0.6678471362657247,
             0.6886352580039381
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_context_expert.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_context_expert.log"
         }
       },
       "effects": {
@@ -232,7 +232,7 @@
             0.9644592361585241,
             0.9687491080321169
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_transfer.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_transfer.log"
         },
         "prototype_only": {
           "metrics": {
@@ -249,7 +249,7 @@
             0.9649946098589944,
             0.9695174436742797
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_prototype_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_prototype_only.log"
         },
         "jaccard_only": {
           "metrics": {
@@ -266,7 +266,7 @@
             0.9645586528262898,
             0.9698426670028534
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_jaccard_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_jaccard_only.log"
         },
         "full": {
           "metrics": {
@@ -283,7 +283,7 @@
             0.9667649466974924,
             0.9709231663883606
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_full.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_full.log"
         },
         "no_support_gate": {
           "metrics": {
@@ -300,7 +300,7 @@
             0.9652698327792554,
             0.9704599677790253
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_support_gate.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_support_gate.log"
         },
         "no_context_expert": {
           "metrics": {
@@ -317,7 +317,7 @@
             0.8644437823188418,
             0.8563458800381611
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_context_expert.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_context_expert.log"
         }
       },
       "effects": {
@@ -438,7 +438,7 @@
             0.8449969429178312,
             0.843803326165772
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_transfer.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_transfer.log"
         },
         "prototype_only": {
           "metrics": {
@@ -455,7 +455,7 @@
             0.8472551867894288,
             0.8466085466891031
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_prototype_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_prototype_only.log"
         },
         "jaccard_only": {
           "metrics": {
@@ -472,7 +472,7 @@
             0.8466477299649261,
             0.8451511481067805
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_jaccard_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_jaccard_only.log"
         },
         "full": {
           "metrics": {
@@ -489,7 +489,7 @@
             0.8479877159215596,
             0.8475331824291241
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_full.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_full.log"
         },
         "no_support_gate": {
           "metrics": {
@@ -506,7 +506,7 @@
             0.8464141597779884,
             0.8433033497425362
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_support_gate.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_support_gate.log"
         },
         "no_context_expert": {
           "metrics": {
@@ -523,7 +523,7 @@
             0.8599588055366465,
             0.8479376743325386
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_context_expert.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_context_expert.log"
         }
       },
       "effects": {
@@ -644,7 +644,7 @@
             0.9352436808445959,
             0.9305719893076732
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_transfer.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_transfer.log"
         },
         "prototype_only": {
           "metrics": {
@@ -661,7 +661,7 @@
             0.9389497087151111,
             0.9353491655676145
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_prototype_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_prototype_only.log"
         },
         "jaccard_only": {
           "metrics": {
@@ -678,7 +678,7 @@
             0.9393352722890871,
             0.9362473702207487
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_jaccard_only.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_jaccard_only.log"
         },
         "full": {
           "metrics": {
@@ -695,7 +695,7 @@
             0.9418474022170644,
             0.9383852080758678
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_full.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_full.log"
         },
         "no_support_gate": {
           "metrics": {
@@ -712,7 +712,7 @@
             0.9418479759254704,
             0.9383321826789304
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_support_gate.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_support_gate.log"
         },
         "no_context_expert": {
           "metrics": {
@@ -729,7 +729,7 @@
             0.8396821027078305,
             0.8340514344467882
           ],
-          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_context_expert.log"
+          "source": "/home/zry/workspace/HDCTI/results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_context_expert.log"
         }
       },
       "effects": {
@@ -895,97 +895,97 @@
       "dataset": "TCM-Suite",
       "method": "Dual-HGNN-CTI",
       "aupr": 0.729257,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "TCMSP",
       "method": "Dual-HGNN-CTI",
       "aupr": 0.939348,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "SymMap2.0",
       "method": "Dual-HGNN-CTI",
       "aupr": 0.83054,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "ETCM2.0-mention10",
       "method": "Dual-HGNN-CTI",
       "aupr": 0.91073,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "TCM-Suite",
       "method": "LightGCN-CTI",
       "aupr": 0.568966,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "TCMSP",
       "method": "LightGCN-CTI",
       "aupr": 0.662029,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "SymMap2.0",
       "method": "LightGCN-CTI",
       "aupr": 0.595482,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "ETCM2.0-mention10",
       "method": "LightGCN-CTI",
       "aupr": 0.608434,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "TCM-Suite",
       "method": "R-GCN-CTI",
       "aupr": 0.670161,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "TCMSP",
       "method": "R-GCN-CTI",
       "aupr": 0.910556,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "SymMap2.0",
       "method": "R-GCN-CTI",
       "aupr": 0.812299,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "ETCM2.0-mention10",
       "method": "R-GCN-CTI",
       "aupr": 0.809541,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "TCM-Suite",
       "method": "HGT-CTI",
       "aupr": 0.696228,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "TCMSP",
       "method": "HGT-CTI",
       "aupr": 0.934128,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "SymMap2.0",
       "method": "HGT-CTI",
       "aupr": 0.83969,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     },
     {
       "dataset": "ETCM2.0-mention10",
       "method": "HGT-CTI",
       "aupr": 0.846547,
-      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv"
     }
   ],
   "external_baselines_sha256": "98a41b7581591f4b29b849aa29f98230c82f2f36474408bd0a5565b6b4458016",

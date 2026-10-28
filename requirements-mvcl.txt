@@ -1,0 +1,6 @@
+# Separate Python 3.9 environment used for the MVCL comparison.
+# Install the CUDA 12.8 PyTorch wheel using the command in README.md.
+torch==2.7.1
+numpy==1.23.5
+scipy==1.13.1
+scikit-learn==1.1.3

@@ -6,3 +6,5 @@ dataset/
 saved_model/
 *.ckpt*
 *.zip
+data/installed_manifest.json
+/results/

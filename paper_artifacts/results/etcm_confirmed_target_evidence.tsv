@@ -1,0 +1,686 @@
+tcmip_id	compound_id	compound_name	gene_symbol	protein_id	status	evidence_count	activity_count	reference_count
+TCMIP-I-00110	800	(-)Arctigenin	MAP2K1	548	unseen_confirmed	1	1	3
+TCMIP-I-00188	565	(-)-Epicatechin	ALPL	61	unseen_confirmed	1	1	1
+TCMIP-I-00188	565	(-)-Epicatechin	CA1	101	unseen_confirmed	3	3	8
+TCMIP-I-00188	565	(-)-Epicatechin	CA12	102	unseen_confirmed	1	1	3
+TCMIP-I-00188	565	(-)-Epicatechin	CA2	104	unseen_confirmed	2	2	6
+TCMIP-I-00188	565	(-)-Epicatechin	CA4	106	unseen_confirmed	3	3	8
+TCMIP-I-00188	565	(-)-Epicatechin	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-00196	701	(-)-epigallocatechin	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-00196	701	(-)-epigallocatechin	MAPK14	557	unseen_confirmed	1	1	3
+TCMIP-I-00197	702	(-)-epigallocatechin 3-O-gallate	APP	72	unseen_confirmed	2	2	5
+TCMIP-I-00197	702	(-)-epigallocatechin 3-O-gallate	DYRK1A	260	unseen_confirmed	2	1	5
+TCMIP-I-00197	702	(-)-epigallocatechin 3-O-gallate	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-00197	702	(-)-epigallocatechin 3-O-gallate	MET	574	unseen_confirmed	1	1	3
+TCMIP-I-00197	702	(-)-epigallocatechin 3-O-gallate	MMP7	594	unseen_confirmed	1	1	3
+TCMIP-I-00197	702	(-)-epigallocatechin 3-O-gallate	STAT1	911	unseen_confirmed	1	1	3
+TCMIP-I-00197	702	(-)-epigallocatechin 3-O-gallate	TERT	932	unseen_confirmed	3	3	3
+TCMIP-I-00198	703	(-)-epigallocatechin-3-gallate	APP	72	unseen_confirmed	2	2	5
+TCMIP-I-00198	703	(-)-epigallocatechin-3-gallate	DYRK1A	260	unseen_confirmed	2	1	5
+TCMIP-I-00198	703	(-)-epigallocatechin-3-gallate	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-00198	703	(-)-epigallocatechin-3-gallate	MET	574	unseen_confirmed	1	1	3
+TCMIP-I-00198	703	(-)-epigallocatechin-3-gallate	MMP7	594	unseen_confirmed	1	1	3
+TCMIP-I-00198	703	(-)-epigallocatechin-3-gallate	STAT1	911	unseen_confirmed	1	1	3
+TCMIP-I-00198	703	(-)-epigallocatechin-3-gallate	TERT	932	unseen_confirmed	3	3	3
+TCMIP-I-00207	576	(-)-GALLOCATECHIN	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-00207	576	(-)-GALLOCATECHIN	MAPK14	557	unseen_confirmed	1	1	3
+TCMIP-I-00265	608	(-)-Medicarpin	PSMB5	775	unseen_confirmed	1	1	3
+TCMIP-I-00504	279	(+)-arctigenin	MAP2K1	548	unseen_confirmed	1	1	3
+TCMIP-I-00524	147	(+)-Catechin	ALPL	61	unseen_confirmed	1	1	1
+TCMIP-I-00524	147	(+)-Catechin	CA1	101	unseen_confirmed	3	3	8
+TCMIP-I-00524	147	(+)-Catechin	CA12	102	unseen_confirmed	1	1	3
+TCMIP-I-00524	147	(+)-Catechin	CA2	104	unseen_confirmed	2	2	6
+TCMIP-I-00524	147	(+)-Catechin	CA4	106	unseen_confirmed	3	3	8
+TCMIP-I-00524	147	(+)-Catechin	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-00569	317	(+)-epicatechin	ALPL	61	unseen_confirmed	1	1	1
+TCMIP-I-00569	317	(+)-epicatechin	CA1	101	unseen_confirmed	3	3	8
+TCMIP-I-00569	317	(+)-epicatechin	CA12	102	unseen_confirmed	1	1	3
+TCMIP-I-00569	317	(+)-epicatechin	CA2	104	unseen_confirmed	2	2	6
+TCMIP-I-00569	317	(+)-epicatechin	CA4	106	unseen_confirmed	3	3	8
+TCMIP-I-00569	317	(+)-epicatechin	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-00592	177	(+)-Gallocatechin	APP	72	unseen_confirmed	2	2	5
+TCMIP-I-00592	177	(+)-Gallocatechin	DYRK1A	260	unseen_confirmed	2	1	5
+TCMIP-I-00592	177	(+)-Gallocatechin	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-00592	177	(+)-Gallocatechin	MET	574	unseen_confirmed	1	1	3
+TCMIP-I-00592	177	(+)-Gallocatechin	MMP7	594	unseen_confirmed	1	1	3
+TCMIP-I-00592	177	(+)-Gallocatechin	STAT1	911	unseen_confirmed	1	1	3
+TCMIP-I-00592	177	(+)-Gallocatechin	TERT	932	unseen_confirmed	3	3	3
+TCMIP-I-01049	1005	(1S,2R)-2-phenylcyclopropanamine	CYP2C19	222	unseen_confirmed	12	6	23
+TCMIP-I-01414	1344	(2E)-2-(3,4-dihydroxybenzylidene)-6,7-dihydroxy-benzofuran-3-one	APP	72	unseen_confirmed	1	1	3
+TCMIP-I-01824	1701	(2Z)-2-(2-oxoindolin-3-ylidene)indolin-3-one	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-01936	1820	(3R,4R,4aR,6aR,6bS,8aR,11R,12S,12aR,14aR,14bS)-3-hydroxy-4,6a,6b,8a,11,12,14b-heptamethyl-14-oxo-1,2,3,4a,5,6,7,8,9,10,11,12,12a,14a-tetradecahydropicene-4-carboxylic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-02113	2083	(4aS,6aR,6aS,6bR,8aR,10R,12aR,14bS)-10-hydroxy-2,2,6a,6b,9,9,12a-heptamethyl-1,3,4,5,6,6a,7,8,8a,10,11,12,13,14b-tetradecahydropicene-4a-carboxylic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-02113	2083	(4aS,6aR,6aS,6bR,8aR,10R,12aR,14bS)-10-hydroxy-2,2,6a,6b,9,9,12a-heptamethyl-1,3,4,5,6,6a,7,8,8a,10,11,12,13,14b-tetradecahydropicene-4a-carboxylic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-02113	2083	(4aS,6aR,6aS,6bR,8aR,10R,12aR,14bS)-10-hydroxy-2,2,6a,6b,9,9,12a-heptamethyl-1,3,4,5,6,6a,7,8,8a,10,11,12,13,14b-tetradecahydropicene-4a-carboxylic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-02113	2083	(4aS,6aR,6aS,6bR,8aR,10R,12aR,14bS)-10-hydroxy-2,2,6a,6b,9,9,12a-heptamethyl-1,3,4,5,6,6a,7,8,8a,10,11,12,13,14b-tetradecahydropicene-4a-carboxylic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-02113	2083	(4aS,6aR,6aS,6bR,8aR,10R,12aR,14bS)-10-hydroxy-2,2,6a,6b,9,9,12a-heptamethyl-1,3,4,5,6,6a,7,8,8a,10,11,12,13,14b-tetradecahydropicene-4a-carboxylic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-02113	2083	(4aS,6aR,6aS,6bR,8aR,10R,12aR,14bS)-10-hydroxy-2,2,6a,6b,9,9,12a-heptamethyl-1,3,4,5,6,6a,7,8,8a,10,11,12,13,14b-tetradecahydropicene-4a-carboxylic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-02493	2367	(E)-16,17-Didehydro-17-methoxy-17,18-seco-3-beta-yohimban-16-carboxylic acid methyl ester	BCHE	88	unseen_confirmed	1	1	3
+TCMIP-I-02521	2392	(E)-3-(3',5'-dimethoxy-4'-hydroxybenzylidence)-2-indolinone	DHFR	240	unseen_confirmed	1	1	3
+TCMIP-I-02524	2391	(E)-3-(3',5'-Dimethoxy-4'-hydroxybenzylidene)-2-indolinone	DHFR	240	unseen_confirmed	1	1	3
+TCMIP-I-02633	2496	(E)-p-coumaric acid	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-02633	2496	(E)-p-coumaric acid	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-02775	2606	(S)-Coriolic acid	PPARG	739	unseen_confirmed	2	1	4
+TCMIP-I-02817	2654	(Z)-1-(2,4-dihydroxyphenyl)-3-(4-hydroxyphenyl)prop-2-en-1-one	NLRP3	615	unseen_confirmed	1	1	3
+TCMIP-I-02817	2654	(Z)-1-(2,4-dihydroxyphenyl)-3-(4-hydroxyphenyl)prop-2-en-1-one	PSMB5	775	unseen_confirmed	1	1	3
+TCMIP-I-02821	2653	(Z)-1,3-di(phenyl)prop-2-en-1-one	PLIN1	724	unseen_confirmed	1	1	1
+TCMIP-I-02920	2741	(Z)-p-Coumaric acid	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-02920	2741	(Z)-p-Coumaric acid	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-02996	28780	[(2R,3S,4S,5S)-5-(6-aminopurin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl dihydrogen phosphate	PRKAB1	751	unseen_confirmed	2	2	3
+TCMIP-I-03349	2963	1,2,3,4,6-Pentagalloylglucose	F10	298	unseen_confirmed	2	2	3
+TCMIP-I-03349	2963	1,2,3,4,6-Pentagalloylglucose	GSTM1	400	unseen_confirmed	1	1	1
+TCMIP-I-03349	2963	1,2,3,4,6-Pentagalloylglucose	MCL1	568	unseen_confirmed	1	1	1
+TCMIP-I-03462	3095	1,2-dimethoxybenzene	CA12	102	unseen_confirmed	1	1	3
+TCMIP-I-03580	3216	1,3-benzenediol	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-03622	3237	1,3-dihydroxynaphthalene	NQO2	634	unseen_confirmed	1	1	3
+TCMIP-I-03736	3328	1,5-Bis(4-hydroxy-3-methoxyphenyl)-1,4-pentadien-3-one	HSD11B1	440	unseen_confirmed	1	1	3
+TCMIP-I-04223	4508	11-keto-beta-boswellic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-04224	4509	11-keto-beta-boswellic,acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-04417	4628	12-O-tetradecanoylphorbol-13-acetate	RASGRP3	808	unseen_confirmed	1	1	3
+TCMIP-I-04433	4631	12-Tetradecanoylphorbol 13-acetate	RASGRP3	808	unseen_confirmed	1	1	3
+TCMIP-I-04654	4884	15,17-Dihydrotanshinone I	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-04654	4884	15,17-Dihydrotanshinone I	PTPN6	791	unseen_confirmed	1	1	3
+TCMIP-I-04769	5024	16-alpha-Hydro-19-al-ent-kauran-17-oic acid	F10	298	unseen_confirmed	1	1	2
+TCMIP-I-04868	5070	16α-Hydro-19-al-ent-kauran-l7-oic acid	F10	298	unseen_confirmed	1	1	2
+TCMIP-I-04907	5133	17beta-Oestradiol	CYP1B1	214	unseen_confirmed	1	1	3
+TCMIP-I-04907	5133	17beta-Oestradiol	ESRRB	296	unseen_confirmed	3	3	7
+TCMIP-I-04946	5142	18-(β-D-Oxy glucose)-28-Oxo-12-oleanolic acid-3β-3-O-(β-D-glucose)-β-D-glucuronic acid methylester deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-04946	5142	18-(β-D-Oxy glucose)-28-Oxo-12-oleanolic acid-3β-3-O-(β-D-glucose)-β-D-glucuronic acid methylester deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-04946	5142	18-(β-D-Oxy glucose)-28-Oxo-12-oleanolic acid-3β-3-O-(β-D-glucose)-β-D-glucuronic acid methylester deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-04946	5142	18-(β-D-Oxy glucose)-28-Oxo-12-oleanolic acid-3β-3-O-(β-D-glucose)-β-D-glucuronic acid methylester deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-04946	5142	18-(β-D-Oxy glucose)-28-Oxo-12-oleanolic acid-3β-3-O-(β-D-glucose)-β-D-glucuronic acid methylester deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-04946	5142	18-(β-D-Oxy glucose)-28-Oxo-12-oleanolic acid-3β-3-O-(β-D-glucose)-β-D-glucuronic acid methylester deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-04953	5157	18alpha-Glycyrrhetinic acid	PRKCH	759	unseen_confirmed	1	1	3
+TCMIP-I-04953	5157	18alpha-Glycyrrhetinic acid	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-04957	5160	18beta-glycyrrhetinic acid	PRKCH	759	unseen_confirmed	1	1	3
+TCMIP-I-04957	5160	18beta-glycyrrhetinic acid	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-05353	3733	1-Kestose	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-05762	6081	2-(2’-hydroypropyl)-5-methyl-7-hydroxychromone	AHR	44	unseen_confirmed	1	1	3
+TCMIP-I-05816	6124	2-(4-hydroxyphenyl)ethanol	CA2	104	unseen_confirmed	1	1	3
+TCMIP-I-05817	6125	2-(4-hydroxyphenyl)ethyl (E)-3-(4-hydroxyphenyl)prop-2-enoate	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-06143	5380	2',4,4'-trihydroxychalcone	NLRP3	615	unseen_confirmed	1	1	3
+TCMIP-I-06143	5380	2',4,4'-trihydroxychalcone	PSMB5	775	unseen_confirmed	1	1	3
+TCMIP-I-06597	7023	20-Hydroxyecdysone	BCHE	88	unseen_confirmed	1	1	3
+TCMIP-I-06648	7062	21-Episerratenediol	BCHE	88	unseen_confirmed	2	2	3
+TCMIP-I-06686	7136	22alpha-Hydroxyerythrodiol	CD81	143	unseen_confirmed	1	1	3
+TCMIP-I-07035	7440	27-P-coumaroyloxyursolic acid	EGFR	266	unseen_confirmed	1	1	3
+TCMIP-I-07045	7470	28-deglucosyl-chikusetsusaponin,iva deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-07045	7470	28-deglucosyl-chikusetsusaponin,iva deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-07045	7470	28-deglucosyl-chikusetsusaponin,iva deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-07045	7470	28-deglucosyl-chikusetsusaponin,iva deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-07045	7470	28-deglucosyl-chikusetsusaponin,iva deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-07045	7470	28-deglucosyl-chikusetsusaponin,iva deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-07200	6194	2-Amino-4-methylpentanoic acid	ALPL	61	unseen_confirmed	1	1	3
+TCMIP-I-07200	6194	2-Amino-4-methylpentanoic acid	PLAA	716	unseen_confirmed	1	1	3
+TCMIP-I-07503	6756	2-hydroxybenzoic acid	APP	72	unseen_confirmed	1	1	3
+TCMIP-I-07503	6756	2-hydroxybenzoic acid	HMGB1	428	unseen_confirmed	1	1	3
+TCMIP-I-07636	6812	2-methoxyphenol	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-07656	6385	2-Methyl-1,4-naphthoquinone	CDC25A	145	unseen_confirmed	1	1	3
+TCMIP-I-07656	6385	2-Methyl-1,4-naphthoquinone	PLIN1	724	unseen_confirmed	1	1	1
+TCMIP-I-08156	8341	3-(3,4-dihydroxyphenyl)-2-acrylic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-08156	8341	3-(3,4-dihydroxyphenyl)-2-acrylic acid	MMP9	596	unseen_confirmed	2	2	3
+TCMIP-I-08156	8341	3-(3,4-dihydroxyphenyl)-2-acrylic acid	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-08287	7877	3,3'4',5,7-Pentahydroxyvone-3-L-rhamnoside	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-08345	7669	3',4',5,7-Tetrahydroxyflavone	CD38	141	unseen_confirmed	1	1	3
+TCMIP-I-08345	7669	3',4',5,7-Tetrahydroxyflavone	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-08390	7962	3,4-Benzopyrene	AHR	44	unseen_confirmed	2	2	5
+TCMIP-I-08524	8074	3,5,3',5'-Tetraiodothyronine	NR1H4	637	unseen_confirmed	1	1	3
+TCMIP-I-08569	8153	3,5-dicaffeoylquinic acid methyl ester	MMP13	588	unseen_confirmed	1	1	3
+TCMIP-I-08641	8108	3,5-Di-O-caffeoylquinic methyl ester	MMP13	588	unseen_confirmed	1	1	3
+TCMIP-I-09151	9157	3-epioleanolic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-09151	9157	3-epioleanolic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-09151	9157	3-epioleanolic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-09151	9157	3-epioleanolic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-09151	9157	3-epioleanolic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-09151	9157	3-epioleanolic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-09162	8461	3-Epiursolic Acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-09162	8461	3-Epiursolic Acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-09162	8461	3-Epiursolic Acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-09162	8461	3-Epiursolic Acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-09162	8461	3-Epiursolic Acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-09162	8461	3-Epiursolic Acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-09250	8498	3-Hydroxy-12-ursen-28-oic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-09250	8498	3-Hydroxy-12-ursen-28-oic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-09250	8498	3-Hydroxy-12-ursen-28-oic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-09250	8498	3-Hydroxy-12-ursen-28-oic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-09250	8498	3-Hydroxy-12-ursen-28-oic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-09250	8498	3-Hydroxy-12-ursen-28-oic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-09320	8527	3-Hydroxycoumarin	DAO	229	unseen_confirmed	8	8	5
+TCMIP-I-09405	7729	3'-Methoxy-4',5,7-trihydroxyflavone	GSTM1	400	unseen_confirmed	1	1	1
+TCMIP-I-09519	8603	3-Methylcyclohexanone	CA1	101	unseen_confirmed	1	1	3
+TCMIP-I-09519	8603	3-Methylcyclohexanone	CA2	104	unseen_confirmed	1	1	3
+TCMIP-I-09519	8603	3-Methylcyclohexanone	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-09713	8781	3-O-acetyloleanolic acid	PTGS2	783	unseen_confirmed	1	1	3
+TCMIP-I-09796	8803	3-O-beta-D-Xylopyranosyl-(1-6)-beta-D-glucopyranosyl-(1-6)-beta-D-glucopyranosyl oleanolic acid 28-O-beta-D-glucopyranosyl ester deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-09796	8803	3-O-beta-D-Xylopyranosyl-(1-6)-beta-D-glucopyranosyl-(1-6)-beta-D-glucopyranosyl oleanolic acid 28-O-beta-D-glucopyranosyl ester deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-09796	8803	3-O-beta-D-Xylopyranosyl-(1-6)-beta-D-glucopyranosyl-(1-6)-beta-D-glucopyranosyl oleanolic acid 28-O-beta-D-glucopyranosyl ester deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-09796	8803	3-O-beta-D-Xylopyranosyl-(1-6)-beta-D-glucopyranosyl-(1-6)-beta-D-glucopyranosyl oleanolic acid 28-O-beta-D-glucopyranosyl ester deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-09796	8803	3-O-beta-D-Xylopyranosyl-(1-6)-beta-D-glucopyranosyl-(1-6)-beta-D-glucopyranosyl oleanolic acid 28-O-beta-D-glucopyranosyl ester deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-09796	8803	3-O-beta-D-Xylopyranosyl-(1-6)-beta-D-glucopyranosyl-(1-6)-beta-D-glucopyranosyl oleanolic acid 28-O-beta-D-glucopyranosyl ester deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-10148	9408	3-β-D-glucopyranosyloxy-5-phenylvaleric acid	MCL1	568	unseen_confirmed	1	1	1
+TCMIP-I-10659	10287	4-hydroxy benzoic acid	EGFR	266	unseen_confirmed	1	1	3
+TCMIP-I-10659	10287	4-hydroxy benzoic acid	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-10716	9749	4'-hydroxy-4-methoxychalcone	P4HB	668	unseen_confirmed	1	1	3
+TCMIP-I-10717	10308	4-hydroxy-4'-methoxychalcone	P4HB	668	unseen_confirmed	1	1	3
+TCMIP-I-10792	9756	4'-methoxy flavone	NLRP3	615	unseen_confirmed	1	1	1
+TCMIP-I-10886	10124	4-Methylcyclohexanone	CA1	101	unseen_confirmed	1	1	3
+TCMIP-I-10886	10124	4-Methylcyclohexanone	CA2	104	unseen_confirmed	1	1	3
+TCMIP-I-10886	10124	4-Methylcyclohexanone	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-11314	10702	5,7,3',4'-tetrahydroxy-flavonone	HSP90AB1	447	unseen_confirmed	1	1	1
+TCMIP-I-11331	10719	5,7,4'-trihydroxy-6-methoxyflavone	NR0B1	635	unseen_confirmed	1	1	1
+TCMIP-I-11345	10728	5,7,8-Trimethoxycoumarin	CA2	104	unseen_confirmed	1	1	3
+TCMIP-I-11475	10516	5'-Adenosine monophosphate	PRKAB1	751	unseen_confirmed	2	2	3
+TCMIP-I-11650	11142	5-hydroxy-2-(2-phenylethyl)chromone	HTR3A	459	unseen_confirmed	1	1	3
+TCMIP-I-11821	11000	5-Methoxypsoralen	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-12015	11567	6-(8'Z-Pentadecenyl)-salicylic acid	SGMS2	856	unseen_confirmed	1	1	3
+TCMIP-I-12073	11512	6,7-Dihydroxy-2H-chromen-2-one	XDH	976	unseen_confirmed	1	1	3
+TCMIP-I-12108	11538	6,8-Diprenylnaringenin	XBP1	975	unseen_confirmed	1	1	1
+TCMIP-I-12785	12072	7,4'-Dihydroxyflavan	PLA2G2A	711	unseen_confirmed	1	1	3
+TCMIP-I-12963	12179	7-Epitaxol	ITGB3	480	unseen_confirmed	1	1	3
+TCMIP-I-12963	12179	7-Epitaxol	MERTK	573	unseen_confirmed	1	1	3
+TCMIP-I-13094	12412	7-methoxycoumarin	CA1	101	unseen_confirmed	1	1	3
+TCMIP-I-13094	12412	7-methoxycoumarin	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-13291	12555	8(9),15-Isopimaradien-3β-ol	NR1H3	636	unseen_confirmed	1	1	3
+TCMIP-I-13503	12792	8-methoxypsoralen	CYP2A6	221	unseen_confirmed	3	3	5
+TCMIP-I-13707	13001	9-aminoacridine	NQO2	634	unseen_confirmed	2	2	3
+TCMIP-I-13976	13188	Acanthol	NR1H3	636	unseen_confirmed	1	1	3
+TCMIP-I-14047	28952	acetyl 11-keto-β-boswellic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-14063	13240	Acetyl-11-keto-B-boswellic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-14064	28962	acetyl-11-keto-beta-boswellic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-14065	13239	Acetyl-11-keto--beta-boswellic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-14066	28963	acetyl-11-keto-beta-boswellic,acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-14218	13318	Actinodaphnine	MCL1	568	unseen_confirmed	1	1	1
+TCMIP-I-14246	13340	Adenine nucleoside	MAP3K7	553	unseen_confirmed	1	1	3
+TCMIP-I-14252	13346	Adenosin	MAP3K7	553	unseen_confirmed	1	1	3
+TCMIP-I-14253	13347	Adenosine 5'-monophosphate	PRKAB1	751	unseen_confirmed	2	2	3
+TCMIP-I-14255	13349	Adenosine diphosphate	HSPA8	450	unseen_confirmed	4	4	7
+TCMIP-I-14256	13350	Adenosine triphosphate	JAK2	488	unseen_confirmed	1	1	3
+TCMIP-I-14256	13350	Adenosine triphosphate	MAPKAPK2	561	unseen_confirmed	2	2	3
+TCMIP-I-14418	13467	Ajmaline	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-14418	13467	Ajmaline	SCN1A	846	unseen_confirmed	1	1	3
+TCMIP-I-14666	13590	Alloisoleucine	ALPL	61	unseen_confirmed	1	1	3
+TCMIP-I-14666	13590	Alloisoleucine	PLAA	716	unseen_confirmed	1	1	3
+TCMIP-I-14667	13585	Allo-L-isoleucine	ALPL	61	unseen_confirmed	1	1	3
+TCMIP-I-14667	13585	Allo-L-isoleucine	PLAA	716	unseen_confirmed	1	1	3
+TCMIP-I-14671	13593	Allopseudococain	SLC6A2	890	unseen_confirmed	12	12	20
+TCMIP-I-14749	29298	alpha:beta-Diolein	PRKCQ	760	unseen_confirmed	1	1	3
+TCMIP-I-15027	13751	Anacaridic acid D	KAT5	493	unseen_confirmed	1	1	3
+TCMIP-I-15186	29390	anisocoumarin H	OPRK1	652	unseen_confirmed	1	1	3
+TCMIP-I-15415	13985	Apigenin-7-O--beta-D-glucuronide	PTPN1	787	unseen_confirmed	2	2	1
+TCMIP-I-15452	29464	apomorphine	HTR1D	453	unseen_confirmed	1	1	3
+TCMIP-I-15452	29464	apomorphine	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-15452	29464	apomorphine	MCL1	568	unseen_confirmed	2	2	2
+TCMIP-I-15452	29464	apomorphine	MDM2	571	unseen_confirmed	3	3	4
+TCMIP-I-15452	29464	apomorphine	RUNX1	833	unseen_confirmed	3	3	2
+TCMIP-I-15478	14026	Araboglycyrrhizin deglycosylation	PRKCH	759	unseen_confirmed	1	1	3
+TCMIP-I-15478	14026	Araboglycyrrhizin deglycosylation	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-15481	29472	arachidonate	PTGS2	783	unseen_confirmed	1	1	3
+TCMIP-I-15582	14078	Arecatannin B1	SERPINE1	854	unseen_confirmed	1	1	3
+TCMIP-I-16029	29676	atropine	HRH1	436	unseen_confirmed	1	1	3
+TCMIP-I-16129	14425	Bacachinin	PPARG	739	unseen_confirmed	4	4	4
+TCMIP-I-16156	14452	Baicalein	PRSS1	768	unseen_confirmed	1	1	3
+TCMIP-I-16156	14452	Baicalein	SI	859	unseen_confirmed	1	1	3
+TCMIP-I-16182	14472	Bakuchicin	CYP2A6	221	unseen_confirmed	1	1	3
+TCMIP-I-16255	14516	Bavachinin	PPARG	739	unseen_confirmed	4	4	4
+TCMIP-I-16256	14517	Bavachinin A	PPARG	739	unseen_confirmed	4	4	4
+TCMIP-I-16455	14403	B-Estradiol	CYP1B1	214	unseen_confirmed	1	1	3
+TCMIP-I-16455	14403	B-Estradiol	ESRRB	296	unseen_confirmed	3	3	7
+TCMIP-I-16545	29856	beta-Lapachone	CASP1	122	unseen_confirmed	1	1	3
+TCMIP-I-16545	29856	beta-Lapachone	TDP2	930	unseen_confirmed	1	1	3
+TCMIP-I-16711	14715	Biotin	ABL1	7	unseen_confirmed	2	2	1
+TCMIP-I-16750	14741	Bisabolol	CHRNA7	172	unseen_confirmed	1	1	3
+TCMIP-I-16943	14848	Broussochalcone A	XDH	976	unseen_confirmed	1	1	3
+TCMIP-I-17112	30092	buplerol	MAP2K1	548	unseen_confirmed	1	1	3
+TCMIP-I-17359	15128	Caffeic acid	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-17359	15128	Caffeic acid	MMP9	596	unseen_confirmed	2	2	3
+TCMIP-I-17359	15128	Caffeic acid	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-17372	30197	caffeine	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-17479	30229	calycosin-7-O-beta-D-glucoside	TNF	941	unseen_confirmed	1	1	3
+TCMIP-I-17550	15246	Camptothecin	CHEK1	161	unseen_confirmed	1	1	3
+TCMIP-I-17550	15246	Camptothecin	HNRNPA1	430	unseen_confirmed	1	1	3
+TCMIP-I-17550	15246	Camptothecin	TDP2	930	unseen_confirmed	1	1	3
+TCMIP-I-18064	15537	Chalcone	PLIN1	724	unseen_confirmed	1	1	1
+TCMIP-I-18483	15788	Cinaroside	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-18729	30721	citric acid	PLIN1	724	unseen_confirmed	1	1	1
+TCMIP-I-18807	15901	Clematisprosapogenin,Cp7a deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-18807	15901	Clematisprosapogenin,Cp7a deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-18807	15901	Clematisprosapogenin,Cp7a deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-18807	15901	Clematisprosapogenin,Cp7a deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-18807	15901	Clematisprosapogenin,Cp7a deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-18807	15901	Clematisprosapogenin,Cp7a deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-18821	15911	ClematosideA' deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-18821	15911	ClematosideA' deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-18821	15911	ClematosideA' deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-18821	15911	ClematosideA' deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-18821	15911	ClematosideA' deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-18821	15911	ClematosideA' deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-18828	30753	clemontanoside B deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-18828	30753	clemontanoside B deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-18828	30753	clemontanoside B deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-18828	30753	clemontanoside B deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-18828	30753	clemontanoside B deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-18828	30753	clemontanoside B deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-18887	15944	Cocaine	SLC6A2	890	unseen_confirmed	12	12	20
+TCMIP-I-18893	15949	Cochalic acid	CD81	143	unseen_confirmed	1	1	3
+TCMIP-I-19112	16088	Cordycepeptide A	CETP	160	unseen_confirmed	1	1	3
+TCMIP-I-19189	16133	Corylifol B	XDH	976	unseen_confirmed	1	1	3
+TCMIP-I-19227	16158	Coumarin	CA1	101	unseen_confirmed	9	1	19
+TCMIP-I-19227	16158	Coumarin	CA2	104	unseen_confirmed	8	1	17
+TCMIP-I-19227	16158	Coumarin	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-19227	16158	Coumarin	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-19236	16162	Coumestrol	CSNK2A1	194	unseen_confirmed	1	1	3
+TCMIP-I-19905	16530	Cynaroside	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-19937	31134	cytidine	MDM2	571	unseen_confirmed	1	1	3
+TCMIP-I-19940	16547	Cytisine	CHRNA4	171	unseen_confirmed	5	5	7
+TCMIP-I-19940	16547	Cytisine	CHRNA7	172	unseen_confirmed	3	3	7
+TCMIP-I-20031	16702	Damnacanthal	LIMK1	530	unseen_confirmed	1	1	3
+TCMIP-I-20162	16800	Daurinoline	KCNH2	499	unseen_confirmed	2	2	3
+TCMIP-I-20302	31249	deglucose chikusetsusaponin Iva deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-20302	31249	deglucose chikusetsusaponin Iva deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-20302	31249	deglucose chikusetsusaponin Iva deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-20302	31249	deglucose chikusetsusaponin Iva deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-20302	31249	deglucose chikusetsusaponin Iva deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-20302	31249	deglucose chikusetsusaponin Iva deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-20304	16876	Deguelin	HSP90AA1	446	unseen_confirmed	1	1	3
+TCMIP-I-20736	17139	Desoxyrhapontigenin	SYK	920	unseen_confirmed	1	1	3
+TCMIP-I-20746	16632	DEXPROPRANOLOL	ADORA2A	33	unseen_confirmed	2	2	3
+TCMIP-I-20746	16632	DEXPROPRANOLOL	ADRB3	40	unseen_confirmed	4	4	7
+TCMIP-I-20746	16632	DEXPROPRANOLOL	AGTR1	42	unseen_confirmed	2	2	3
+TCMIP-I-20746	16632	DEXPROPRANOLOL	CHRM3	165	unseen_confirmed	2	2	3
+TCMIP-I-20746	16632	DEXPROPRANOLOL	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-20746	16632	DEXPROPRANOLOL	OPRD1	651	unseen_confirmed	2	2	3
+TCMIP-I-20746	16632	DEXPROPRANOLOL	OPRK1	652	unseen_confirmed	2	2	3
+TCMIP-I-20746	16632	DEXPROPRANOLOL	OPRM1	654	unseen_confirmed	2	2	3
+TCMIP-I-20766	16635	DGL	GRIA3	380	unseen_confirmed	2	2	4
+TCMIP-I-20766	16635	DGL	GRIA4	381	unseen_confirmed	5	3	10
+TCMIP-I-20766	16635	DGL	GRM7	393	unseen_confirmed	1	1	3
+TCMIP-I-21011	17280	Dihydrocorynantheine	BCHE	88	unseen_confirmed	1	1	3
+TCMIP-I-21110	17335	Dihydrotanshinone I	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-21110	17335	Dihydrotanshinone I	PTPN6	791	unseen_confirmed	1	1	3
+TCMIP-I-21111	31549	dihydrotanshinone IIA	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-21111	31549	dihydrotanshinone IIA	PTPN6	791	unseen_confirmed	1	1	3
+TCMIP-I-21112	17336	DihydrotanshinoneⅠ	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-21112	17336	DihydrotanshinoneⅠ	PTPN6	791	unseen_confirmed	1	1	3
+TCMIP-I-21407	16593	D-Nicotine	CHRNA1	167	unseen_confirmed	1	1	3
+TCMIP-I-21407	16593	D-Nicotine	CYP2A6	221	unseen_confirmed	1	1	3
+TCMIP-I-21448	17498	Dopamine	DRD4	255	unseen_confirmed	13	12	15
+TCMIP-I-21448	17498	Dopamine	MTNR1B	604	unseen_confirmed	1	1	2
+TCMIP-I-21448	17498	Dopamine	SLC6A2	890	unseen_confirmed	2	2	4
+TCMIP-I-21624	17606	Ecdysterone	BCHE	88	unseen_confirmed	1	1	3
+TCMIP-I-21637	31689	echinocystic acid	CD81	143	unseen_confirmed	1	1	3
+TCMIP-I-21656	17626	Eclalbasaponin Ⅳ	CD81	143	unseen_confirmed	1	1	3
+TCMIP-I-21676	17636	Ecliptasaponin A deglycosylation	CD81	143	unseen_confirmed	1	1	3
+TCMIP-I-21678	17638	Ecliptasaponin B deglycosylation	CD81	143	unseen_confirmed	1	1	3
+TCMIP-I-21684	17642	Eeiodictyol	HSP90AB1	447	unseen_confirmed	1	1	1
+TCMIP-I-21700	17580	EHD	CHEK1	161	unseen_confirmed	1	1	3
+TCMIP-I-21700	17580	EHD	HNRNPA1	430	unseen_confirmed	1	1	3
+TCMIP-I-21700	17580	EHD	TDP2	930	unseen_confirmed	1	1	3
+TCMIP-I-21711	17648	Eicosanetetraenoic acid	PTGS2	783	unseen_confirmed	1	1	3
+TCMIP-I-21753	17676	Ellipticine	NR5A1	643	unseen_confirmed	1	1	1
+TCMIP-I-21753	17676	Ellipticine	PRKACA	752	unseen_confirmed	1	1	1
+TCMIP-I-21753	17676	Ellipticine	ROCK2	823	unseen_confirmed	1	1	1
+TCMIP-I-21765	17685	Embelin	KAT2B	492	unseen_confirmed	1	1	3
+TCMIP-I-21772	17690	Emetine	NR2F2	640	unseen_confirmed	1	1	1
+TCMIP-I-21772	17690	Emetine	NR5A1	643	unseen_confirmed	2	2	1
+TCMIP-I-21772	17690	Emetine	RORA	824	unseen_confirmed	2	2	1
+TCMIP-I-21826	17731	Enoxolone	PRKCH	759	unseen_confirmed	1	1	3
+TCMIP-I-21826	17731	Enoxolone	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-21952	31836	ent-Kauran-16β,17,18-triol	HSD11B1	440	unseen_confirmed	1	1	3
+TCMIP-I-22030	31883	epigallocatechin	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-22030	31883	epigallocatechin	MAPK14	557	unseen_confirmed	1	1	3
+TCMIP-I-22045	17800	Epilupeol	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-22144	31918	ergolide	PTGS2	783	unseen_confirmed	1	1	3
+TCMIP-I-22213	17893	Eriodictyol	HSP90AB1	447	unseen_confirmed	1	1	1
+TCMIP-I-22543	18069	Etiocholanone	NR3C2	641	unseen_confirmed	1	1	3
+TCMIP-I-22829	18208	FA	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-22953	18280	Fisetin	CDK6	156	unseen_confirmed	2	1	4
+TCMIP-I-23015	32240	fluoxetine	CYP2C19	222	unseen_confirmed	2	2	4
+TCMIP-I-23015	32240	fluoxetine	SIGMAR1	860	unseen_confirmed	1	1	3
+TCMIP-I-23327	32322	gallocatechin	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-23327	32322	gallocatechin	MAPK14	557	unseen_confirmed	1	1	3
+TCMIP-I-23328	32323	gallocatechin gallate	APP	72	unseen_confirmed	2	2	5
+TCMIP-I-23328	32323	gallocatechin gallate	DYRK1A	260	unseen_confirmed	2	1	5
+TCMIP-I-23328	32323	gallocatechin gallate	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-23328	32323	gallocatechin gallate	MET	574	unseen_confirmed	1	1	3
+TCMIP-I-23328	32323	gallocatechin gallate	MMP7	594	unseen_confirmed	1	1	3
+TCMIP-I-23328	32323	gallocatechin gallate	STAT1	911	unseen_confirmed	1	1	3
+TCMIP-I-23328	32323	gallocatechin gallate	TERT	932	unseen_confirmed	3	3	3
+TCMIP-I-23331	32324	gallocatechin-3-O-gallate	APP	72	unseen_confirmed	2	2	5
+TCMIP-I-23331	32324	gallocatechin-3-O-gallate	DYRK1A	260	unseen_confirmed	2	1	5
+TCMIP-I-23331	32324	gallocatechin-3-O-gallate	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-23331	32324	gallocatechin-3-O-gallate	MET	574	unseen_confirmed	1	1	3
+TCMIP-I-23331	32324	gallocatechin-3-O-gallate	MMP7	594	unseen_confirmed	1	1	3
+TCMIP-I-23331	32324	gallocatechin-3-O-gallate	STAT1	911	unseen_confirmed	1	1	3
+TCMIP-I-23331	32324	gallocatechin-3-O-gallate	TERT	932	unseen_confirmed	3	3	3
+TCMIP-I-23356	18554	Gambogic acid	HSP90AB1	447	unseen_confirmed	3	3	3
+TCMIP-I-23356	18554	Gambogic acid	TXN	957	unseen_confirmed	1	1	3
+TCMIP-I-23356	18554	Gambogic acid	TXN2	958	unseen_confirmed	1	1	3
+TCMIP-I-23423	18570	Gancaonin Q	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-23576	18666	Garcinone D	CYP19A1	212	unseen_confirmed	1	1	3
+TCMIP-I-23577	18667	Garcinone E	NOD1	617	unseen_confirmed	1	1	1
+TCMIP-I-23577	18667	Garcinone E	NOD2	618	unseen_confirmed	1	1	1
+TCMIP-I-23577	18667	Garcinone E	XBP1	975	unseen_confirmed	1	1	1
+TCMIP-I-23652	18710	Genistein 7-glucoside	EGFR	266	unseen_confirmed	1	1	3
+TCMIP-I-23659	32441	genistin	EGFR	266	unseen_confirmed	1	1	3
+TCMIP-I-23704	18720	Gentianose	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-23794	18762	Giganteaside D	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-23794	18762	Giganteaside D	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-23794	18762	Giganteaside D	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-23794	18762	Giganteaside D	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-23794	18762	Giganteaside D	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-23794	18762	Giganteaside D	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-23994	18866	Glabridin	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-24177	32668	glutamic,acid	GRIA3	380	unseen_confirmed	2	2	4
+TCMIP-I-24177	32668	glutamic,acid	GRIA4	381	unseen_confirmed	5	3	10
+TCMIP-I-24177	32668	glutamic,acid	GRM7	393	unseen_confirmed	1	1	3
+TCMIP-I-24182	18944	Glutathione	GSTK1	399	unseen_confirmed	1	1	3
+TCMIP-I-24279	19001	Glycyrrhetinic acid	PRKCH	759	unseen_confirmed	1	1	3
+TCMIP-I-24279	19001	Glycyrrhetinic acid	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-24417	19098	Gossypol	CASP1	122	unseen_confirmed	1	1	3
+TCMIP-I-24417	19098	Gossypol	LDHA	523	unseen_confirmed	1	1	3
+TCMIP-I-24417	19098	Gossypol	LDHB	524	unseen_confirmed	1	1	3
+TCMIP-I-24463	32751	graynotoxin Ⅲ	CA1	101	unseen_confirmed	1	1	3
+TCMIP-I-24463	32751	graynotoxin Ⅲ	CA12	102	unseen_confirmed	1	1	3
+TCMIP-I-24463	32751	graynotoxin Ⅲ	CA2	104	unseen_confirmed	1	1	3
+TCMIP-I-24463	32751	graynotoxin Ⅲ	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-24463	32751	graynotoxin Ⅲ	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-24504	18521	GUAN MU ZHUANG CHE ZHOU CAO	CYP2C9	223	unseen_confirmed	1	1	3
+TCMIP-I-24542	19178	Guggulsterone	NR1H4	637	unseen_confirmed	3	2	6
+TCMIP-I-24553	19188	Gulutamine	GRIA3	380	unseen_confirmed	2	2	4
+TCMIP-I-24553	19188	Gulutamine	GRIA4	381	unseen_confirmed	5	3	10
+TCMIP-I-24553	19188	Gulutamine	GRM7	393	unseen_confirmed	1	1	3
+TCMIP-I-24733	19342	Gytisine	CHRNA4	171	unseen_confirmed	5	5	7
+TCMIP-I-24733	19342	Gytisine	CHRNA7	172	unseen_confirmed	3	3	7
+TCMIP-I-25101	19607	Hexamine	HSP90AB1	447	unseen_confirmed	1	1	1
+TCMIP-I-25151	19645	Hinokitiol	BARD1	86	unseen_confirmed	1	1	1
+TCMIP-I-25151	19645	Hinokitiol	MDM4	572	unseen_confirmed	1	1	1
+TCMIP-I-25164	32914	hirsutine	BCHE	88	unseen_confirmed	1	1	3
+TCMIP-I-25454	19843	Hyoscyamine	HRH1	436	unseen_confirmed	1	1	3
+TCMIP-I-25693	33044	indirubin	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-25806	19908	IPH	CA4	106	unseen_confirmed	6	2	13
+TCMIP-I-25924	20174	Isoarctigenin	MAP2K1	548	unseen_confirmed	1	1	3
+TCMIP-I-26026	20242	Isocitric acid	PLIN1	724	unseen_confirmed	1	1	1
+TCMIP-I-26027	20243	Isocitric acid c	PLIN1	724	unseen_confirmed	1	1	1
+TCMIP-I-26214	20356	Isoimperatorin	CYP1B1	214	unseen_confirmed	1	1	3
+TCMIP-I-26252	20376	Isoleucine	ALPL	61	unseen_confirmed	1	1	3
+TCMIP-I-26252	20376	Isoleucine	PLAA	716	unseen_confirmed	1	1	3
+TCMIP-I-26276	33222	isoliquiritigenin	NLRP3	615	unseen_confirmed	1	1	3
+TCMIP-I-26276	33222	isoliquiritigenin	PSMB5	775	unseen_confirmed	1	1	3
+TCMIP-I-26436	33272	isoproterenol	DRD4	255	unseen_confirmed	1	1	3
+TCMIP-I-26473	33286	isorhamnetin 3-O-glucoside	MMP9	596	unseen_confirmed	1	1	3
+TCMIP-I-26481	33294	isorhamnetin,3-o-glucoside	MMP9	596	unseen_confirmed	1	1	3
+TCMIP-I-27607	21189	L-(+)-Glutamic acid	GRIA3	380	unseen_confirmed	2	2	4
+TCMIP-I-27607	21189	L-(+)-Glutamic acid	GRIA4	381	unseen_confirmed	5	3	10
+TCMIP-I-27607	21189	L-(+)-Glutamic acid	GRM7	393	unseen_confirmed	1	1	3
+TCMIP-I-27608	21190	L-(+)-Leucine	ALPL	61	unseen_confirmed	1	1	3
+TCMIP-I-27608	21190	L-(+)-Leucine	PLAA	716	unseen_confirmed	1	1	3
+TCMIP-I-27952	21224	L-Epigallocatechin	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-27952	21224	L-Epigallocatechin	MAPK14	557	unseen_confirmed	1	1	3
+TCMIP-I-27972	21498	Leucinum	ALPL	61	unseen_confirmed	1	1	3
+TCMIP-I-27972	21498	Leucinum	PLAA	716	unseen_confirmed	1	1	3
+TCMIP-I-28292	21658	Liquiritic acid	PRKCH	759	unseen_confirmed	1	1	3
+TCMIP-I-28292	21658	Liquiritic acid	PTPN11	788	unseen_confirmed	1	1	3
+TCMIP-I-28322	21673	Lithocholic acid	VDR	971	unseen_confirmed	3	3	5
+TCMIP-I-28462	33974	loperamide	OPRD1	651	unseen_confirmed	2	2	5
+TCMIP-I-28462	33974	loperamide	OPRK1	652	unseen_confirmed	1	1	3
+TCMIP-I-28462	33974	loperamide	TEK	931	unseen_confirmed	1	1	3
+TCMIP-I-28592	33997	lup-20(29)-en-3-ol	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-28650	21841	Luteolin 7-O-beta-D-galatoside	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-28670	34029	luteolin-7-o-beta-d-galactopyranoside	MAPK10	556	unseen_confirmed	1	1	3
+TCMIP-I-28798	34061	lysegrol	TAAR1	921	unseen_confirmed	2	2	1
+TCMIP-I-28800	21933	Lysergol	TAAR1	921	unseen_confirmed	2	2	1
+TCMIP-I-29109	22138	Mangiferin	ALK	53	unseen_confirmed	1	1	3
+TCMIP-I-29200	34216	maristeminol	HSD11B1	440	unseen_confirmed	1	1	3
+TCMIP-I-29308	34241	melatonin	MPO	599	unseen_confirmed	1	1	3
+TCMIP-I-29801	22534	Methyl rosmarinate	MMP9	596	unseen_confirmed	1	1	3
+TCMIP-I-29954	34494	methylrosmarinate	MMP9	596	unseen_confirmed	1	1	3
+TCMIP-I-29967	34499	metoclopramide	MPO	599	unseen_confirmed	2	2	3
+TCMIP-I-30002	34503	mifepristone	CYP2C9	223	unseen_confirmed	1	1	3
+TCMIP-I-30213	22768	Moronic acid	NOD1	617	unseen_confirmed	1	1	1
+TCMIP-I-30213	22768	Moronic acid	NOD2	618	unseen_confirmed	1	1	1
+TCMIP-I-30308	22821	Mulberrochromene	PTGS2	783	unseen_confirmed	1	1	3
+TCMIP-I-30452	22930	Myrianthic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-30452	22930	Myrianthic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-30452	22930	Myrianthic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-30452	22930	Myrianthic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-30452	22930	Myrianthic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-30452	22930	Myrianthic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-30465	22942	Myricetin	HTT	462	unseen_confirmed	1	1	1
+TCMIP-I-30465	22942	Myricetin	INSR	474	unseen_confirmed	1	1	3
+TCMIP-I-30465	22942	Myricetin	MYLK	606	unseen_confirmed	1	1	3
+TCMIP-I-30638	23251	Nantenin	DRD4	255	unseen_confirmed	1	1	3
+TCMIP-I-30638	23251	Nantenin	OPRM1	654	unseen_confirmed	1	1	3
+TCMIP-I-30639	34711	nantenine	DRD4	255	unseen_confirmed	1	1	3
+TCMIP-I-30639	34711	nantenine	OPRM1	654	unseen_confirmed	1	1	3
+TCMIP-I-30941	23391	Neokestose	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-31091	34853	nicotine	CHRNA1	167	unseen_confirmed	1	1	3
+TCMIP-I-31091	34853	nicotine	CYP2A6	221	unseen_confirmed	1	1	3
+TCMIP-I-31331	34885	norartocarpetin	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-31358	23581	Nordihydroguaiaretic acid	ALOX5	57	unseen_confirmed	11	11	24
+TCMIP-I-31358	23581	Nordihydroguaiaretic acid	CYP19A1	212	unseen_confirmed	1	1	3
+TCMIP-I-31358	23581	Nordihydroguaiaretic acid	HSP90AA1	446	unseen_confirmed	1	1	1
+TCMIP-I-31359	23582	Nordihyolroguaiaretic acid	ALOX5	57	unseen_confirmed	11	11	24
+TCMIP-I-31359	23582	Nordihyolroguaiaretic acid	CYP19A1	212	unseen_confirmed	1	1	3
+TCMIP-I-31359	23582	Nordihyolroguaiaretic acid	HSP90AA1	446	unseen_confirmed	1	1	1
+TCMIP-I-31724	35046	odoratin	PPARG	739	unseen_confirmed	1	1	3
+TCMIP-I-31783	35063	oleanolic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-31783	35063	oleanolic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-31783	35063	oleanolic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-31783	35063	oleanolic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-31783	35063	oleanolic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-31783	35063	oleanolic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-31784	23790	Oleanolic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-31784	23790	Oleanolic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-31784	23790	Oleanolic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-31784	23790	Oleanolic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-31784	23790	Oleanolic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-31784	23790	Oleanolic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-31802	35073	oleanolic acid-3-0-β-D-glucuronide	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-31802	35073	oleanolic acid-3-0-β-D-glucuronide	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-31802	35073	oleanolic acid-3-0-β-D-glucuronide	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-31802	35073	oleanolic acid-3-0-β-D-glucuronide	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-31802	35073	oleanolic acid-3-0-β-D-glucuronide	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-31802	35073	oleanolic acid-3-0-β-D-glucuronide	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-31813	35077	oleanolic,,acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-31813	35077	oleanolic,,acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-31813	35077	oleanolic,,acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-31813	35077	oleanolic,,acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-31813	35077	oleanolic,,acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-31813	35077	oleanolic,,acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-31814	35078	oleanolicacid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-31814	35078	oleanolicacid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-31814	35078	oleanolicacid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-31814	35078	oleanolicacid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-31814	35078	oleanolicacid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-31814	35078	oleanolicacid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-32248	24040	Pachysamine B	DHCR7	239	unseen_confirmed	1	1	3
+TCMIP-I-32259	35304	paclitaxel	ITGB3	480	unseen_confirmed	1	1	3
+TCMIP-I-32259	35304	paclitaxel	MERTK	573	unseen_confirmed	1	1	3
+TCMIP-I-32422	24134	Panose	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-32424	24136	Panose C	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-32429	24139	Papaverine	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-32429	24139	Papaverine	PDE5A	682	unseen_confirmed	1	1	3
+TCMIP-I-32584	35253	p-Coumaric acid	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-32584	35253	p-Coumaric acid	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-32587	23985	P-coumaricacid	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-32587	23985	P-coumaricacid	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-32591	24000	PD 98059	MAP2K1	548	unseen_confirmed	1	1	3
+TCMIP-I-32591	24000	PD 98059	MAPK1	555	unseen_confirmed	1	1	3
+TCMIP-I-32727	24291	Perillyl alcohol	CYP1B1	214	unseen_confirmed	1	1	3
+TCMIP-I-32938	24003	PHB	EGFR	266	unseen_confirmed	1	1	3
+TCMIP-I-32938	24003	PHB	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-32971	35626	phenanthraquinone	BCHE	88	unseen_confirmed	1	1	3
+TCMIP-I-32971	35626	phenanthraquinone	TERT	932	unseen_confirmed	2	1	3
+TCMIP-I-32980	24385	Phenethyl caffeate	AKR1C2	46	unseen_confirmed	1	1	3
+TCMIP-I-32995	24395	Phenol	CA4	106	unseen_confirmed	6	2	13
+TCMIP-I-33063	35656	phorbol-12-butyrate-13-laurate	RASGRP3	808	unseen_confirmed	1	1	3
+TCMIP-I-33066	24442	Phorbol-12-myristate-13-acetate	RASGRP3	808	unseen_confirmed	1	1	3
+TCMIP-I-33119	35284	p-hydroxyphenylethyl p-coumarate	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-33221	24530	Piceatannol-4’-O-β-D-glucopyranoside	CA1	101	unseen_confirmed	2	2	5
+TCMIP-I-33221	24530	Piceatannol-4’-O-β-D-glucopyranoside	CA12	102	unseen_confirmed	2	2	5
+TCMIP-I-33221	24530	Piceatannol-4’-O-β-D-glucopyranoside	CA2	104	unseen_confirmed	2	2	5
+TCMIP-I-33221	24530	Piceatannol-4’-O-β-D-glucopyranoside	CA4	106	unseen_confirmed	2	2	5
+TCMIP-I-33221	24530	Piceatannol-4’-O-β-D-glucopyranoside	CA5A	107	unseen_confirmed	2	2	5
+TCMIP-I-33221	24530	Piceatannol-4’-O-β-D-glucopyranoside	POLA1	731	unseen_confirmed	1	1	3
+TCMIP-I-33464	35773	pjs-1 deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-33464	35773	pjs-1 deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-33464	35773	pjs-1 deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-33464	35773	pjs-1 deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-33464	35773	pjs-1 deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-33464	35773	pjs-1 deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-33487	24706	Planteose	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-33583	24741	Plumbagin	CDC25A	145	unseen_confirmed	1	1	3
+TCMIP-I-33583	24741	Plumbagin	EP300	275	unseen_confirmed	1	1	3
+TCMIP-I-33882	35932	pregn-4-ene-3,16-dione	CYP2C9	223	unseen_confirmed	1	1	3
+TCMIP-I-33976	35955	procyanidin B-7	MMP9	596	unseen_confirmed	1	1	3
+TCMIP-I-34322	36069	psoralen	CYP2A6	221	unseen_confirmed	1	1	3
+TCMIP-I-34504	25301	Purpurin	HSP90AB1	447	unseen_confirmed	1	1	1
+TCMIP-I-34593	25367	Quercetin	ALK	53	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	CA5A	107	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	CAMK2B	118	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	DRD4	255	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	IGF1R	466	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	KDM1A	504	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	KDR	509	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	MET	574	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	MMP13	588	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	PKN1	708	unseen_confirmed	1	1	3
+TCMIP-I-34593	25367	Quercetin	PYGL	796	unseen_confirmed	1	1	3
+TCMIP-I-34619	36166	quercetin 3-rhamnoside	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-34628	36173	quercetin rhamnose	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-34698	25409	Quercetin-3-O-alpha-L-rhamnopyranoside	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-34700	36193	quercetin-3-O-a-L-rhamnoside	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-34722	36200	quercetin-3-O-rhamnopyranoside	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-34772	36238	quercetine 3-rhamnoside	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-34896	36274	raffinose	CDK1	151	unseen_confirmed	1	1	3
+TCMIP-I-34966	25570	Rehmaglutin A	HSP90AA1	446	unseen_confirmed	1	1	3
+TCMIP-I-34970	36294	rehmaglutin,a	HSP90AA1	446	unseen_confirmed	1	1	3
+TCMIP-I-35059	25610	Resveratrol	CA1	101	unseen_confirmed	2	2	5
+TCMIP-I-35059	25610	Resveratrol	CA12	102	unseen_confirmed	2	2	5
+TCMIP-I-35059	25610	Resveratrol	CA2	104	unseen_confirmed	2	2	5
+TCMIP-I-35059	25610	Resveratrol	CA4	106	unseen_confirmed	2	2	5
+TCMIP-I-35059	25610	Resveratrol	CA5A	107	unseen_confirmed	2	2	5
+TCMIP-I-35059	25610	Resveratrol	POLA1	731	unseen_confirmed	1	1	3
+TCMIP-I-35123	36361	rhapontisterone B	BCHE	88	unseen_confirmed	1	1	3
+TCMIP-I-35136	36368	rhein	HSP90AA1	446	unseen_confirmed	1	1	1
+TCMIP-I-35227	25733	Rimantadine	GRIN1	385	unseen_confirmed	3	3	7
+TCMIP-I-35231	36378	risperidone	SIGMAR1	860	unseen_confirmed	1	1	3
+TCMIP-I-35231	36378	risperidone	SLC6A4	892	unseen_confirmed	3	2	5
+TCMIP-I-35238	25494	RNG	ADRB2	39	unseen_confirmed	1	1	2
+TCMIP-I-35238	25494	RNG	TBXAS1	927	unseen_confirmed	1	1	3
+TCMIP-I-35315	25787	Rottlerin	MAPKAPK2	561	unseen_confirmed	1	1	3
+TCMIP-I-35315	25787	Rottlerin	PRKCD	756	unseen_confirmed	1	1	3
+TCMIP-I-35762	36552	sanguisorbin B deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-35762	36552	sanguisorbin B deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-35762	36552	sanguisorbin B deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-35762	36552	sanguisorbin B deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-35762	36552	sanguisorbin B deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-35762	36552	sanguisorbin B deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-36348	26408	Semaxanib	FLT4	321	unseen_confirmed	2	1	5
+TCMIP-I-36348	26408	Semaxanib	PDGFRA	686	unseen_confirmed	1	1	3
+TCMIP-I-36438	26456	Serotonin	DRD2	254	unseen_confirmed	1	1	3
+TCMIP-I-36438	26456	Serotonin	EGFR	266	unseen_confirmed	1	1	3
+TCMIP-I-36438	26456	Serotonin	FLT4	321	unseen_confirmed	1	1	3
+TCMIP-I-36438	26456	Serotonin	HTR2A	456	unseen_confirmed	1	1	3
+TCMIP-I-36438	26456	Serotonin	IGF1R	466	unseen_confirmed	1	1	3
+TCMIP-I-36438	26456	Serotonin	KDR	509	unseen_confirmed	1	1	3
+TCMIP-I-36438	26456	Serotonin	SLC18A2	867	unseen_confirmed	3	3	3
+TCMIP-I-36442	36797	serrat-14-ene-3β,21α-diol	BCHE	88	unseen_confirmed	2	2	3
+TCMIP-I-36443	36798	serrat-14-ene-3β,21β-diol	BCHE	88	unseen_confirmed	2	2	3
+TCMIP-I-36449	26461	Serratenediol	BCHE	88	unseen_confirmed	2	2	3
+TCMIP-I-36637	26554	Siegesbeckiol	HSD11B1	440	unseen_confirmed	1	1	3
+TCMIP-I-36956	26737	Spermidine	CA1	101	unseen_confirmed	1	1	3
+TCMIP-I-36956	26737	Spermidine	CA2	104	unseen_confirmed	1	1	3
+TCMIP-I-37165	26839	Steppogenin	TYR	962	unseen_confirmed	1	1	3
+TCMIP-I-37298	25943	STOCK1N-70051	HIF1A	421	unseen_confirmed	1	1	3
+TCMIP-I-37310	26907	Strophanthidin	HIF1A	421	unseen_confirmed	1	1	3
+TCMIP-I-37318	26914	Strophanthin	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-37318	26914	Strophanthin	KLF5	512	unseen_confirmed	1	1	1
+TCMIP-I-37433	26973	Sulfuretin	CDK4	153	unseen_confirmed	1	1	3
+TCMIP-I-37433	26973	Sulfuretin	CDK6	156	unseen_confirmed	1	1	3
+TCMIP-I-37433	26973	Sulfuretin	DAPK3	232	unseen_confirmed	1	1	3
+TCMIP-I-37433	26973	Sulfuretin	JAK2	488	unseen_confirmed	1	1	3
+TCMIP-I-37433	26973	Sulfuretin	JAK3	489	unseen_confirmed	1	1	3
+TCMIP-I-37433	26973	Sulfuretin	MCL1	568	unseen_confirmed	1	1	1
+TCMIP-I-37433	26973	Sulfuretin	SYK	920	unseen_confirmed	1	1	3
+TCMIP-I-37436	26976	Sulphuretin	CDK4	153	unseen_confirmed	1	1	3
+TCMIP-I-37436	26976	Sulphuretin	CDK6	156	unseen_confirmed	1	1	3
+TCMIP-I-37436	26976	Sulphuretin	DAPK3	232	unseen_confirmed	1	1	3
+TCMIP-I-37436	26976	Sulphuretin	JAK2	488	unseen_confirmed	1	1	3
+TCMIP-I-37436	26976	Sulphuretin	JAK3	489	unseen_confirmed	1	1	3
+TCMIP-I-37436	26976	Sulphuretin	MCL1	568	unseen_confirmed	1	1	1
+TCMIP-I-37436	26976	Sulphuretin	SYK	920	unseen_confirmed	1	1	3
+TCMIP-I-37644	37235	tamoxifen	DHCR7	239	unseen_confirmed	1	1	3
+TCMIP-I-37644	37235	tamoxifen	GBA	350	unseen_confirmed	1	1	2
+TCMIP-I-37644	37235	tamoxifen	KCNH2	499	unseen_confirmed	1	1	3
+TCMIP-I-37673	27166	TanshinoneⅡA	TERT	932	unseen_confirmed	2	1	3
+TCMIP-I-37823	27284	Taxol	ITGB3	480	unseen_confirmed	1	1	3
+TCMIP-I-37823	27284	Taxol	MERTK	573	unseen_confirmed	1	1	3
+TCMIP-I-38041	27052	TES	CACNA1C	111	unseen_confirmed	2	2	3
+TCMIP-I-38043	27442	Testosteron	CACNA1C	111	unseen_confirmed	2	2	3
+TCMIP-I-38044	27443	Testosterone	CACNA1C	111	unseen_confirmed	2	2	3
+TCMIP-I-38210	27549	Theophylline	ALPL	61	unseen_confirmed	1	1	3
+TCMIP-I-38210	27549	Theophylline	PLAA	716	unseen_confirmed	1	1	3
+TCMIP-I-38222	27560	Thiamine	CA1	101	unseen_confirmed	1	1	3
+TCMIP-I-38222	27560	Thiamine	CA2	104	unseen_confirmed	1	1	3
+TCMIP-I-38513	37458	trans-3,5,4'-trihydroxystilbene	CA1	101	unseen_confirmed	2	2	5
+TCMIP-I-38513	37458	trans-3,5,4'-trihydroxystilbene	CA12	102	unseen_confirmed	2	2	5
+TCMIP-I-38513	37458	trans-3,5,4'-trihydroxystilbene	CA2	104	unseen_confirmed	2	2	5
+TCMIP-I-38513	37458	trans-3,5,4'-trihydroxystilbene	CA4	106	unseen_confirmed	2	2	5
+TCMIP-I-38513	37458	trans-3,5,4'-trihydroxystilbene	CA5A	107	unseen_confirmed	2	2	5
+TCMIP-I-38513	37458	trans-3,5,4'-trihydroxystilbene	POLA1	731	unseen_confirmed	1	1	3
+TCMIP-I-38573	37515	trans-p-hydroxyphenylethanol-p-β-coumarate	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-38599	27701	Trappsol Cyclo	HDAC10	411	unseen_confirmed	1	1	1
+TCMIP-I-38599	27701	Trappsol Cyclo	HDAC3	414	unseen_confirmed	1	1	1
+TCMIP-I-38599	27701	Trappsol Cyclo	HDAC4	415	unseen_confirmed	1	1	1
+TCMIP-I-38599	27701	Trappsol Cyclo	HDAC6	417	unseen_confirmed	1	1	1
+TCMIP-I-38599	27701	Trappsol Cyclo	HDAC7	418	unseen_confirmed	1	1	1
+TCMIP-I-38599	27701	Trappsol Cyclo	HDAC8	419	unseen_confirmed	1	1	1
+TCMIP-I-38599	27701	Trappsol Cyclo	HDAC9	420	unseen_confirmed	1	1	1
+TCMIP-I-38859	27884	Tryptamine	CYP2A6	221	unseen_confirmed	2	2	3
+TCMIP-I-38859	27884	Tryptamine	TAAR1	921	unseen_confirmed	1	1	3
+TCMIP-I-38860	27885	Tryptanthrin	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-38860	27885	Tryptanthrin	PTGS2	783	unseen_confirmed	3	1	7
+TCMIP-I-39080	37652	ursolic	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-39080	37652	ursolic	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-39080	37652	ursolic	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-39080	37652	ursolic	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-39080	37652	ursolic	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-39080	37652	ursolic	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-39081	37653	ursolic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-39081	37653	ursolic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-39081	37653	ursolic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-39081	37653	ursolic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-39081	37653	ursolic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-39081	37653	ursolic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-39082	28037	Ursolic acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-39082	28037	Ursolic acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-39082	28037	Ursolic acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-39082	28037	Ursolic acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-39082	28037	Ursolic acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-39082	28037	Ursolic acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-39086	37655	ursolic,,acid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-39086	37655	ursolic,,acid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-39086	37655	ursolic,,acid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-39086	37655	ursolic,,acid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-39086	37655	ursolic,,acid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-39086	37655	ursolic,,acid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-39087	37656	ursolicacid	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-39087	37656	ursolicacid	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-39087	37656	ursolicacid	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-39087	37656	ursolicacid	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-39087	37656	ursolicacid	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-39087	37656	ursolicacid	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-39245	28071	VERATRIC ACID	CA4	106	unseen_confirmed	1	1	3
+TCMIP-I-39529	28372	Wedelolactone	ALOX5	57	unseen_confirmed	1	1	3
+TCMIP-I-39683	37798	xanthohumol	ALOX5	57	unseen_confirmed	2	2	3
+TCMIP-I-40032	28677	ZINC04081604	CYP2C9	223	unseen_confirmed	1	1	3
+TCMIP-I-40048	37897	zingibroside r1 deglycosylation	CDC25B	146	unseen_confirmed	1	1	3
+TCMIP-I-40048	37897	zingibroside r1 deglycosylation	DUSP3	258	unseen_confirmed	1	1	3
+TCMIP-I-40048	37897	zingibroside r1 deglycosylation	ELANE	272	unseen_confirmed	1	1	3
+TCMIP-I-40048	37897	zingibroside r1 deglycosylation	GAA	334	unseen_confirmed	1	1	2
+TCMIP-I-40048	37897	zingibroside r1 deglycosylation	PTPRC	793	unseen_confirmed	1	1	3
+TCMIP-I-40048	37897	zingibroside r1 deglycosylation	PTPRF	795	unseen_confirmed	1	1	3
+TCMIP-I-40225	38069	α-tocopheryl quinone	PTPN1	787	unseen_confirmed	1	1	3
+TCMIP-I-40390	38213	γ-Mangostin	CYP19A1	212	unseen_confirmed	2	2	3
+TCMIP-I-40390	38213	γ-Mangostin	PTGS2	783	unseen_confirmed	1	1	3

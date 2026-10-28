@@ -1,0 +1,153 @@
+{
+  "created_at": "2026-08-12T19:37:55.606492+08:00",
+  "protocol": "frozen_etcm_pruning_sensitivity_seed52026_v1",
+  "split_strategy": "compound_cold_start",
+  "split_seed": 52026,
+  "outer_test_scored": true,
+  "model_selection_reopened": false,
+  "new_training_jobs": 4,
+  "rows": [
+    {
+      "dataset": "ETCM2.0-mention10",
+      "slug": "mention10",
+      "baseline_metrics": {
+        "AUC": 0.91821,
+        "AUPR": 0.901777,
+        "Recall": 0.251744,
+        "Precision": 0.944995,
+        "F1-score": 0.396402
+      },
+      "final_metrics": {
+        "AUC": 0.931111,
+        "AUPR": 0.922703,
+        "Recall": 0.337563,
+        "Precision": 0.963104,
+        "F1-score": 0.499173
+      },
+      "baseline_fold_aupr": [
+        0.910618516679808,
+        0.9035116940843506,
+        0.9093241152843168,
+        0.8945925682666458,
+        0.8908386552826395
+      ],
+      "final_fold_aupr": [
+        0.9206704666229054,
+        0.9270597550791321,
+        0.9289284937109779,
+        0.9204769348016998,
+        0.9163796332644576
+      ],
+      "fold_aupr_deltas": [
+        0.010051949943097438,
+        0.02354806099478146,
+        0.019604378426661073,
+        0.025884366535053993,
+        0.02554097798181809
+      ],
+      "aupr_delta": 0.020926,
+      "positive_folds": 5,
+      "reused_frozen_result": true
+    },
+    {
+      "dataset": "ETCM2.0-cpdeg3",
+      "slug": "cpdeg3",
+      "baseline_metrics": {
+        "AUC": 0.91517,
+        "AUPR": 0.905805,
+        "Recall": 0.424741,
+        "Precision": 0.938177,
+        "F1-score": 0.575409
+      },
+      "final_metrics": {
+        "AUC": 0.930293,
+        "AUPR": 0.922975,
+        "Recall": 0.369583,
+        "Precision": 0.961841,
+        "F1-score": 0.533738
+      },
+      "baseline_fold_aupr": [
+        0.9036495360357156,
+        0.9082440111704998,
+        0.908662943528549,
+        0.9072743933098449,
+        0.9011961232828748
+      ],
+      "final_fold_aupr": [
+        0.9241178518313203,
+        0.9257974065899122,
+        0.924028854248032,
+        0.9260608511031818,
+        0.9148680426796757
+      ],
+      "fold_aupr_deltas": [
+        0.020468315795604708,
+        0.017553395419412365,
+        0.015365910719483011,
+        0.018786457793336875,
+        0.013671919396800902
+      ],
+      "aupr_delta": 0.01717000000000002,
+      "positive_folds": 5,
+      "reused_frozen_result": false
+    },
+    {
+      "dataset": "ETCM2.0-cpdeg5",
+      "slug": "cpdeg5",
+      "baseline_metrics": {
+        "AUC": 0.91477,
+        "AUPR": 0.896921,
+        "Recall": 0.276232,
+        "Precision": 0.939194,
+        "F1-score": 0.425134
+      },
+      "final_metrics": {
+        "AUC": 0.929416,
+        "AUPR": 0.920701,
+        "Recall": 0.402393,
+        "Precision": 0.952654,
+        "F1-score": 0.565174
+      },
+      "baseline_fold_aupr": [
+        0.9050173091807022,
+        0.8984835560317201,
+        0.9065421945888512,
+        0.8948878162923648,
+        0.8796762304326659
+      ],
+      "final_fold_aupr": [
+        0.9192725232612202,
+        0.9252940010414478,
+        0.9236146350594132,
+        0.919884370981215,
+        0.91543797628473
+      ],
+      "fold_aupr_deltas": [
+        0.014255214080517997,
+        0.026810445009727624,
+        0.017072440470562,
+        0.024996554688850203,
+        0.03576174585206415
+      ],
+      "aupr_delta": 0.023780000000000023,
+      "positive_folds": 5,
+      "reused_frozen_result": false
+    }
+  ],
+  "macro_aupr_delta": 0.020625333333333346,
+  "positive_datasets": 3,
+  "positive_folds": 15,
+  "fold_count": 15,
+  "checks": {
+    "expected_dataset_count": true,
+    "expected_fold_count": true,
+    "expected_new_training_jobs": true,
+    "minimum_positive_dataset_count": true,
+    "minimum_positive_fold_count": true,
+    "minimum_dataset_aupr_delta": true,
+    "mention10_reused_frozen": true,
+    "model_selection_not_reopened": true
+  },
+  "gate": "PASS",
+  "reporting_rule": "report_regardless_of_direction"
+}

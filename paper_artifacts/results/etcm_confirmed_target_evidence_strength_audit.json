@@ -1,0 +1,308 @@
+{
+  "protocol": "etcm_confirmed_target_evidence_strength_audit_v1",
+  "status": "FROZEN_POST_HOC_DESCRIPTIVE_AUDIT",
+  "dataset": "ETCM2.0_core_mention10",
+  "training_or_optimizer_steps": 0,
+  "model_selection_reopened": false,
+  "overall": {
+    "pairs": 685,
+    "compounds": 332,
+    "methods": {
+      "NoContext": {
+        "pair_MRR": 0.0045881481343461195,
+        "pair_Hit@20": 0.00583941605839416,
+        "mean_percentile": 0.18649347663658816
+      },
+      "H-C context expert": {
+        "pair_MRR": 0.07028307617589628,
+        "pair_Hit@20": 0.3167883211678832,
+        "mean_percentile": 0.857655612391517
+      },
+      "SACTI": {
+        "pair_MRR": 0.09057887029653874,
+        "pair_Hit@20": 0.35766423357664234,
+        "mean_percentile": 0.879271797229726
+      }
+    },
+    "deltas": {
+      "H-C context expert_minus_NoContext": {
+        "pair_MRR": 0.06569492804154994,
+        "pair_Hit@20": 0.310948905109489,
+        "mean_percentile": 0.6711621357549287
+      },
+      "SACTI_minus_H-C context expert": {
+        "pair_MRR": 0.02029579412064227,
+        "pair_Hit@20": 0.040875912408759124,
+        "mean_percentile": 0.021616184838209068
+      },
+      "SACTI_minus_NoContext": {
+        "pair_MRR": 0.08599072216219222,
+        "pair_Hit@20": 0.3518248175182482,
+        "mean_percentile": 0.6927783205931384
+      }
+    }
+  },
+  "strata": {
+    "evidence_count": {
+      "1": {
+        "pairs": 564,
+        "compounds": 294,
+        "methods": {
+          "NoContext": {
+            "pair_MRR": 0.004715429295783119,
+            "pair_Hit@20": 0.005319148936170213,
+            "mean_percentile": 0.18124197241302273
+          },
+          "H-C context expert": {
+            "pair_MRR": 0.06792175431866304,
+            "pair_Hit@20": 0.32269503546099293,
+            "mean_percentile": 0.8635763947059832
+          },
+          "SACTI": {
+            "pair_MRR": 0.08435414707313513,
+            "pair_Hit@20": 0.3617021276595745,
+            "mean_percentile": 0.8789335176188108
+          }
+        },
+        "deltas": {
+          "H-C context expert_minus_NoContext": {
+            "pair_MRR": 0.06320632502287983,
+            "pair_Hit@20": 0.3173758865248227,
+            "mean_percentile": 0.6823344222929583
+          },
+          "SACTI_minus_H-C context expert": {
+            "pair_MRR": 0.0164323927544718,
+            "pair_Hit@20": 0.03900709219858156,
+            "mean_percentile": 0.015357122912827374
+          },
+          "SACTI_minus_NoContext": {
+            "pair_MRR": 0.07963871777735161,
+            "pair_Hit@20": 0.35638297872340424,
+            "mean_percentile": 0.6976915452057858
+          }
+        }
+      },
+      ">=2": {
+        "pairs": 121,
+        "compounds": 76,
+        "methods": {
+          "NoContext": {
+            "pair_MRR": 0.003994870654590185,
+            "pair_Hit@20": 0.008264462809917356,
+            "mean_percentile": 0.21097156243899254
+          },
+          "H-C context expert": {
+            "pair_MRR": 0.08128956813853624,
+            "pair_Hit@20": 0.2892561983471074,
+            "mean_percentile": 0.8300579163141796
+          },
+          "SACTI": {
+            "pair_MRR": 0.11959328267670027,
+            "pair_Hit@20": 0.33884297520661155,
+            "mean_percentile": 0.880848571614499
+          }
+        },
+        "deltas": {
+          "H-C context expert_minus_NoContext": {
+            "pair_MRR": 0.07729469748394605,
+            "pair_Hit@20": 0.2809917355371901,
+            "mean_percentile": 0.6190863538751873
+          },
+          "SACTI_minus_H-C context expert": {
+            "pair_MRR": 0.03830371453816402,
+            "pair_Hit@20": 0.049586776859504134,
+            "mean_percentile": 0.05079065530031887
+          },
+          "SACTI_minus_NoContext": {
+            "pair_MRR": 0.11559841202211013,
+            "pair_Hit@20": 0.3305785123966942,
+            "mean_percentile": 0.6698770091755057
+          }
+        }
+      }
+    },
+    "activity_count": {
+      "1": {
+        "pairs": 577,
+        "compounds": 297,
+        "methods": {
+          "NoContext": {
+            "pair_MRR": 0.004688777283153866,
+            "pair_Hit@20": 0.005199306759098787,
+            "mean_percentile": 0.18286275740662392
+          },
+          "H-C context expert": {
+            "pair_MRR": 0.06764392846748016,
+            "pair_Hit@20": 0.3223570190641248,
+            "mean_percentile": 0.8639753544671759
+          },
+          "SACTI": {
+            "pair_MRR": 0.08433357179129931,
+            "pair_Hit@20": 0.3587521663778163,
+            "mean_percentile": 0.8789387136833227
+          }
+        },
+        "deltas": {
+          "H-C context expert_minus_NoContext": {
+            "pair_MRR": 0.06295515118432618,
+            "pair_Hit@20": 0.317157712305026,
+            "mean_percentile": 0.6811125970605494
+          },
+          "SACTI_minus_H-C context expert": {
+            "pair_MRR": 0.016689643323818903,
+            "pair_Hit@20": 0.036395147313691506,
+            "mean_percentile": 0.014963359216146496
+          },
+          "SACTI_minus_NoContext": {
+            "pair_MRR": 0.0796447945081451,
+            "pair_Hit@20": 0.3535528596187175,
+            "mean_percentile": 0.6960759562766963
+          }
+        }
+      },
+      ">=2": {
+        "pairs": 108,
+        "compounds": 69,
+        "methods": {
+          "NoContext": {
+            "pair_MRR": 0.004050527589326956,
+            "pair_Hit@20": 0.009259259259259259,
+            "mean_percentile": 0.20589093030037905
+          },
+          "H-C context expert": {
+            "pair_MRR": 0.0843829671736371,
+            "pair_Hit@20": 0.28703703703703703,
+            "mean_percentile": 0.8238918051910178
+          },
+          "SACTI": {
+            "pair_MRR": 0.12394495582915963,
+            "pair_Hit@20": 0.35185185185185186,
+            "mean_percentile": 0.881051326917469
+          }
+        },
+        "deltas": {
+          "H-C context expert_minus_NoContext": {
+            "pair_MRR": 0.08033243958431015,
+            "pair_Hit@20": 0.2777777777777778,
+            "mean_percentile": 0.6180008748906387
+          },
+          "SACTI_minus_H-C context expert": {
+            "pair_MRR": 0.039561988655522524,
+            "pair_Hit@20": 0.06481481481481481,
+            "mean_percentile": 0.057159521726450876
+          },
+          "SACTI_minus_NoContext": {
+            "pair_MRR": 0.11989442823983272,
+            "pair_Hit@20": 0.3425925925925926,
+            "mean_percentile": 0.6751603966170897
+          }
+        }
+      }
+    },
+    "reference_count": {
+      "1": {
+        "pairs": 53,
+        "compounds": 38,
+        "methods": {
+          "NoContext": {
+            "pair_MRR": 0.0034901299904373617,
+            "pair_Hit@20": 0.0,
+            "mean_percentile": 0.23811469321051845
+          },
+          "H-C context expert": {
+            "pair_MRR": 0.025444415453454314,
+            "pair_Hit@20": 0.16981132075471697,
+            "mean_percentile": 0.8056009508245434
+          },
+          "SACTI": {
+            "pair_MRR": 0.04302933212385428,
+            "pair_Hit@20": 0.1509433962264151,
+            "mean_percentile": 0.8242831674342592
+          }
+        },
+        "deltas": {
+          "H-C context expert_minus_NoContext": {
+            "pair_MRR": 0.02195428546301696,
+            "pair_Hit@20": 0.16981132075471697,
+            "mean_percentile": 0.5674862576140248
+          },
+          "SACTI_minus_H-C context expert": {
+            "pair_MRR": 0.017584916670399967,
+            "pair_Hit@20": -0.018867924528301886,
+            "mean_percentile": 0.018682216609716237
+          },
+          "SACTI_minus_NoContext": {
+            "pair_MRR": 0.03953920213341692,
+            "pair_Hit@20": 0.1509433962264151,
+            "mean_percentile": 0.5861684742237411
+          }
+        }
+      },
+      ">=2": {
+        "pairs": 632,
+        "compounds": 305,
+        "methods": {
+          "NoContext": {
+            "pair_MRR": 0.00468022876983214,
+            "pair_Hit@20": 0.006329113924050633,
+            "mean_percentile": 0.18216448220871115
+          },
+          "H-C context expert": {
+            "pair_MRR": 0.07404328031875926,
+            "pair_Hit@20": 0.3291139240506329,
+            "mean_percentile": 0.8620209558457106
+          },
+          "SACTI": {
+            "pair_MRR": 0.09456641068127333,
+            "pair_Hit@20": 0.375,
+            "mean_percentile": 0.8838831854878916
+          }
+        },
+        "deltas": {
+          "H-C context expert_minus_NoContext": {
+            "pair_MRR": 0.06936305154892693,
+            "pair_Hit@20": 0.3227848101265823,
+            "mean_percentile": 0.6798564736369983
+          },
+          "SACTI_minus_H-C context expert": {
+            "pair_MRR": 0.020523130362513853,
+            "pair_Hit@20": 0.04588607594936709,
+            "mean_percentile": 0.021862229642180785
+          },
+          "SACTI_minus_NoContext": {
+            "pair_MRR": 0.08988618191144075,
+            "pair_Hit@20": 0.3686708860759494,
+            "mean_percentile": 0.7017187032791794
+          }
+        }
+      }
+    }
+  },
+  "spearman_count_vs_percentile": {
+    "evidence_count": {
+      "NoContext": 0.0006275317294337063,
+      "H-C context expert": -0.060769941336860686,
+      "SACTI": -0.005687378284264529
+    },
+    "activity_count": {
+      "NoContext": -0.011235651643270542,
+      "H-C context expert": -0.06278260703403575,
+      "SACTI": 0.0014904679823517979
+    },
+    "reference_count": {
+      "NoContext": -0.07962962043571177,
+      "H-C context expert": 0.03612581812938629,
+      "SACTI": 0.09356336465355963
+    }
+  },
+  "checks": {
+    "expected_pairs": true,
+    "expected_compounds": true,
+    "raw_evidence_counts_match": true,
+    "ranking_populations_match": true,
+    "input_hashes_match": true,
+    "training_or_optimizer_steps_zero": true,
+    "model_selection_reopened_false": true
+  },
+  "interpretation": "Pair-level post-hoc association audit only. Evidence multiplicity is not an experimental quality score, and no result may reopen model selection."
+}

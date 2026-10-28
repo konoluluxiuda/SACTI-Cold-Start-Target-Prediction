@@ -1,0 +1,729 @@
+{
+  "created_at_utc": "2026-08-11T13:52:55.627164+00:00",
+  "protocol": "frozen_unified_sampled_pair_full_candidate_audit_v1",
+  "split_strategy": "compound_cold_start",
+  "split_seed": 52026,
+  "fold_count": 5,
+  "training_optimizer_steps": 0,
+  "model_selection_reopened": false,
+  "sampled_pair_source": "/home/zry/workspace/HDCTI/paper_artifacts/results/final_matched_ablation.json",
+  "sampled_pair_source_sha256": "a6f35a1f8d5cf476f632d8462d0fd313efcc0da26de80875c7da041adc5fd7d3",
+  "ranking_source": "/home/zry/workspace/HDCTI/paper_artifacts/results/dg_schpt_v2_ranking.json",
+  "ranking_source_sha256": "a179949f0c7bd47f3db2b42e15aaf1cc5350a0912c4785ed061547833bb32697",
+  "evaluation_regimes": [
+    {
+      "name": "random_edge_sampled_pair",
+      "role": "historical_transductive_benchmark",
+      "candidate_space": "fixed_sampled_positive_and_negative_pairs",
+      "primary_metrics": [
+        "AUC",
+        "AUPR",
+        "Recall",
+        "Precision",
+        "F1-score"
+      ],
+      "directly_comparable_to_cold_start": false
+    },
+    {
+      "name": "compound_cold_start_sampled_pair",
+      "role": "primary_binary_discrimination_evaluation",
+      "candidate_space": "fold_fixed_1_to_1_sampled_pairs",
+      "primary_metrics": [
+        "AUC",
+        "AUPR",
+        "Recall",
+        "Precision",
+        "F1-score"
+      ],
+      "threshold_rule": "AUC/AUPR threshold-free; Precision/Recall/F1 use the a-priori fixed 0.5 threshold unless an inner-validation threshold is explicitly labelled"
+    },
+    {
+      "name": "compound_cold_start_full_candidate",
+      "role": "candidate_target_retrieval_evaluation",
+      "candidate_space": "all mapped proteins per held-out compound; training positives filtered and test positives retained",
+      "aggregation": "fold mean of macro-over-compound metrics",
+      "primary_metrics": [
+        "MRR",
+        "Precision@10",
+        "Recall@10",
+        "Hits@10",
+        "Precision@20",
+        "Recall@20",
+        "Hits@20"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "sampled_pair": {
+        "AUC": 0.731457,
+        "AUPR": 0.731219,
+        "Recall": 0.283701,
+        "Precision": 0.807109,
+        "F1-score": 0.415922
+      },
+      "full_candidate": {
+        "metrics": {
+          "MRR": {
+            "mean": 0.12871402496526047,
+            "std": 0.0155945010663077,
+            "folds": [
+              0.12110925314813803,
+              0.12471763045454669,
+              0.10864384936997946,
+              0.1554535873429302,
+              0.13364580451070793
+            ]
+          },
+          "Precision@10": {
+            "mean": 0.060489012167836455,
+            "std": 0.009442697369267932,
+            "folds": [
+              0.05805084745762712,
+              0.06008403361344538,
+              0.04495798319327731,
+              0.07352941176470588,
+              0.06582278481012659
+            ]
+          },
+          "Recall@10": {
+            "mean": 0.042736813562383534,
+            "std": 0.010592772412863318,
+            "folds": [
+              0.032921282602141215,
+              0.04605826091322507,
+              0.028166307850338218,
+              0.05014665901836624,
+              0.05639155742784693
+            ]
+          },
+          "Hits@10": {
+            "mean": 0.21145758024299613,
+            "std": 0.03959066583564051,
+            "folds": [
+              0.1906779661016949,
+              0.20588235294117646,
+              0.15126050420168066,
+              0.25630252100840334,
+              0.25316455696202533
+            ]
+          },
+          "Precision@20": {
+            "mean": 0.05409766931874659,
+            "std": 0.009142511734540323,
+            "folds": [
+              0.05783898305084746,
+              0.045168067226890755,
+              0.04159663865546218,
+              0.06533613445378152,
+              0.060548523206751054
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.06364053842650472,
+            "std": 0.01356479682843129,
+            "folds": [
+              0.05866007437181384,
+              0.05711714271324354,
+              0.04498772291338192,
+              0.07371793652628854,
+              0.08371981560779575
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.2814188537461756,
+            "std": 0.052798946268091326,
+            "folds": [
+              0.2796610169491525,
+              0.24369747899159663,
+              0.20588235294117646,
+              0.3487394957983193,
+              0.3291139240506329
+            ]
+          }
+        },
+        "evaluated_compounds": 1187,
+        "candidate_count": {
+          "minimum": 7258,
+          "median": 7258.0,
+          "maximum": 7258
+        },
+        "test_positive_pairs": 43669,
+        "candidate_pairs": 8615246,
+        "micro_positive_prevalence": 0.005068804767733852,
+        "filtered_train_positives": 0,
+        "metric_files": [
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsuite/fold_1/per_compound_metrics.tsv",
+            "sha256": "fb994d28f07c4e61c4f166f41ba7d5547b747c216fc64c11af486144f98e1c6b"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsuite/fold_2/per_compound_metrics.tsv",
+            "sha256": "92614a9853b0a0b0d5c6fe58eed96ae232ab461b0c6ec3256f26a59b37260bb5"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsuite/fold_3/per_compound_metrics.tsv",
+            "sha256": "f1fda268ecf8d62adb75d0cc7489ec3ebc6389fc4f4b814d99a1b9718257b3d9"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsuite/fold_4/per_compound_metrics.tsv",
+            "sha256": "36172665402b866e68a2f1a048cbf9983eaec503809576f0cd550bfea9b2b3a8"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsuite/fold_5/per_compound_metrics.tsv",
+            "sha256": "d330bc300c20b743670fe906fa30770fa4303bc250c7d4dff8af2c280eb6be6d"
+          }
+        ],
+        "consistency_checks": {
+          "mrr_matches_frozen_summary": true,
+          "recall_at_20_matches_frozen_summary": true,
+          "hits_at_20_matches_frozen_summary": true
+        }
+      },
+      "split_audit": {
+        "manifest": "/home/zry/workspace/HDCTI/dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+        "manifest_sha256": "33746f7e02ab12937a75a76e1e8b8ea6ee0a48a38fbe7396ce57db197ed6c94b",
+        "assignments": "/home/zry/workspace/HDCTI/dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+        "assignments_sha256": "ad3d3a232b9956774d480dd1a4a339a66f066e30a3a7d885cbc46e4535cc19bc",
+        "record_count": 87338,
+        "positive_count": 43669,
+        "negative_count": 43669,
+        "per_fold_balanced_1_to_1": true,
+        "compound_disjoint": true,
+        "fold_counts": {
+          "1": {
+            "negative": 8734,
+            "positive": 8734
+          },
+          "2": {
+            "negative": 8734,
+            "positive": 8734
+          },
+          "3": {
+            "negative": 8734,
+            "positive": 8734
+          },
+          "4": {
+            "positive": 8734,
+            "negative": 8734
+          },
+          "5": {
+            "positive": 8733,
+            "negative": 8733
+          }
+        }
+      }
+    },
+    {
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "sampled_pair": {
+        "AUC": 0.952658,
+        "AUPR": 0.958445,
+        "Recall": 0.666501,
+        "Precision": 0.972836,
+        "F1-score": 0.789983
+      },
+      "full_candidate": {
+        "metrics": {
+          "MRR": {
+            "mean": 0.5578413948492167,
+            "std": 0.005150771039795554,
+            "folds": [
+              0.5499475077187738,
+              0.5538405097128419,
+              0.5628378661531729,
+              0.562959927258335,
+              0.5596211634029601
+            ]
+          },
+          "Precision@10": {
+            "mean": 0.2591856825289901,
+            "std": 0.003957956104542339,
+            "folds": [
+              0.2589595375722543,
+              0.25252525252525254,
+              0.26464646464646463,
+              0.25865800865800864,
+              0.26113914924297044
+            ]
+          },
+          "Recall@10": {
+            "mean": 0.42375239307858403,
+            "std": 0.012232219980751975,
+            "folds": [
+              0.4396951436938409,
+              0.40394505147225745,
+              0.4250718667903592,
+              0.4180731847579973,
+              0.4319767186784654
+            ]
+          },
+          "Hits@10": {
+            "mean": 0.7793338368151559,
+            "std": 0.0042816081285807495,
+            "folds": [
+              0.7832369942196532,
+              0.7770562770562771,
+              0.7813852813852814,
+              0.772005772005772,
+              0.7829848594087959
+            ]
+          },
+          "Precision@20": {
+            "mean": 0.1973800394811247,
+            "std": 0.0023565788491273164,
+            "folds": [
+              0.19588150289017342,
+              0.1937229437229437,
+              0.20054112554112555,
+              0.19866522366522366,
+              0.19808940158615718
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.5758329985646815,
+            "std": 0.009212974610096795,
+            "folds": [
+              0.5826426997360168,
+              0.559281930821058,
+              0.5723011930807957,
+              0.5811424760549814,
+              0.5837966931305558
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.8600094233404785,
+            "std": 0.007068459680682263,
+            "folds": [
+              0.8627167630057804,
+              0.8492063492063492,
+              0.8571428571428571,
+              0.8708513708513709,
+              0.8601297764960346
+            ]
+          }
+        },
+        "evaluated_compounds": 6929,
+        "candidate_count": {
+          "minimum": 1748,
+          "median": 1748.0,
+          "maximum": 1748
+        },
+        "test_positive_pairs": 56102,
+        "candidate_pairs": 12111892,
+        "micro_positive_prevalence": 0.004631976573106828,
+        "filtered_train_positives": 0,
+        "metric_files": [
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsp/fold_1/per_compound_metrics.tsv",
+            "sha256": "d6c8fdcfb18f6d786653c30b095a023a749e2a8e41d4e799c541388300b4536b"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsp/fold_2/per_compound_metrics.tsv",
+            "sha256": "b6abaf01682423cc974d492df9684cd98d1d2917e499b32dc9dc0851e048c2c4"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsp/fold_3/per_compound_metrics.tsv",
+            "sha256": "12ad2a7024d8cc1200ab0edc55a1fd19cad53c507f35f98770dd9c6401ad9a25"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsp/fold_4/per_compound_metrics.tsv",
+            "sha256": "310fbd780824d7ed3555bd16d0410c4f496dd2cee8a28eff07340fe9774aaa20"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/tcmsp/fold_5/per_compound_metrics.tsv",
+            "sha256": "ffa775e115ea6f7de76aa19feb0f75de5a8daea7cbbfd951de645ee4352d4d78"
+          }
+        ],
+        "consistency_checks": {
+          "mrr_matches_frozen_summary": true,
+          "recall_at_20_matches_frozen_summary": true,
+          "hits_at_20_matches_frozen_summary": true
+        }
+      },
+      "split_audit": {
+        "manifest": "/home/zry/workspace/HDCTI/dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+        "manifest_sha256": "4df42e99fb43e692b2774d3acbbce847e035f541e1072edce1e72dcb0ec6e77f",
+        "assignments": "/home/zry/workspace/HDCTI/dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+        "assignments_sha256": "f06f8856802bd58a495da05e217aa90bf1c6d36d9949bdbd641b4b84d054a5b6",
+        "record_count": 112204,
+        "positive_count": 56102,
+        "negative_count": 56102,
+        "per_fold_balanced_1_to_1": true,
+        "compound_disjoint": true,
+        "fold_counts": {
+          "1": {
+            "negative": 11221,
+            "positive": 11221
+          },
+          "2": {
+            "negative": 11221,
+            "positive": 11221
+          },
+          "3": {
+            "positive": 11220,
+            "negative": 11220
+          },
+          "4": {
+            "positive": 11220,
+            "negative": 11220
+          },
+          "5": {
+            "negative": 11220,
+            "positive": 11220
+          }
+        }
+      }
+    },
+    {
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "sampled_pair": {
+        "AUC": 0.819281,
+        "AUPR": 0.840635,
+        "Recall": 0.549341,
+        "Precision": 0.872541,
+        "F1-score": 0.674047
+      },
+      "full_candidate": {
+        "metrics": {
+          "MRR": {
+            "mean": 0.29207729415451006,
+            "std": 0.03784977351942572,
+            "folds": [
+              0.3450074676789451,
+              0.3114902997173316,
+              0.23740293359475623,
+              0.26275899553408033,
+              0.3037267742474371
+            ]
+          },
+          "Precision@10": {
+            "mean": 0.10880900508351489,
+            "std": 0.03385531823457015,
+            "folds": [
+              0.17037037037037037,
+              0.1021671826625387,
+              0.06842105263157895,
+              0.09259259259259259,
+              0.11049382716049383
+            ]
+          },
+          "Recall@10": {
+            "mean": 0.16156716093980317,
+            "std": 0.03284197278378072,
+            "folds": [
+              0.20919147067719598,
+              0.1772704398845521,
+              0.11158126473533961,
+              0.1428398260822706,
+              0.1669528033196576
+            ]
+          },
+          "Hits@10": {
+            "mean": 0.43690899361693997,
+            "std": 0.07853457683902786,
+            "folds": [
+              0.5555555555555556,
+              0.47058823529411764,
+              0.3219814241486068,
+              0.3888888888888889,
+              0.44753086419753085
+            ]
+          },
+          "Precision@20": {
+            "mean": 0.06891984864121087,
+            "std": 0.026513176701519477,
+            "folds": [
+              0.11898148148148148,
+              0.05897832817337462,
+              0.041176470588235294,
+              0.05709876543209877,
+              0.0683641975308642
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.18751242665516632,
+            "std": 0.0382350547315557,
+            "folds": [
+              0.24024971635491718,
+              0.2102689816488997,
+              0.13013222639787925,
+              0.161812661599033,
+              0.19509854727510245
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.46781523525589574,
+            "std": 0.07564211621589599,
+            "folds": [
+              0.5740740740740741,
+              0.5046439628482973,
+              0.3560371517027864,
+              0.41358024691358025,
+              0.49074074074074076
+            ]
+          }
+        },
+        "evaluated_compounds": 1618,
+        "candidate_count": {
+          "minimum": 18192,
+          "median": 18192.0,
+          "maximum": 18192
+        },
+        "test_positive_pairs": 37991,
+        "candidate_pairs": 29434656,
+        "micro_positive_prevalence": 0.0012906894512373442,
+        "filtered_train_positives": 0,
+        "metric_files": [
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/symmap/fold_1/per_compound_metrics.tsv",
+            "sha256": "3a13e7226612edaab70edced54c06536eabf3a514b87d3175ede9ec99447127b"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/symmap/fold_2/per_compound_metrics.tsv",
+            "sha256": "1081b765dfc9a6d4fd3f45e46874ff9b1710e27d84a10c74875e4f3d49a65474"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/symmap/fold_3/per_compound_metrics.tsv",
+            "sha256": "cb2e6c23e12974b1b94c1c40a9cb0b2dc6b3b0d4578681462e087fc1b8a44d5a"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/symmap/fold_4/per_compound_metrics.tsv",
+            "sha256": "b55852542e9b160d20ac270afd1d13805c28388939e653d54c650793ad253147"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/symmap/fold_5/per_compound_metrics.tsv",
+            "sha256": "b6932cc82967fa54ab42d692d9937bac97c77a3abfb49e46d7565fb36401ca63"
+          }
+        ],
+        "consistency_checks": {
+          "mrr_matches_frozen_summary": true,
+          "recall_at_20_matches_frozen_summary": true,
+          "hits_at_20_matches_frozen_summary": true
+        }
+      },
+      "split_audit": {
+        "manifest": "/home/zry/workspace/HDCTI/dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+        "manifest_sha256": "9f089e33f0bff85e09f8c98ad977a3d2ab0ef612602bae05c76cdd3a18293b45",
+        "assignments": "/home/zry/workspace/HDCTI/dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+        "assignments_sha256": "5c792d6d68f9dfa4c275fc01e2ec7a07dd4f8d0d0049d5fead791609cfacba56",
+        "record_count": 75982,
+        "positive_count": 37991,
+        "negative_count": 37991,
+        "per_fold_balanced_1_to_1": true,
+        "compound_disjoint": true,
+        "fold_counts": {
+          "1": {
+            "positive": 7599,
+            "negative": 7599
+          },
+          "2": {
+            "positive": 7598,
+            "negative": 7598
+          },
+          "3": {
+            "positive": 7598,
+            "negative": 7598
+          },
+          "4": {
+            "negative": 7598,
+            "positive": 7598
+          },
+          "5": {
+            "positive": 7598,
+            "negative": 7598
+          }
+        }
+      }
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "sampled_pair": {
+        "AUC": 0.931111,
+        "AUPR": 0.922703,
+        "Recall": 0.337563,
+        "Precision": 0.963104,
+        "F1-score": 0.499173
+      },
+      "full_candidate": {
+        "metrics": {
+          "MRR": {
+            "mean": 0.6172053853487992,
+            "std": 0.007724644689452108,
+            "folds": [
+              0.6210572777184072,
+              0.609393523611863,
+              0.6305586535349732,
+              0.6126842589654986,
+              0.6123332129132538
+            ]
+          },
+          "Precision@10": {
+            "mean": 0.35963833089725644,
+            "std": 0.004899836696239285,
+            "folds": [
+              0.3605567226890756,
+              0.35691014188124015,
+              0.3688025210084034,
+              0.35535714285714287,
+              0.3565651260504202
+            ]
+          },
+          "Recall@10": {
+            "mean": 0.42111094136499855,
+            "std": 0.0054307775234509964,
+            "folds": [
+              0.4239275630002533,
+              0.4132838286747851,
+              0.42832926660570275,
+              0.42345145360571335,
+              0.4165625949385383
+            ]
+          },
+          "Hits@10": {
+            "mean": 0.8115337017623655,
+            "std": 0.010288965451192367,
+            "folds": [
+              0.8161764705882353,
+              0.8008407777193904,
+              0.8235294117647058,
+              0.819327731092437,
+              0.7977941176470589
+            ]
+          },
+          "Precision@20": {
+            "mean": 0.26045308546434864,
+            "std": 0.0022881154535799113,
+            "folds": [
+              0.25795693277310927,
+              0.2633736205990541,
+              0.2627888655462185,
+              0.2601102941176471,
+              0.2580357142857143
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.5806946840292599,
+            "std": 0.003726462532613788,
+            "folds": [
+              0.5800533953860265,
+              0.578002004271074,
+              0.582932163736919,
+              0.586542144377627,
+              0.5759437123746532
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.8797129256326808,
+            "std": 0.008437416691827094,
+            "folds": [
+              0.8802521008403361,
+              0.8670520231213873,
+              0.8876050420168067,
+              0.8897058823529411,
+              0.8739495798319328
+            ]
+          }
+        },
+        "evaluated_compounds": 9519,
+        "candidate_count": {
+          "minimum": 509,
+          "median": 509.0,
+          "maximum": 509
+        },
+        "test_positive_pairs": 88431,
+        "candidate_pairs": 4845171,
+        "micro_positive_prevalence": 0.018251368217963825,
+        "filtered_train_positives": 0,
+        "metric_files": [
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/etcm_mention10/fold_1/per_compound_metrics.tsv",
+            "sha256": "f42e3e3953a4b3024d02e615db865da3b2ba15a27d85b5996b03d3b285c0709a"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/etcm_mention10/fold_2/per_compound_metrics.tsv",
+            "sha256": "a61ba61531ea8a7d744cc4cb6a93676e51306dc6e64572280bbd42734d8f280c"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/etcm_mention10/fold_3/per_compound_metrics.tsv",
+            "sha256": "50becda27c367ba92020cf9f89004f96645431de3600a11b32431b3f52dd091f"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/etcm_mention10/fold_4/per_compound_metrics.tsv",
+            "sha256": "9073e949188c264a2a65485d716c93a2bcec64390dcbb623bb8daf654010f16c"
+          },
+          {
+            "path": "/home/zry/workspace/HDCTI/results/batch_runs/dg_schpt_v2_ranking_20260808_150634/v2/etcm_mention10/fold_5/per_compound_metrics.tsv",
+            "sha256": "8a4809aeec3a1006650d1f4b7cb874c28fccd653102b71d077d518743fad9cef"
+          }
+        ],
+        "consistency_checks": {
+          "mrr_matches_frozen_summary": true,
+          "recall_at_20_matches_frozen_summary": true,
+          "hits_at_20_matches_frozen_summary": true
+        }
+      },
+      "split_audit": {
+        "manifest": "/home/zry/workspace/HDCTI/dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+        "manifest_sha256": "c49281995a3b1e83903e2e8b3cafbcb2c758e8169d71e6c4cb4abcdbd27e6d5f",
+        "assignments": "/home/zry/workspace/HDCTI/dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+        "assignments_sha256": "97a2d10cd26a9e77ff537d66af689383f2e0261200dbeff4685923144f9b3326",
+        "record_count": 176862,
+        "positive_count": 88431,
+        "negative_count": 88431,
+        "per_fold_balanced_1_to_1": true,
+        "compound_disjoint": true,
+        "fold_counts": {
+          "1": {
+            "positive": 17687,
+            "negative": 17687
+          },
+          "2": {
+            "negative": 17686,
+            "positive": 17686
+          },
+          "3": {
+            "positive": 17686,
+            "negative": 17686
+          },
+          "4": {
+            "positive": 17686,
+            "negative": 17686
+          },
+          "5": {
+            "positive": 17686,
+            "negative": 17686
+          }
+        }
+      }
+    }
+  ],
+  "checks": {
+    "expected_dataset_count": true,
+    "sampled_pair_balanced_1_to_1": true,
+    "compound_disjoint": true,
+    "five_fold_ranking": true,
+    "ranking_summary_consistent": true,
+    "outer_results_frozen": true,
+    "training_optimizer_steps_zero": true,
+    "model_selection_reopened_false": true
+  },
+  "gate": "PASS",
+  "claim_boundary": {
+    "allowed": [
+      "Report sampled-pair discrimination and full-candidate retrieval as separate tasks.",
+      "Compare methods only when split, candidate space, fold and aggregation match.",
+      "Use AUPR as the primary sampled-pair metric and MRR/Recall@20 as primary retrieval metrics."
+    ],
+    "prohibited": [
+      "Treat sampled-pair AUPR as evidence of full-candidate retrieval superiority.",
+      "Compare random-edge results directly with compound cold-start results.",
+      "Mix fixed-0.5 and inner-validation-selected threshold metrics without explicit labels."
+    ]
+  }
+}

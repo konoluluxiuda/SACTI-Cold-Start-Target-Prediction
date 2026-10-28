@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "protocol": "strict_compound_cold_start_external_baselines_seed52026_v1",
+  "description": "Four external baselines evaluated on the frozen compound-cold-start folds used by the final SCHPT experiment.",
+  "random_seed": 52026,
+  "validation_seed": 152026,
+  "split_strategy": "compound_cold_start",
+  "folds": 5,
+  "selection_metric": "AUPR",
+  "dataset_specific_tuning": false,
+  "datasets": [
+    {
+      "key": "tcmsuite",
+      "name": "TCM-Suite",
+      "split_dir": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5"
+    },
+    {
+      "key": "tcmsp",
+      "name": "TCMSP",
+      "split_dir": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5"
+    },
+    {
+      "key": "symmap",
+      "name": "SymMap2.0",
+      "split_dir": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5"
+    },
+    {
+      "key": "etcm_mention10",
+      "name": "ETCM2.0-mention10",
+      "split_dir": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5"
+    }
+  ],
+  "methods": [
+    {
+      "key": "dual_hgnn",
+      "name": "Dual-HGNN-CTI",
+      "model_name": "HDCTI",
+      "encoder_profile": "dual_hgnn_cti"
+    },
+    {
+      "key": "lightgcn",
+      "name": "LightGCN-CTI",
+      "model_name": "LightGCNCTI"
+    },
+    {
+      "key": "rgcn",
+      "name": "R-GCN-CTI",
+      "model_name": "RGCNCTI"
+    },
+    {
+      "key": "hgt",
+      "name": "HGT-CTI",
+      "model_name": "HGTCTI"
+    }
+  ],
+  "jobs": [
+    {"dataset": "tcmsuite", "method": "dual_hgnn", "config": "configs/DualHGNN_tcmsuite_compound_cold_start_full.conf", "sha256": "9b9be229cf790d513023453adad7bcd4f7c066375f2873e8cab7c7ea662d5aac"},
+    {"dataset": "tcmsp", "method": "dual_hgnn", "config": "configs/DualHGNN_tcmsp_compound_cold_start_full.conf", "sha256": "c67fb6d04c8aed7393d08925ffd5e3b9ad18cf57fa2f1b94c388487cf27980ec"},
+    {"dataset": "symmap", "method": "dual_hgnn", "config": "configs/DualHGNN_symmap_compound_cold_start_full.conf", "sha256": "3e5190243cbf4d789a3d1bcd8ca2b7bfb3d7287ec921334caa84e69a98a516d3"},
+    {"dataset": "etcm_mention10", "method": "dual_hgnn", "config": "configs/DualHGNN_etcm_mention10_compound_cold_start_full.conf", "sha256": "a87029b2dc978c6547eea8715cd9178d0b4161b2eb8752749235456c685a5e67"},
+    {"dataset": "tcmsuite", "method": "lightgcn", "config": "configs/LightGCNCTI_tcmsuite_compound_cold_start_full.conf", "sha256": "bbbf7ea49807997f98af24181c5daee62ebd8c3523b663980bca43bf06995f59"},
+    {"dataset": "tcmsp", "method": "lightgcn", "config": "configs/LightGCNCTI_tcmsp_compound_cold_start_full.conf", "sha256": "33c8e601d06e1da02a085e99599e6371d88ef649178a4055b8923feb1df2f305"},
+    {"dataset": "symmap", "method": "lightgcn", "config": "configs/LightGCNCTI_symmap_compound_cold_start_full.conf", "sha256": "0e1f09e57d297ddd2aed84ef8628a913b786a234385caa614fb8cc553f8456bb"},
+    {"dataset": "etcm_mention10", "method": "lightgcn", "config": "configs/LightGCNCTI_etcm_mention10_compound_cold_start_full.conf", "sha256": "02fbe5736e1116d9926b622053cae08bfe3efd6cce1e525499ae12e8f914385e"},
+    {"dataset": "tcmsuite", "method": "rgcn", "config": "configs/RGCNCTI_tcmsuite_compound_cold_start_full.conf", "sha256": "24feb30a307653cc7999e4cc03c67f223ed11a2fffb6cf055252c906b6b761b9"},
+    {"dataset": "tcmsp", "method": "rgcn", "config": "configs/RGCNCTI_tcmsp_compound_cold_start_full.conf", "sha256": "efb2b9d39b179e46c818894118e4bba5a64aa2b38cd553be09c7997c50c3396a"},
+    {"dataset": "symmap", "method": "rgcn", "config": "configs/RGCNCTI_symmap_compound_cold_start_full.conf", "sha256": "5d7f270547e2190fc4156ac33dc6a1a1e33f5b30e29b5a6e58e85befc6639bd0"},
+    {"dataset": "etcm_mention10", "method": "rgcn", "config": "configs/RGCNCTI_etcm_mention10_compound_cold_start_full.conf", "sha256": "17a532a951a59092a7d045f2a4397524dd533d2dba3b9a12ca52985a78628c6e"},
+    {"dataset": "tcmsuite", "method": "hgt", "config": "configs/HGTCTI_tcmsuite_compound_cold_start_full.conf", "sha256": "a08fd6c1f75c3df4c35e3b21b8c67f14c628da3a64c86388cd33d9e844b572d8"},
+    {"dataset": "tcmsp", "method": "hgt", "config": "configs/HGTCTI_tcmsp_compound_cold_start_full.conf", "sha256": "23ae3743e9635d6992007c468ca6d91f62301e9176456062ace39da8cd086430"},
+    {"dataset": "symmap", "method": "hgt", "config": "configs/HGTCTI_symmap_compound_cold_start_full.conf", "sha256": "4927bf332c95b41e120ae82734a47e602a73565df3ebaa8d633a38602a0b2951"},
+    {"dataset": "etcm_mention10", "method": "hgt", "config": "configs/HGTCTI_etcm_mention10_compound_cold_start_full.conf", "sha256": "4d9e6003413db832cfcc3491ac9cde4ce869521329519f7ee50d3d83803d3990"}
+  ]
+}

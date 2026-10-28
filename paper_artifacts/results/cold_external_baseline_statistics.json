@@ -1,0 +1,500 @@
+{
+  "protocol": "frozen_cold_external_baseline_paired_fold_statistics_v1",
+  "split_seed": 52026,
+  "metric": "AUPR",
+  "unit": "paired outer folds stratified by dataset",
+  "training_steps": 0,
+  "outer_test_rescored": false,
+  "primary_comparator": "Dual-HGNN-CTI",
+  "multiple_testing_family": [
+    "Dual-HGNN-CTI",
+    "HGT-CTI",
+    "LightGCN-CTI",
+    "R-GCN-CTI"
+  ],
+  "source_files": {
+    "final_results": {
+      "path": "/home/zry/workspace/HDCTI/paper_artifacts/results/final_matched_ablation.json",
+      "sha256": "a6f35a1f8d5cf476f632d8462d0fd313efcc0da26de80875c7da041adc5fd7d3"
+    },
+    "external_results": {
+      "path": "/home/zry/workspace/HDCTI/paper_artifacts/results/cold_external_baselines.tsv",
+      "sha256": "98a41b7581591f4b29b849aa29f98230c82f2f36474408bd0a5565b6b4458016"
+    },
+    "logs": {
+      "Dual-HGNN-CTI|TCM-Suite": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/01_dual_hgnn_tcmsuite.log",
+        "sha256": "c781c31a7c4adfb2d2b2c8d9855e581099464828aa570a4c0b26c03addd58aa9"
+      },
+      "Dual-HGNN-CTI|TCMSP": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/02_dual_hgnn_tcmsp.log",
+        "sha256": "4e4dcd65a7f7d418a8eec2babecc0378809b529598bd092856695122fd20ac55"
+      },
+      "Dual-HGNN-CTI|SymMap2.0": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/03_dual_hgnn_symmap.log",
+        "sha256": "67234a8a398fcb310c43e6b8a90cfb07e9bf008388ad80fd1a4502aa0f940ad7"
+      },
+      "Dual-HGNN-CTI|ETCM2.0-mention10": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/04_dual_hgnn_etcm_mention10.log",
+        "sha256": "7c2f91ac7f6a21cba8b52926e55677fcc53b7e74c2ef85436fdd002157784a66"
+      },
+      "LightGCN-CTI|TCM-Suite": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/05_lightgcn_tcmsuite.log",
+        "sha256": "b26d3712d431e60e51854b8dc183eb78afa79e171fd0e1902cd102d79daa8756"
+      },
+      "LightGCN-CTI|TCMSP": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/06_lightgcn_tcmsp.log",
+        "sha256": "dad2cbe63305f1912191c5889c19e61ec461e23f2e1758dacf3f8c8358b6c438"
+      },
+      "LightGCN-CTI|SymMap2.0": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/07_lightgcn_symmap.log",
+        "sha256": "ae739a71936f480ac0a5eb191b81ae79d072d1dacb25924a4422307f046b08d8"
+      },
+      "LightGCN-CTI|ETCM2.0-mention10": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/08_lightgcn_etcm_mention10.log",
+        "sha256": "bef4df4c43f68195be32f146f52af5cdd4be43bd8a4a8c9bd426ef543cf67a51"
+      },
+      "R-GCN-CTI|TCM-Suite": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/09_rgcn_tcmsuite.log",
+        "sha256": "c24560ff6771597fa5c7db3c27ef8eccdd7454e1c7a33818f33a4349bcc80168"
+      },
+      "R-GCN-CTI|TCMSP": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/10_rgcn_tcmsp.log",
+        "sha256": "d2b5ffe7763cd68d9743bc5aafc741d7ac6485ea89a403bf62bce853f8444f3f"
+      },
+      "R-GCN-CTI|SymMap2.0": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/11_rgcn_symmap.log",
+        "sha256": "33f49a4da49225470b4bed0a78be529f424701b17b399f29d274cbe9bf76d55c"
+      },
+      "R-GCN-CTI|ETCM2.0-mention10": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/12_rgcn_etcm_mention10.log",
+        "sha256": "a99570a2ba78adb5be1dba96ea376b6d3c5c47290a52e7d090a441bf5932fc92"
+      },
+      "HGT-CTI|TCM-Suite": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/13_hgt_tcmsuite.log",
+        "sha256": "76341f7789613b884db1cba3b4363767512a46aceb9344a4f7f609f07a6a4758"
+      },
+      "HGT-CTI|TCMSP": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/14_hgt_tcmsp.log",
+        "sha256": "8cd7f37c2508bd99e4e486433492a41b7207485fcac6a2a42251a7a54eed55c8"
+      },
+      "HGT-CTI|SymMap2.0": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/15_hgt_symmap.log",
+        "sha256": "250ae8bc95eee1c4ae2e5a9dedc373da9f3fbcef3ff8dac68a1d697842dcf40d"
+      },
+      "HGT-CTI|ETCM2.0-mention10": {
+        "path": "/home/zry/workspace/HDCTI/results/batch_runs/cold_start_external_baselines_full_20260806_134426/16_hgt_etcm_mention10.log",
+        "sha256": "b949230faaf97ced711d1f7ef4bba34f543ca4cf6ecab445ec79a38aa13845e0"
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "comparator": "Dual-HGNN-CTI",
+      "mean_delta": 0.010781924980318353,
+      "median_delta": 0.014089371060810263,
+      "standard_deviation": 0.015465465390355204,
+      "positive_folds": 17,
+      "negative_folds": 3,
+      "rank_biserial_effect_size": 0.6857142857142857,
+      "wilcoxon_two_sided_p": 0.005580902099609375,
+      "sign_test_two_sided_p": 0.0025768280029296875,
+      "stratified_bootstrap_95_ci": {
+        "lower_95": 0.005029900563477799,
+        "upper_95": 0.017007692626933874,
+        "bootstrap_mean": 0.010749624236097986
+      },
+      "per_dataset": {
+        "ETCM2.0-mention10": {
+          "fold_deltas": [
+            0.006888630077254154,
+            0.016554581884573705,
+            0.01562380718539158,
+            0.008373288502418585,
+            0.012424867778309645
+          ],
+          "mean_delta": 0.011973035085589534,
+          "median_delta": 0.012424867778309645,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.008589740987531024,
+            "upper_95": 0.015356329183648043
+          }
+        },
+        "SymMap2.0": {
+          "fold_deltas": [
+            0.016798092149917565,
+            0.010181831440665978,
+            0.006617735892275101,
+            0.004326123947060001,
+            0.012554934936228945
+          ],
+          "mean_delta": 0.010095743673229518,
+          "median_delta": 0.010181831440665978,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.0064139102238672365,
+            "upper_95": 0.013913389455651348
+          }
+        },
+        "TCM-Suite": {
+          "fold_deltas": [
+            0.02040454728560437,
+            -0.008763420441506575,
+            -0.014148489775141493,
+            -0.031678006429791794,
+            0.04399668580226179
+          ],
+          "mean_delta": 0.00196226328828526,
+          "median_delta": -0.008763420441506575,
+          "positive_folds": 2,
+          "negative_folds": 3,
+          "bootstrap_95_ci": {
+            "lower_95": -0.02008328257027463,
+            "upper_95": 0.02764922298344965
+          }
+        },
+        "TCMSP": {
+          "fold_deltas": [
+            0.016556463670980293,
+            0.018110233238243012,
+            0.021807457193164348,
+            0.02057746970404395,
+            0.01843166556441389
+          ],
+          "mean_delta": 0.019096657874169098,
+          "median_delta": 0.01843166556441389,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.0175530118765721,
+            "upper_95": 0.020822014904356
+          }
+        }
+      },
+      "wilcoxon_holm_adjusted_p": 0.005580902099609375
+    },
+    {
+      "comparator": "HGT-CTI",
+      "mean_delta": 0.034102245700745236,
+      "median_delta": 0.02372480967480023,
+      "standard_deviation": 0.03893324671645859,
+      "positive_folds": 17,
+      "negative_folds": 3,
+      "rank_biserial_effect_size": 0.8571428571428571,
+      "wilcoxon_two_sided_p": 0.0002613067626953125,
+      "sign_test_two_sided_p": 0.0025768280029296875,
+      "stratified_bootstrap_95_ci": {
+        "lower_95": 0.024561659381781415,
+        "upper_95": 0.04684956244370477,
+        "bootstrap_mean": 0.03418239273480493
+      },
+      "per_dataset": {
+        "ETCM2.0-mention10": {
+          "fold_deltas": [
+            0.0694947905960458,
+            0.09206652461280196,
+            0.09316597064750975,
+            0.06107815710874531,
+            0.06497300188678135
+          ],
+          "mean_delta": 0.07615568897037683,
+          "median_delta": 0.0694947905960458,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.06431942171741982,
+            "upper_95": 0.08799195622333385
+          }
+        },
+        "SymMap2.0": {
+          "fold_deltas": [
+            0.0006692363675063762,
+            0.002864871411134229,
+            -0.003643936349268184,
+            -0.0038828015957087514,
+            0.008719602659401526
+          ],
+          "mean_delta": 0.0009453944986130391,
+          "median_delta": 0.0006692363675063762,
+          "positive_folds": 3,
+          "negative_folds": 2,
+          "bootstrap_95_ci": {
+            "lower_95": -0.002876847904489499,
+            "upper_95": 0.0050759486080141246
+          }
+        },
+        "TCM-Suite": {
+          "fold_deltas": [
+            -0.007201066945476731,
+            0.01642427334649832,
+            0.13194652618466685,
+            0.00044020596251359567,
+            0.03334393125082635
+          ],
+          "mean_delta": 0.034990773959805675,
+          "median_delta": 0.01642427334649832,
+          "positive_folds": 4,
+          "negative_folds": 1,
+          "bootstrap_95_ci": {
+            "lower_95": 0.0005805102761144099,
+            "upper_95": 0.08573762504939944
+          }
+        },
+        "TCMSP": {
+          "fold_deltas": [
+            0.012967366594098584,
+            0.024196772210595907,
+            0.030451949830441083,
+            0.030716691096786874,
+            0.02325284713900455
+          ],
+          "mean_delta": 0.0243171253741854,
+          "median_delta": 0.024196772210595907,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.018521379350348276,
+            "upper_95": 0.029306810813010363
+          }
+        }
+      },
+      "wilcoxon_holm_adjusted_p": 0.000522613525390625
+    },
+    {
+      "comparator": "LightGCN-CTI",
+      "mean_delta": 0.2545230529387189,
+      "median_delta": 0.27238099302504787,
+      "standard_deviation": 0.06237118500722493,
+      "positive_folds": 20,
+      "negative_folds": 0,
+      "rank_biserial_effect_size": 1.0,
+      "wilcoxon_two_sided_p": 1.9073486328125e-06,
+      "sign_test_two_sided_p": 1.9073486328125e-06,
+      "stratified_bootstrap_95_ci": {
+        "lower_95": 0.24815734332745062,
+        "upper_95": 0.26089207682895466,
+        "bootstrap_mean": 0.254574732216979
+      },
+      "per_dataset": {
+        "ETCM2.0-mention10": {
+          "fold_deltas": [
+            0.30309705566208567,
+            0.327322359778628,
+            0.31639809497383875,
+            0.30338979334112093,
+            0.3211389872073991
+          ],
+          "mean_delta": 0.3142692581926145,
+          "median_delta": 0.31639809497383875,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.3058743585960504,
+            "upper_95": 0.32266415778917856
+          }
+        },
+        "SymMap2.0": {
+          "fold_deltas": [
+            0.23658056715282094,
+            0.26578327524669343,
+            0.24775997600201682,
+            0.2198582134160071,
+            0.25578681112527013
+          ],
+          "mean_delta": 0.2451537685885617,
+          "median_delta": 0.24775997600201682,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.23038840370522246,
+            "upper_95": 0.2581800297491888
+          }
+        },
+        "TCM-Suite": {
+          "fold_deltas": [
+            0.18543605856594692,
+            0.1602777511549266,
+            0.13529134419097433,
+            0.16960335128584259,
+            0.16065653735991192
+          ],
+          "mean_delta": 0.16225300851152047,
+          "median_delta": 0.16065653735991192,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.14715102700273844,
+            "upper_95": 0.17552425008353292
+          }
+        },
+        "TCMSP": {
+          "fold_deltas": [
+            0.2789787108034023,
+            0.2922114781673265,
+            0.283276310621712,
+            0.30562339331664534,
+            0.3219909894018077
+          ],
+          "mean_delta": 0.29641617646217877,
+          "median_delta": 0.2922114781673265,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.28334430420351103,
+            "upper_95": 0.31097453442875606
+          }
+        }
+      },
+      "wilcoxon_holm_adjusted_p": 7.62939453125e-06
+    },
+    {
+      "comparator": "R-GCN-CTI",
+      "mean_delta": 0.06261137601283027,
+      "median_delta": 0.05606083166727066,
+      "standard_deviation": 0.0366961214615736,
+      "positive_folds": 20,
+      "negative_folds": 0,
+      "rank_biserial_effect_size": 1.0,
+      "wilcoxon_two_sided_p": 1.9073486328125e-06,
+      "sign_test_two_sided_p": 1.9073486328125e-06,
+      "stratified_bootstrap_95_ci": {
+        "lower_95": 0.05514651607301223,
+        "upper_95": 0.0701191935822866,
+        "bootstrap_mean": 0.06258852323208668
+      },
+      "per_dataset": {
+        "ETCM2.0-mention10": {
+          "fold_deltas": [
+            0.13029355229032902,
+            0.11116214438952876,
+            0.10949130185757305,
+            0.10342202353044783,
+            0.11144053868530801
+          ],
+          "mean_delta": 0.11316191215063734,
+          "median_delta": 0.11116214438952876,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.10657375073323605,
+            "upper_95": 0.12236249948277363
+          }
+        },
+        "SymMap2.0": {
+          "fold_deltas": [
+            0.0437036649603324,
+            0.05670296667134889,
+            0.023827093951180434,
+            0.004455248068997886,
+            0.0129926077834559
+          ],
+          "mean_delta": 0.028336316287063103,
+          "median_delta": 0.023827093951180434,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.011744561131217602,
+            "upper_95": 0.045361034551566995
+          }
+        },
+        "TCM-Suite": {
+          "fold_deltas": [
+            0.0848611241259577,
+            0.06438923101350902,
+            0.09189264676448106,
+            0.029499217018577717,
+            0.03464983299449553
+          ],
+          "mean_delta": 0.061058410383404205,
+          "median_delta": 0.06438923101350902,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.0385374662079311,
+            "upper_95": 0.0835793545588773
+          }
+        },
+        "TCMSP": {
+          "fold_deltas": [
+            0.055418696663192435,
+            0.043899349535470034,
+            0.05927692648262772,
+            0.0441512496845875,
+            0.03669810378520455
+          ],
+          "mean_delta": 0.047888865230216446,
+          "median_delta": 0.0441512496845875,
+          "positive_folds": 5,
+          "negative_folds": 0,
+          "bootstrap_95_ci": {
+            "lower_95": 0.041069231265187335,
+            "upper_95": 0.055429765129309125
+          }
+        }
+      },
+      "wilcoxon_holm_adjusted_p": 7.62939453125e-06
+    }
+  ],
+  "post_hoc_best_per_dataset": {
+    "TCM-Suite": {
+      "selected_comparator": "Dual-HGNN-CTI",
+      "selection_basis": "highest outer-fold mean AUPR among four baselines",
+      "inference_status": "post_hoc_descriptive_only",
+      "mean_delta": 0.00196226328828526,
+      "positive_folds": 2,
+      "fold_deltas": [
+        0.02040454728560437,
+        -0.008763420441506575,
+        -0.014148489775141493,
+        -0.031678006429791794,
+        0.04399668580226179
+      ]
+    },
+    "TCMSP": {
+      "selected_comparator": "Dual-HGNN-CTI",
+      "selection_basis": "highest outer-fold mean AUPR among four baselines",
+      "inference_status": "post_hoc_descriptive_only",
+      "mean_delta": 0.019096657874169098,
+      "positive_folds": 5,
+      "fold_deltas": [
+        0.016556463670980293,
+        0.018110233238243012,
+        0.021807457193164348,
+        0.02057746970404395,
+        0.01843166556441389
+      ]
+    },
+    "SymMap2.0": {
+      "selected_comparator": "HGT-CTI",
+      "selection_basis": "highest outer-fold mean AUPR among four baselines",
+      "inference_status": "post_hoc_descriptive_only",
+      "mean_delta": 0.0009453944986130391,
+      "positive_folds": 3,
+      "fold_deltas": [
+        0.0006692363675063762,
+        0.002864871411134229,
+        -0.003643936349268184,
+        -0.0038828015957087514,
+        0.008719602659401526
+      ]
+    },
+    "ETCM2.0-mention10": {
+      "selected_comparator": "Dual-HGNN-CTI",
+      "selection_basis": "highest outer-fold mean AUPR among four baselines",
+      "inference_status": "post_hoc_descriptive_only",
+      "mean_delta": 0.011973035085589534,
+      "positive_folds": 5,
+      "fold_deltas": [
+        0.006888630077254154,
+        0.016554581884573705,
+        0.01562380718539158,
+        0.008373288502418585,
+        0.012424867778309645
+      ]
+    }
+  },
+  "interpretation_boundary": "The four fixed method comparisons use matched outer folds and Holm correction. Cross-validation training sets overlap, so fold-level p-values are supportive rather than independent-replication evidence. Per-dataset best comparators were selected after reading outer means and are descriptive only."
+}

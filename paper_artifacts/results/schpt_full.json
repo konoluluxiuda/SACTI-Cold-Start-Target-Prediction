@@ -1,0 +1,235 @@
+{
+  "protocol": "schpt_four_dataset_seed52026_five_fold_confirmation_v1",
+  "manifest": "/home/zry/workspace/HDCTI/configs/schpt_full_manifest.json",
+  "rows": [
+    {
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "baseline_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/01_tcmsuite_baseline.log",
+      "candidate_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/02_tcmsuite_candidate.log",
+      "baseline_metrics": {
+        "AUC": 0.729913,
+        "AUPR": 0.71796,
+        "Recall": 0.223681,
+        "Precision": 0.800147,
+        "F1-score": 0.347955
+      },
+      "candidate_metrics": {
+        "AUC": 0.730069,
+        "AUPR": 0.721718,
+        "Recall": 0.271335,
+        "Precision": 0.798914,
+        "F1-score": 0.401289
+      },
+      "outer_aupr_delta": 0.003757999999999928,
+      "baseline_fold_aupr": [
+        0.7386228907718173,
+        0.7446665427204018,
+        0.7034849931885799,
+        0.710302504491948,
+        0.6927232649224303
+      ],
+      "candidate_fold_aupr": [
+        0.7378665703037381,
+        0.7465545866634951,
+        0.6977945056431382,
+        0.7098469156510508,
+        0.7165260981567863
+      ],
+      "fold_aupr_deltas": [
+        -0.0007563204680791635,
+        0.001888043943093276,
+        -0.005690487545441769,
+        -0.00045558884089713647,
+        0.023802833234355947
+      ],
+      "positive_fold_count": 2,
+      "mean_evidence_coverage": 0.9944691174915175,
+      "minimum_evidence_coverage": 0.9866041527126591,
+      "mean_learned_scale": 0.6681228637695312,
+      "minimum_absolute_learned_scale": 0.4413115382194519,
+      "metadata_paths": [
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-25-55/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-26-21/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-26-57/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-27-20/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-27-57/herb_prototype_transfer.json"
+      ]
+    },
+    {
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "baseline_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/03_tcmsp_baseline.log",
+      "candidate_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/04_tcmsp_candidate.log",
+      "baseline_metrics": {
+        "AUC": 0.944074,
+        "AUPR": 0.939557,
+        "Recall": 0.385948,
+        "Precision": 0.966039,
+        "F1-score": 0.494169
+      },
+      "candidate_metrics": {
+        "AUC": 0.952025,
+        "AUPR": 0.957323,
+        "Recall": 0.665595,
+        "Precision": 0.969855,
+        "F1-score": 0.779152
+      },
+      "outer_aupr_delta": 0.01776600000000006,
+      "baseline_fold_aupr": [
+        0.943936782888627,
+        0.9357519370758604,
+        0.9319170372513947,
+        0.9421322229960761,
+        0.9440477963624336
+      ],
+      "candidate_fold_aupr": [
+        0.956391163004753,
+        0.9527217674627462,
+        0.9591123587935242,
+        0.9578636413735548,
+        0.9605268595838331
+      ],
+      "fold_aupr_deltas": [
+        0.012454380116125985,
+        0.01696983038688582,
+        0.027195321542129447,
+        0.015731418377478712,
+        0.01647906322139947
+      ],
+      "positive_fold_count": 5,
+      "mean_evidence_coverage": 0.9985636820481456,
+      "minimum_evidence_coverage": 0.9963875903102423,
+      "mean_learned_scale": 0.6370809733867645,
+      "minimum_absolute_learned_scale": 0.4796716570854187,
+      "metadata_paths": [
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-32-08/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-32-42/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-33-27/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-34-04/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-34-40/herb_prototype_transfer.json"
+      ]
+    },
+    {
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "baseline_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/05_symmap_baseline.log",
+      "candidate_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/06_symmap_candidate.log",
+      "baseline_metrics": {
+        "AUC": 0.803038,
+        "AUPR": 0.807284,
+        "Recall": 0.421282,
+        "Precision": 0.869547,
+        "F1-score": 0.562564
+      },
+      "candidate_metrics": {
+        "AUC": 0.81868,
+        "AUPR": 0.837607,
+        "Recall": 0.541892,
+        "Precision": 0.87477,
+        "F1-score": 0.669066
+      },
+      "outer_aupr_delta": 0.03032299999999999,
+      "baseline_fold_aupr": [
+        0.8054726378449079,
+        0.8077275495200542,
+        0.8216990886202835,
+        0.8079157708736131,
+        0.7936068869075114
+      ],
+      "candidate_fold_aupr": [
+        0.8225721651340134,
+        0.8383560099258182,
+        0.8508068001439022,
+        0.8360877695436266,
+        0.8402147169409061
+      ],
+      "fold_aupr_deltas": [
+        0.017099527289105576,
+        0.030628460405763946,
+        0.029107711523618685,
+        0.02817199867001352,
+        0.04660783003339475
+      ],
+      "positive_fold_count": 5,
+      "mean_evidence_coverage": 0.9916904169237014,
+      "minimum_evidence_coverage": 0.9758784991066111,
+      "mean_learned_scale": 0.49337084889411925,
+      "minimum_absolute_learned_scale": 0.415740966796875,
+      "metadata_paths": [
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-38-33/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-39-36/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-40-28/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-41-26/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 15-42-24/herb_prototype_transfer.json"
+      ]
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "baseline_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/07_etcm_mention10_baseline.log",
+      "candidate_log": "/home/zry/workspace/HDCTI/results/batch_runs/schpt_full_20260805_152323/08_etcm_mention10_candidate.log",
+      "baseline_metrics": {
+        "AUC": 0.91821,
+        "AUPR": 0.901777,
+        "Recall": 0.251744,
+        "Precision": 0.944995,
+        "F1-score": 0.396402
+      },
+      "candidate_metrics": {
+        "AUC": 0.926106,
+        "AUPR": 0.913655,
+        "Recall": 0.291006,
+        "Precision": 0.957707,
+        "F1-score": 0.44602
+      },
+      "outer_aupr_delta": 0.011877999999999944,
+      "baseline_fold_aupr": [
+        0.910618516679808,
+        0.9035116940843506,
+        0.9093241152843168,
+        0.8945925682666458,
+        0.8908386552826395
+      ],
+      "candidate_fold_aupr": [
+        0.913539222392808,
+        0.9177380883734322,
+        0.921016505629576,
+        0.9108404865135294,
+        0.90514022464364
+      ],
+      "fold_aupr_deltas": [
+        0.0029207057130000713,
+        0.014226394289081568,
+        0.011692390345259263,
+        0.016247918246883652,
+        0.014301569361000466
+      ],
+      "positive_fold_count": 5,
+      "mean_evidence_coverage": 0.9943073750070519,
+      "minimum_evidence_coverage": 0.9906258615936036,
+      "mean_learned_scale": 1.6905697107315063,
+      "minimum_absolute_learned_scale": 1.497525930404663,
+      "metadata_paths": [
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 16-05-19/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 16-09-32/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 16-15-32/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 16-19-29/herb_prototype_transfer.json",
+        "/home/zry/workspace/HDCTI/saved_model/2026-08-05 16-23-53/herb_prototype_transfer.json"
+      ]
+    }
+  ],
+  "mean_outer_aupr_delta": 0.01593124999999998,
+  "positive_dataset_count": 4,
+  "positive_fold_count": 17,
+  "fold_count": 20,
+  "checks": {
+    "mean_outer_aupr_delta_at_least_0.003": true,
+    "at_least_3_of_4_datasets_positive": true,
+    "no_dataset_drop_below_minus_0.005": true,
+    "at_least_12_of_20_folds_positive": true,
+    "all_fold_coverage_at_least_0.30": true,
+    "all_fold_scales_nonzero": true
+  },
+  "gate": "PASS"
+}

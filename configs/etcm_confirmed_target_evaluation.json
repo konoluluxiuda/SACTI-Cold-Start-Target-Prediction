@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-31T00:00:00+08:00",
+  "status": "FROZEN_BEFORE_DATASET_WIDE_SCORING",
+  "protocol": "etcm_held_out_confirmed_target_evaluation_v1",
+  "purpose": "Dataset-wide checkpoint-only evaluation against ETCM ingredient-page Confirmed Targets absent from the model C-P graph",
+  "dataset": "ETCM2.0_core_mention10",
+  "split_strategy": "compound_cold_start",
+  "split_seed": 52026,
+  "fold_count": 5,
+  "outer_test_scored_for_model_selection": false,
+  "evidence": {
+    "path": "dataset/ETCM2.0_validation/validation/ETCM2.0_core_mention10/unseen_confirmed.tsv",
+    "sha256": "111a0d755c7a60cea3ddfb17c313dbdb189d46576f98930faec8c926ca8df0b6",
+    "manifest": "dataset/ETCM2.0_validation/manifest.json",
+    "manifest_sha256": "2d8fc6f8b6409a39a22a4edb2b2c23e5c882e764424aaf77079596c4adcb6e7e",
+    "expected_pairs": 685,
+    "expected_compounds": 332,
+    "used_for_training": false,
+    "used_for_early_stopping": false,
+    "used_for_model_selection": false
+  },
+  "model_graph": {
+    "cp_path": "dataset/ETCM2.0_core_mention10/C_P.txt",
+    "cp_sha256": "578af491e1171c5b076c45f185db4d97e33eb929ee03748e01fe69103a4bd7fc",
+    "hc_path": "dataset/ETCM2.0_core_mention10/H_C.txt",
+    "hc_sha256": "dd14683bc6706dce56c90293a87c023460edcaec0f1eebd3bf4c7db61275cf14",
+    "pd_path": "dataset/ETCM2.0_core_mention10/P_D.txt",
+    "pd_sha256": "03c5068db00d0d7291c385d9b32a2ac010fdaec103181de254ec4cae214d4793",
+    "protein_mapping": "dataset/ETCM2.0_core_mention10/mappings/protein_id_map.csv",
+    "protein_mapping_sha256": "1b54ff82050de181f2b4b4bfb5eb031ff40b3b53aa81051e299328ab9461cec9",
+    "expected_proteins": 509
+  },
+  "split_assignments": {
+    "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+    "sha256": "97a2d10cd26a9e77ff537d66af689383f2e0261200dbeff4685923144f9b3326"
+  },
+  "candidate_protocol": {
+    "scope": "all_509_mapped_proteins",
+    "filter": "current_fold_model_train_positive_pairs_only",
+    "unrecorded_pairs": "unlabelled_not_verified_negative",
+    "tie_break": "protein_id_ascending",
+    "ks": [1, 5, 10, 20, 50],
+    "metrics": [
+      "macro_MRR",
+      "macro_Recall@K",
+      "macro_Hits@K",
+      "micro_Recall@K",
+      "mean_percentile_rank",
+      "median_rank",
+      "macro_EF@K"
+    ]
+  },
+  "bootstrap": {
+    "unit": "compound",
+    "iterations": 20000,
+    "seed": 52026,
+    "comparisons": [
+      "Final_vs_NoContext",
+      "Final_vs_Hctx-P",
+      "Final_vs_HerbPrototype-EB",
+      "Final_vs_HC-Jaccard-LP"
+    ],
+    "metrics": ["MRR", "Recall@20"]
+  },
+  "neural_methods": [
+    {
+      "name": "NoContext",
+      "slug": "no_context",
+      "config": "configs/HDCTI_etcm_mention10_no_context_seed52026_frozen.conf",
+      "config_sha256": "c6c9cda7dfe78bb9a42ac547d9b81821c7c3bd75a11caa5055bb016b388c9593",
+      "checkpoints": [
+        {"fold": 1, "prefix": "saved_model/2026-08-10 23-41-46/hdcti_model.ckpt", "index_sha256": "960d7fc4b79941055f37c4f80374357e0ca0f2e430888f87ac6be69830a08c36", "data_sha256": "81a9d817a96b5ad8f32c1932be725655c2e74d576c8cd4e5ae2ed37c2ff687a8"},
+        {"fold": 2, "prefix": "saved_model/2026-08-10 23-42-33/hdcti_model.ckpt", "index_sha256": "acac7c550939027e468f49689cb262747f7824dbc0b2db5b5a3adf495fbb7607", "data_sha256": "1b3dfe6cc066e51982e05f8d93c4e7d31ba9dd408149db800dfd215c27412217"},
+        {"fold": 3, "prefix": "saved_model/2026-08-10 23-43-19/hdcti_model.ckpt", "index_sha256": "ef81817fc8778bc71dfff1892505440ef8ee51b6420fb8d30fb603bd23e9cf38", "data_sha256": "7671bbd7c2ed15d8ce8ccb49ff65eb8797168b303f243158ac68ab3d06e59b3e"},
+        {"fold": 4, "prefix": "saved_model/2026-08-10 23-44-04/hdcti_model.ckpt", "index_sha256": "274a2e755d1cd99b4435ef329c77ab696f18f8e3b6605facaf12475034e7ace3", "data_sha256": "9fb119b988418c1af533f7e6dd38cee937ed6c8e63cedc6d8d829e2d1f258939"},
+        {"fold": 5, "prefix": "saved_model/2026-08-10 23-44-51/hdcti_model.ckpt", "index_sha256": "93859db9b31a7ea515a018f2e626b9241e3d8bce0a011a70fde7f627614aa694", "data_sha256": "1acc0208bd3dcfee194cc268654b8619d5a394d660797e6422a9d5cc6afe2333"}
+      ]
+    },
+    {
+      "name": "Hctx-P",
+      "slug": "hctx",
+      "config": "configs/HDCTI_etcm_mention10_hctx_seed52026_frozen.conf",
+      "config_sha256": "fe27adcdddffe017533a52698d9485d28c31e625ef19d483ac94fa42a859de0f",
+      "checkpoints": [
+        {"fold": 1, "prefix": "saved_model/2026-08-10 23-45-42/hdcti_model.ckpt", "index_sha256": "c881f526eb68fe6834fd1f8995c19c0666961ac8845b7f3376662749f81eb64e", "data_sha256": "26d4567eff4768fc03df70694bb33907e3404a1c47b30878de2e6807c79683a0"},
+        {"fold": 2, "prefix": "saved_model/2026-08-10 23-48-15/hdcti_model.ckpt", "index_sha256": "a0a0463989ea2beb0f2ab2917d870533a038347c92fca434f0805d9e7ddbadc2", "data_sha256": "5539d5d5785145c19b4a17d0ff305262b0f6dce6abef39d3c8957ff1951b33d9"},
+        {"fold": 3, "prefix": "saved_model/2026-08-10 23-50-32/hdcti_model.ckpt", "index_sha256": "a646c15f97cbda9ca462590b1462db08a00d8146221603476d012f0d9cebbd93", "data_sha256": "b7fe531191688ea62708eccf02684ebe6c59942a8480e765c9f2eccb2b59e9c0"},
+        {"fold": 4, "prefix": "saved_model/2026-08-10 23-52-49/hdcti_model.ckpt", "index_sha256": "349f1ceffdf0dd8c6d3c7ddf2a5021d60f690be2dfd93109edb95abc9f7dfac5", "data_sha256": "1963dd1c2479fe04b0a24486bf5437e4729f8a26886a910c86c147ab5ed68c3a"},
+        {"fold": 5, "prefix": "saved_model/2026-08-10 23-53-55/hdcti_model.ckpt", "index_sha256": "374a407f929857a04a720fc28410f0e00a572b4b9da805613327f04c2748a870", "data_sha256": "cb3821a7e1ceec11c6614a580260142169f61a9092dfca4c46ab6d9f5349d0c4"}
+      ]
+    },
+    {
+      "name": "Final",
+      "slug": "final",
+      "config": "configs/HDCTI_etcm_mention10_dg_schpt_v2_final.conf",
+      "config_sha256": "edf1972e501a55af220b94fbf016eb44fd1283ea504239485a2d4e2cb32c279c",
+      "checkpoints": [
+        {"fold": 1, "prefix": "saved_model/2026-08-08 14-28-08/hdcti_model.ckpt", "index_sha256": "f7da319374710b40dd9d60d572b05e9f22e0e1b59a80a4f1d14b4893defc0bf1", "data_sha256": "a180374f9de9e3bf03de5f9d2378027f6b30c804bd1b570e6a29e7d5b831c05c"},
+        {"fold": 2, "prefix": "saved_model/2026-08-08 14-29-29/hdcti_model.ckpt", "index_sha256": "3cf9cadd45511103cdb0998b27caf59338ab9bcda4a8f26d336357e9b18f809d", "data_sha256": "c28a95afda2c76316cb997839ef7a78986ae0ecf23d09698edfee913ee65a8ee"},
+        {"fold": 3, "prefix": "saved_model/2026-08-08 14-30-48/hdcti_model.ckpt", "index_sha256": "dd7bc8a9fd78b8ff00ea70904c686e818f4c10625647b86f0acd689c523a3841", "data_sha256": "8c04570cdb49447c1611f99fe1b90938d4c9a34f91b7fe5e024252f14607ece7"},
+        {"fold": 4, "prefix": "saved_model/2026-08-08 14-31-55/hdcti_model.ckpt", "index_sha256": "9827f19498e63b6d71712230d270c3694fd8d691cfd8cbded1d2db1ce926d3f2", "data_sha256": "f288039de0545bad58db27dfc43a1cb19058f19a8f72cf163e1f0a59d90509c1"},
+        {"fold": 5, "prefix": "saved_model/2026-08-08 14-33-18/hdcti_model.ckpt", "index_sha256": "303f0a384ef06f075db98efa6e7ef7d2bf129b609d06f1cee4456caa32d2c756", "data_sha256": "464cf9076f6e086df4e174f8fcf21c85b9722a524767b6e4021e251d7d75311c"}
+      ]
+    }
+  ],
+  "non_neural_methods": {
+    "names": ["GlobalPrior", "HerbPrototype-EB", "HC-Jaccard-LP"],
+    "prior_strength": 1.0,
+    "uses_current_fold_training_cp_only": true
+  },
+  "reporting_boundaries": [
+    "All 685 frozen evidence pairs are reported regardless of rank or method direction.",
+    "The evidence source is a held-out relation source within ETCM2.0, not an independent biological cohort or prospective experiment.",
+    "Potential Targets are excluded because they are similarity-derived rather than confirmed interactions.",
+    "Unrecorded candidate pairs remain unlabelled and are not counted as verified negatives.",
+    "This descriptive evaluation cannot reopen model selection, checkpoint selection, thresholds or candidate definitions."
+  ]
+}

@@ -1,0 +1,1666 @@
+{
+  "created_at_utc": "2026-08-11T11:13:21.819765+00:00",
+  "protocol": "frozen_adapted_hc_weighted_neighbor_cold_start_v1",
+  "outer_test_scored": true,
+  "model_selection_reopened": false,
+  "manifest": "/home/zry/workspace/HDCTI/configs/adapted_hc_wnn_baseline.json",
+  "manifest_sha256": "f1d21f469a8db4a03b44e946f9ae428bcf6f342b863a56d5e27b1ea5646bdf12",
+  "split_seed": 52026,
+  "fold_count": 5,
+  "neighbor_count": 5,
+  "rank_decay": 0.7,
+  "ks": [
+    10,
+    20,
+    50
+  ],
+  "method": "HC-WNN-adapted",
+  "datasets": [
+    {
+      "name": "TCM-Suite",
+      "slug": "tcmsuite",
+      "hc_path": "dataset/TCMsuite/H_C.txt",
+      "pd_path": "dataset/TCMsuite/P_D.txt",
+      "split_dir": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5",
+      "assignments_sha256": "ad3d3a232b9956774d480dd1a4a339a66f066e30a3a7d885cbc46e4535cc19bc",
+      "hc_sha256": "f2d9c2f2ac3f07ebefe08645a9c8bfedf73d221fa16d7cb4a256521157ec14c1",
+      "pd_sha256": "91bc0e235e500849f18d9efc0fb15fc8148142f8d5333eb212538f378ef8e7b3",
+      "folds": [
+        {
+          "fold": 1,
+          "training_positive_edges": 34935,
+          "test_compounds": 236,
+          "sampled_pair": {
+            "AUC": 0.6003336848500858,
+            "AUPR": 0.6011673720961254
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.2597718306521656,
+            "evaluated_compounds": 236,
+            "held_out_positive_pairs": 8734,
+            "candidate_pairs": 1712888,
+            "held_out_positive_prevalence": 0.005098990710425901,
+            "candidate_count_per_compound": {
+              "min": 7258.0,
+              "median": 7258.0,
+              "mean": 7258.0,
+              "max": 7258.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 31.5,
+              "mean": 888.7203389830509,
+              "max": 5950.0
+            },
+            "Precision@10": 0.14788135593220342,
+            "Recall@10": 0.1466220470869678,
+            "Hits@10": 0.3855932203389831,
+            "Enrichment@10": 29.002083810396158,
+            "MicroPrecision@10": 0.1478813559322034,
+            "MicroRecall@10": 0.03995878177238379,
+            "Precision@20": 0.11694915254237288,
+            "Recall@20": 0.19601565894652773,
+            "Hits@20": 0.4533898305084746,
+            "Enrichment@20": 22.935745362949394,
+            "MicroPrecision@20": 0.11694915254237288,
+            "MicroRecall@20": 0.06320128234485917,
+            "Precision@50": 0.07703389830508474,
+            "Recall@50": 0.243737131831069,
+            "Hits@50": 0.5423728813559322,
+            "Enrichment@50": 15.10767574994275,
+            "MicroPrecision@50": 0.07703389830508475,
+            "MicroRecall@50": 0.10407602473093656
+          },
+          "coverage": 0.9872881355932204,
+          "used_neighbors": {
+            "mean": 4.7923728813559325,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 2,
+          "training_positive_edges": 34935,
+          "test_compounds": 238,
+          "sampled_pair": {
+            "AUC": 0.6310041223471266,
+            "AUPR": 0.6327387543324173
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.27462109058837364,
+            "evaluated_compounds": 238,
+            "held_out_positive_pairs": 8734,
+            "candidate_pairs": 1727404,
+            "held_out_positive_prevalence": 0.0050561420489937505,
+            "candidate_count_per_compound": {
+              "min": 7258.0,
+              "median": 7258.0,
+              "mean": 7258.0,
+              "max": 7258.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 30.5,
+              "mean": 897.09243697479,
+              "max": 6746.0
+            },
+            "Precision@10": 0.14369747899159666,
+            "Recall@10": 0.1320800743864053,
+            "Hits@10": 0.3865546218487395,
+            "Enrichment@10": 28.420380123654684,
+            "MicroPrecision@10": 0.14369747899159663,
+            "MicroRecall@10": 0.039157316235401876,
+            "Precision@20": 0.1138655462184874,
+            "Recall@20": 0.18189798734832457,
+            "Hits@20": 0.453781512605042,
+            "Enrichment@20": 22.52024272956263,
+            "MicroPrecision@20": 0.11386554621848739,
+            "MicroRecall@20": 0.06205633157774216,
+            "Precision@50": 0.07487394957983193,
+            "Recall@50": 0.23737333336004954,
+            "Hits@50": 0.5378151260504201,
+            "Enrichment@50": 14.80851385390428,
+            "MicroPrecision@50": 0.07487394957983193,
+            "MicroRecall@50": 0.10201511335012595
+          },
+          "coverage": 0.9789915966386554,
+          "used_neighbors": {
+            "mean": 4.726890756302521,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 3,
+          "training_positive_edges": 34935,
+          "test_compounds": 238,
+          "sampled_pair": {
+            "AUC": 0.6405561041869017,
+            "AUPR": 0.6454563940945535
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.24647655915148312,
+            "evaluated_compounds": 238,
+            "held_out_positive_pairs": 8734,
+            "candidate_pairs": 1727404,
+            "held_out_positive_prevalence": 0.0050561420489937505,
+            "candidate_count_per_compound": {
+              "min": 7258.0,
+              "median": 7258.0,
+              "mean": 7258.0,
+              "max": 7258.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 36.5,
+              "mean": 850.9327731092437,
+              "max": 6477.0
+            },
+            "Precision@10": 0.13025210084033614,
+            "Recall@10": 0.16244695841610068,
+            "Hits@10": 0.4117647058823529,
+            "Enrichment@10": 25.76116326997939,
+            "MicroPrecision@10": 0.13025210084033614,
+            "MicroRecall@10": 0.035493473780627435,
+            "Precision@20": 0.10819327731092437,
+            "Recall@20": 0.19666284553711513,
+            "Hits@20": 0.4579831932773109,
+            "Enrichment@20": 21.398385619418363,
+            "MicroPrecision@20": 0.10819327731092437,
+            "MicroRecall@20": 0.05896496450652622,
+            "Precision@50": 0.0757983193277311,
+            "Recall@50": 0.24198355576061714,
+            "Hits@50": 0.5378151260504201,
+            "Enrichment@50": 14.991335012594458,
+            "MicroPrecision@50": 0.0757983193277311,
+            "MicroRecall@50": 0.10327455919395466
+          },
+          "coverage": 0.9915966386554622,
+          "used_neighbors": {
+            "mean": 4.722689075630252,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 4,
+          "training_positive_edges": 34935,
+          "test_compounds": 238,
+          "sampled_pair": {
+            "AUC": 0.6367654440801798,
+            "AUPR": 0.6436163482007276
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.31257863335889613,
+            "evaluated_compounds": 238,
+            "held_out_positive_pairs": 8734,
+            "candidate_pairs": 1727404,
+            "held_out_positive_prevalence": 0.0050561420489937505,
+            "candidate_count_per_compound": {
+              "min": 7258.0,
+              "median": 7258.0,
+              "mean": 7258.0,
+              "max": 7258.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 30.0,
+              "mean": 817.218487394958,
+              "max": 6580.0
+            },
+            "Precision@10": 0.14747899159663866,
+            "Recall@10": 0.17884704032745213,
+            "Hits@10": 0.39915966386554624,
+            "Enrichment@10": 29.16828486375086,
+            "MicroPrecision@10": 0.14747899159663866,
+            "MicroRecall@10": 0.04018777192580719,
+            "Precision@20": 0.11491596638655463,
+            "Recall@20": 0.22918679554991075,
+            "Hits@20": 0.4831932773109244,
+            "Enrichment@20": 22.72799404625601,
+            "MicroPrecision@20": 0.11491596638655462,
+            "MicroRecall@20": 0.06262880696130066,
+            "Precision@50": 0.07403361344537815,
+            "Recall@50": 0.278246590152482,
+            "Hits@50": 0.5504201680672269,
+            "Enrichment@50": 14.642312800549576,
+            "MicroPrecision@50": 0.07403361344537815,
+            "MicroRecall@50": 0.10087016258300893
+          },
+          "coverage": 0.9747899159663865,
+          "used_neighbors": {
+            "mean": 4.663865546218488,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 5,
+          "training_positive_edges": 34936,
+          "test_compounds": 237,
+          "sampled_pair": {
+            "AUC": 0.619975700872254,
+            "AUPR": 0.6261692297608987
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.24820353534676484,
+            "evaluated_compounds": 237,
+            "held_out_positive_pairs": 8733,
+            "candidate_pairs": 1720146,
+            "held_out_positive_prevalence": 0.005076894635687901,
+            "candidate_count_per_compound": {
+              "min": 7258.0,
+              "median": 7258.0,
+              "mean": 7258.0,
+              "max": 7258.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 39.0,
+              "mean": 920.3586497890295,
+              "max": 6986.0
+            },
+            "Precision@10": 0.13839662447257386,
+            "Recall@10": 0.1293180335171966,
+            "Hits@10": 0.3881856540084388,
+            "Enrichment@10": 27.26009389671362,
+            "MicroPrecision@10": 0.13839662447257384,
+            "MicroRecall@10": 0.03755868544600939,
+            "Precision@20": 0.11308016877637131,
+            "Recall@20": 0.17345616361220131,
+            "Hits@20": 0.45147679324894513,
+            "Enrichment@20": 22.273491354631854,
+            "MicroPrecision@20": 0.11308016877637131,
+            "MicroRecall@20": 0.06137638841177144,
+            "Precision@50": 0.08329113924050632,
+            "Recall@50": 0.2245554660797587,
+            "Hits@50": 0.5316455696202531,
+            "Enrichment@50": 16.405922363448987,
+            "MicroPrecision@50": 0.08329113924050632,
+            "MicroRecall@50": 0.11301958090003435
+          },
+          "coverage": 0.9789029535864979,
+          "used_neighbors": {
+            "mean": 4.637130801687764,
+            "minimum": 0,
+            "maximum": 5
+          }
+        }
+      ],
+      "sampled_pair": {
+        "HC-WNN-adapted": {
+          "AUC": {
+            "mean": 0.6257270112673096,
+            "std": 0.014474083701034927,
+            "folds": [
+              0.6003336848500858,
+              0.6310041223471266,
+              0.6405561041869017,
+              0.6367654440801798,
+              0.619975700872254
+            ]
+          },
+          "AUPR": {
+            "mean": 0.6298296196969445,
+            "std": 0.015985342769253754,
+            "folds": [
+              0.6011673720961254,
+              0.6327387543324173,
+              0.6454563940945535,
+              0.6436163482007276,
+              0.6261692297608987
+            ]
+          }
+        },
+        "final": {
+          "AUPR": {
+            "mean": 0.7312192090137695,
+            "std": 0.012491690812486862,
+            "folds": [
+              0.7525694344323883,
+              0.7351286073143644,
+              0.7159430096123466,
+              0.7226289188323248,
+              0.7298260748774232
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "AUPR": 0.10138958931682496
+        }
+      },
+      "full_candidate": {
+        "HC-WNN-adapted": {
+          "MRR": {
+            "mean": 0.26833032981953664,
+            "std": 0.024303946565613566,
+            "folds": [
+              0.2597718306521656,
+              0.27462109058837364,
+              0.24647655915148312,
+              0.31257863335889613,
+              0.24820353534676484
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.1954438901988159,
+            "std": 0.01901235407640643,
+            "folds": [
+              0.19601565894652773,
+              0.18189798734832457,
+              0.19666284553711513,
+              0.22918679554991075,
+              0.17345616361220131
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.4599649213901394,
+            "std": 0.011806764575809467,
+            "folds": [
+              0.4533898305084746,
+              0.453781512605042,
+              0.4579831932773109,
+              0.4831932773109244,
+              0.45147679324894513
+            ]
+          }
+        },
+        "final": {
+          "MRR": {
+            "mean": 0.12871402496526047,
+            "std": 0.015594501066307699,
+            "folds": [
+              0.12110925314813803,
+              0.12471763045454667,
+              0.10864384936997948,
+              0.1554535873429302,
+              0.13364580451070793
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.06364053842650472,
+            "std": 0.01356479682843129,
+            "folds": [
+              0.05866007437181384,
+              0.05711714271324354,
+              0.04498772291338192,
+              0.07371793652628854,
+              0.08371981560779575
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.2814188537461756,
+            "std": 0.052798946268091326,
+            "folds": [
+              0.2796610169491525,
+              0.24369747899159663,
+              0.20588235294117646,
+              0.3487394957983193,
+              0.3291139240506329
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "MRR": -0.13961630485427617,
+          "Recall@20": -0.13180335177231117,
+          "Hits@20": -0.1785460676439638
+        }
+      },
+      "coverage": {
+        "mean": 0.9823138480880445,
+        "std": 0.006167574036323409,
+        "folds": [
+          0.9872881355932204,
+          0.9789915966386554,
+          0.9915966386554622,
+          0.9747899159663865,
+          0.9789029535864979
+        ]
+      }
+    },
+    {
+      "name": "TCMSP",
+      "slug": "tcmsp",
+      "hc_path": "dataset/TCMSP/herb-compound.txt",
+      "pd_path": "dataset/TCMSP/target-disease.txt",
+      "split_dir": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5",
+      "assignments_sha256": "f06f8856802bd58a495da05e217aa90bf1c6d36d9949bdbd641b4b84d054a5b6",
+      "hc_sha256": "9c8eafb5ed19f324ad4673dbbbae4254692ace7c49facaa980034fc33d48e391",
+      "pd_sha256": "8db65e911a97c3fd8ee71a16a70b686e4ae97f99906b52d93690d32a22791b52",
+      "folds": [
+        {
+          "fold": 1,
+          "training_positive_edges": 44881,
+          "test_compounds": 1384,
+          "sampled_pair": {
+            "AUC": 0.7951458842213596,
+            "AUPR": 0.7936715043955672
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5631695554074558,
+            "evaluated_compounds": 1384,
+            "held_out_positive_pairs": 11221,
+            "candidate_pairs": 2419232,
+            "held_out_positive_prevalence": 0.004638248832687398,
+            "candidate_count_per_compound": {
+              "min": 1748.0,
+              "median": 1748.0,
+              "mean": 1748.0,
+              "max": 1748.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 58.51806358381503,
+              "max": 1746.0
+            },
+            "Precision@10": 0.24371387283236995,
+            "Recall@10": 0.4110011744286918,
+            "Hits@10": 0.786849710982659,
+            "Enrichment@10": 52.544372159344086,
+            "MicroPrecision@10": 0.24371387283236995,
+            "MicroRecall@10": 0.30059709473308976,
+            "Precision@20": 0.1827673410404624,
+            "Recall@20": 0.5355110765561756,
+            "Hits@20": 0.8511560693641619,
+            "Enrichment@20": 39.40438463595044,
+            "MicroPrecision@20": 0.18276734104046244,
+            "MicroRecall@20": 0.45085108279119507,
+            "Precision@50": 0.09186416184971098,
+            "Recall@50": 0.6228911789334906,
+            "Hits@50": 0.884393063583815,
+            "Enrichment@50": 19.80578558060779,
+            "MicroPrecision@50": 0.09186416184971098,
+            "MicroRecall@50": 0.5665270475002228
+          },
+          "coverage": 0.9971098265895953,
+          "used_neighbors": {
+            "mean": 4.978323699421965,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 2,
+          "training_positive_edges": 44881,
+          "test_compounds": 1386,
+          "sampled_pair": {
+            "AUC": 0.7776767927393957,
+            "AUPR": 0.7765881782536372
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5570168595726162,
+            "evaluated_compounds": 1386,
+            "held_out_positive_pairs": 11221,
+            "candidate_pairs": 2422728,
+            "held_out_positive_prevalence": 0.004631555832928831,
+            "candidate_count_per_compound": {
+              "min": 1748.0,
+              "median": 1748.0,
+              "mean": 1748.0,
+              "max": 1748.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 69.04834054834055,
+              "max": 1748.0
+            },
+            "Precision@10": 0.2362914862914863,
+            "Recall@10": 0.3992595084539869,
+            "Hits@10": 0.7683982683982684,
+            "Enrichment@10": 51.017734604758935,
+            "MicroPrecision@10": 0.2362914862914863,
+            "MicroRecall@10": 0.2918634702789413,
+            "Precision@20": 0.1786075036075036,
+            "Recall@20": 0.5282876966376474,
+            "Hits@20": 0.8398268398268398,
+            "Enrichment@20": 38.56317618750557,
+            "MicroPrecision@20": 0.1786075036075036,
+            "MicroRecall@20": 0.44122627216825594,
+            "Precision@50": 0.09001443001443002,
+            "Recall@50": 0.6100004111026903,
+            "Hits@50": 0.873015873015873,
+            "Enrichment@50": 19.435030745922823,
+            "MicroPrecision@50": 0.09001443001443002,
+            "MicroRecall@50": 0.5559219320916139
+          },
+          "coverage": 0.9978354978354979,
+          "used_neighbors": {
+            "mean": 4.984848484848484,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 3,
+          "training_positive_edges": 44882,
+          "test_compounds": 1386,
+          "sampled_pair": {
+            "AUC": 0.7929884882165474,
+            "AUPR": 0.7918818434148505
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5503295769776946,
+            "evaluated_compounds": 1386,
+            "held_out_positive_pairs": 11220,
+            "candidate_pairs": 2422728,
+            "held_out_positive_prevalence": 0.004631143075079002,
+            "candidate_count_per_compound": {
+              "min": 1748.0,
+              "median": 1748.0,
+              "mean": 1748.0,
+              "max": 1748.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 74.82900432900433,
+              "max": 1748.0
+            },
+            "Precision@10": 0.24985569985569986,
+            "Recall@10": 0.4007979287003362,
+            "Hits@10": 0.7626262626262627,
+            "Enrichment@10": 53.95119429590018,
+            "MicroPrecision@10": 0.24985569985569986,
+            "MicroRecall@10": 0.3086452762923351,
+            "Precision@20": 0.18654401154401154,
+            "Recall@20": 0.5290309921344429,
+            "Hits@20": 0.8383838383838383,
+            "Enrichment@20": 40.28033868092692,
+            "MicroPrecision@20": 0.18654401154401154,
+            "MicroRecall@20": 0.460873440285205,
+            "Precision@50": 0.09467532467532469,
+            "Recall@50": 0.6184672523641297,
+            "Hits@50": 0.8694083694083694,
+            "Enrichment@50": 20.443187165775402,
+            "MicroPrecision@50": 0.09467532467532468,
+            "MicroRecall@50": 0.58475935828877
+          },
+          "coverage": 0.9971139971139971,
+          "used_neighbors": {
+            "mean": 4.971139971139971,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 4,
+          "training_positive_edges": 44882,
+          "test_compounds": 1386,
+          "sampled_pair": {
+            "AUC": 0.7813033369238149,
+            "AUPR": 0.7802398500509513
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5664713369263981,
+            "evaluated_compounds": 1386,
+            "held_out_positive_pairs": 11220,
+            "candidate_pairs": 2422728,
+            "held_out_positive_prevalence": 0.004631143075079002,
+            "candidate_count_per_compound": {
+              "min": 1748.0,
+              "median": 1748.0,
+              "mean": 1748.0,
+              "max": 1748.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 74.89682539682539,
+              "max": 1744.0
+            },
+            "Precision@10": 0.2404040404040404,
+            "Recall@10": 0.39147297154519495,
+            "Hits@10": 0.7734487734487735,
+            "Enrichment@10": 51.91030303030303,
+            "MicroPrecision@10": 0.2404040404040404,
+            "MicroRecall@10": 0.296969696969697,
+            "Precision@20": 0.18124098124098126,
+            "Recall@20": 0.5237890637973095,
+            "Hits@20": 0.8362193362193362,
+            "Enrichment@20": 39.13525846702318,
+            "MicroPrecision@20": 0.18124098124098123,
+            "MicroRecall@20": 0.4477718360071301,
+            "Precision@50": 0.09151515151515152,
+            "Recall@50": 0.6105817486767828,
+            "Hits@50": 0.8643578643578643,
+            "Enrichment@50": 19.7608128342246,
+            "MicroPrecision@50": 0.09151515151515152,
+            "MicroRecall@50": 0.5652406417112299
+          },
+          "coverage": 0.9963924963924964,
+          "used_neighbors": {
+            "mean": 4.970418470418471,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 5,
+          "training_positive_edges": 44882,
+          "test_compounds": 1387,
+          "sampled_pair": {
+            "AUC": 0.7869202086927787,
+            "AUPR": 0.7860253639331333
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5692786687445812,
+            "evaluated_compounds": 1387,
+            "held_out_positive_pairs": 11220,
+            "candidate_pairs": 2424476,
+            "held_out_positive_prevalence": 0.0046278041110738985,
+            "candidate_count_per_compound": {
+              "min": 1748.0,
+              "median": 1748.0,
+              "mean": 1748.0,
+              "max": 1748.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 69.90194664744052,
+              "max": 1744.0
+            },
+            "Precision@10": 0.24614275414563805,
+            "Recall@10": 0.405595422212006,
+            "Hits@10": 0.7664023071377073,
+            "Enrichment@10": 53.18780748663101,
+            "MicroPrecision@10": 0.24614275414563808,
+            "MicroRecall@10": 0.30427807486631014,
+            "Precision@20": 0.18493150684931506,
+            "Recall@20": 0.5295101095487744,
+            "Hits@20": 0.8298485940879596,
+            "Enrichment@20": 39.96096256684491,
+            "MicroPrecision@20": 0.18493150684931506,
+            "MicroRecall@20": 0.4572192513368984,
+            "Precision@50": 0.09306416726748379,
+            "Recall@50": 0.6192876313716618,
+            "Hits@50": 0.8666186012977649,
+            "Enrichment@50": 20.109789661319073,
+            "MicroPrecision@50": 0.09306416726748377,
+            "MicroRecall@50": 0.575222816399287
+          },
+          "coverage": 0.9956741167988464,
+          "used_neighbors": {
+            "mean": 4.969718817591925,
+            "minimum": 0,
+            "maximum": 5
+          }
+        }
+      ],
+      "sampled_pair": {
+        "HC-WNN-adapted": {
+          "AUC": {
+            "mean": 0.7868069421587792,
+            "std": 0.0066544961446784396,
+            "folds": [
+              0.7951458842213596,
+              0.7776767927393957,
+              0.7929884882165474,
+              0.7813033369238149,
+              0.7869202086927787
+            ]
+          },
+          "AUPR": {
+            "mean": 0.7856813480096279,
+            "std": 0.006552903563201933,
+            "folds": [
+              0.7936715043955672,
+              0.7765881782536372,
+              0.7918818434148505,
+              0.7802398500509513,
+              0.7860253639331333
+            ]
+          }
+        },
+        "final": {
+          "AUPR": {
+            "mean": 0.9584449724328691,
+            "std": 0.002364592886713552,
+            "folds": [
+              0.9572412419362191,
+              0.9547801958378626,
+              0.9605085884197513,
+              0.9582846120146582,
+              0.961410223955854
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "AUPR": 0.17276362442324122
+        }
+      },
+      "full_candidate": {
+        "HC-WNN-adapted": {
+          "MRR": {
+            "mean": 0.5612531995257491,
+            "std": 0.006820287966804641,
+            "folds": [
+              0.5631695554074558,
+              0.5570168595726162,
+              0.5503295769776946,
+              0.5664713369263981,
+              0.5692786687445812
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.52922578773487,
+            "std": 0.0037433039381532516,
+            "folds": [
+              0.5355110765561756,
+              0.5282876966376474,
+              0.5290309921344429,
+              0.5237890637973095,
+              0.5295101095487744
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.8390869355764272,
+            "std": 0.006932183983112014,
+            "folds": [
+              0.8511560693641619,
+              0.8398268398268398,
+              0.8383838383838383,
+              0.8362193362193362,
+              0.8298485940879596
+            ]
+          }
+        },
+        "final": {
+          "MRR": {
+            "mean": 0.5578413948492167,
+            "std": 0.005150771039795542,
+            "folds": [
+              0.5499475077187738,
+              0.5538405097128418,
+              0.5628378661531728,
+              0.562959927258335,
+              0.55962116340296
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.5758329985646815,
+            "std": 0.00921297461009679,
+            "folds": [
+              0.5826426997360169,
+              0.559281930821058,
+              0.5723011930807959,
+              0.5811424760549813,
+              0.5837966931305558
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.8600094233404784,
+            "std": 0.007068459680682264,
+            "folds": [
+              0.8627167630057804,
+              0.8492063492063492,
+              0.8571428571428571,
+              0.8708513708513709,
+              0.8601297764960346
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "MRR": -0.0034118046765324594,
+          "Recall@20": 0.04660721082981156,
+          "Hits@20": 0.020922487764051145
+        }
+      },
+      "coverage": {
+        "mean": 0.9968251869460867,
+        "std": 0.0007344852254527556,
+        "folds": [
+          0.9971098265895953,
+          0.9978354978354979,
+          0.9971139971139971,
+          0.9963924963924964,
+          0.9956741167988464
+        ]
+      }
+    },
+    {
+      "name": "SymMap2.0",
+      "slug": "symmap",
+      "hc_path": "dataset/Symmap/HI.txt",
+      "pd_path": "dataset/Symmap/TD.txt",
+      "split_dir": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5",
+      "assignments_sha256": "5c792d6d68f9dfa4c275fc01e2ec7a07dd4f8d0d0049d5fead791609cfacba56",
+      "hc_sha256": "ca1de7f1bb9892a3b06ab4f29809434fd0b8f80180df63d56c9f83ae9468910f",
+      "pd_sha256": "fe015b84ea079cf95e6881c2827e1f1660ee91d50974bb75e689eb768d5907c8",
+      "folds": [
+        {
+          "fold": 1,
+          "training_positive_edges": 30392,
+          "test_compounds": 324,
+          "sampled_pair": {
+            "AUC": 0.7173477660785427,
+            "AUPR": 0.7235247886867628
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.42821829175867054,
+            "evaluated_compounds": 324,
+            "held_out_positive_pairs": 7599,
+            "candidate_pairs": 5894208,
+            "held_out_positive_prevalence": 0.0012892317339327013,
+            "candidate_count_per_compound": {
+              "min": 18192.0,
+              "median": 18192.0,
+              "mean": 18192.0,
+              "max": 18192.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 3.5,
+              "mean": 2923.8703703703704,
+              "max": 18094.0
+            },
+            "Precision@10": 0.2037037037037037,
+            "Recall@10": 0.25862989911929307,
+            "Hits@10": 0.595679012345679,
+            "Enrichment@10": 158.00394788787997,
+            "MicroPrecision@10": 0.2037037037037037,
+            "MicroRecall@10": 0.08685353335965258,
+            "Precision@20": 0.1537037037037037,
+            "Recall@20": 0.3267883267545518,
+            "Hits@20": 0.6481481481481481,
+            "Enrichment@20": 119.22116067903671,
+            "MicroPrecision@20": 0.1537037037037037,
+            "MicroRecall@20": 0.13106987761547573,
+            "Precision@50": 0.09370370370370372,
+            "Recall@50": 0.3944148128074103,
+            "Hits@50": 0.691358024691358,
+            "Enrichment@50": 72.6818160284248,
+            "MicroPrecision@50": 0.0937037037037037,
+            "MicroRecall@50": 0.19976312672720095
+          },
+          "coverage": 0.9753086419753086,
+          "used_neighbors": {
+            "mean": 4.854938271604938,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 2,
+          "training_positive_edges": 30393,
+          "test_compounds": 323,
+          "sampled_pair": {
+            "AUC": 0.727592978119164,
+            "AUPR": 0.7289006139092289
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.39461958114205187,
+            "evaluated_compounds": 323,
+            "held_out_positive_pairs": 7598,
+            "candidate_pairs": 5876016,
+            "held_out_positive_prevalence": 0.0012930529801144176,
+            "candidate_count_per_compound": {
+              "min": 18192.0,
+              "median": 18192.0,
+              "mean": 18192.0,
+              "max": 18192.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 5.0,
+              "mean": 2496.3529411764707,
+              "max": 17765.0
+            },
+            "Precision@10": 0.18204334365325076,
+            "Recall@10": 0.2576662947857263,
+            "Hits@10": 0.5882352941176471,
+            "Enrichment@10": 140.78568044222163,
+            "MicroPrecision@10": 0.18204334365325078,
+            "MicroRecall@10": 0.07738878652276915,
+            "Precision@20": 0.14086687306501547,
+            "Recall@20": 0.32300044655161814,
+            "Hits@20": 0.6470588235294118,
+            "Enrichment@20": 108.9413003421953,
+            "MicroPrecision@20": 0.14086687306501547,
+            "MicroRecall@20": 0.11976836009476179,
+            "Precision@50": 0.08972136222910217,
+            "Recall@50": 0.3788809227996323,
+            "Hits@50": 0.6934984520123839,
+            "Enrichment@50": 69.3872282179521,
+            "MicroPrecision@50": 0.08972136222910217,
+            "MicroRecall@50": 0.19070808107396683
+          },
+          "coverage": 0.9876160990712074,
+          "used_neighbors": {
+            "mean": 4.928792569659443,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 3,
+          "training_positive_edges": 30393,
+          "test_compounds": 323,
+          "sampled_pair": {
+            "AUC": 0.7315718985358016,
+            "AUPR": 0.7327611325759145
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.43464932037872833,
+            "evaluated_compounds": 323,
+            "held_out_positive_pairs": 7598,
+            "candidate_pairs": 5876016,
+            "held_out_positive_prevalence": 0.0012930529801144176,
+            "candidate_count_per_compound": {
+              "min": 18192.0,
+              "median": 18192.0,
+              "mean": 18192.0,
+              "max": 18192.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 4.0,
+              "mean": 2583.6191950464395,
+              "max": 17765.0
+            },
+            "Precision@10": 0.18637770897832817,
+            "Recall@10": 0.25766537307092685,
+            "Hits@10": 0.6068111455108359,
+            "Enrichment@10": 144.13772045275073,
+            "MicroPrecision@10": 0.18637770897832817,
+            "MicroRecall@10": 0.07923137667807317,
+            "Precision@20": 0.1368421052631579,
+            "Recall@20": 0.31843727704379454,
+            "Hits@20": 0.653250773993808,
+            "Enrichment@20": 105.82869176098974,
+            "MicroPrecision@20": 0.1368421052631579,
+            "MicroRecall@20": 0.11634640694919715,
+            "Precision@50": 0.08390092879256966,
+            "Recall@50": 0.36718650010524845,
+            "Hits@50": 0.6873065015479877,
+            "Enrichment@50": 64.88591734667018,
+            "MicroPrecision@50": 0.08390092879256966,
+            "MicroRecall@50": 0.17833640431692552
+          },
+          "coverage": 0.9907120743034056,
+          "used_neighbors": {
+            "mean": 4.953560371517028,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 4,
+          "training_positive_edges": 30393,
+          "test_compounds": 324,
+          "sampled_pair": {
+            "AUC": 0.7202244276610662,
+            "AUPR": 0.7249761744913498
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.39667700986987914,
+            "evaluated_compounds": 324,
+            "held_out_positive_pairs": 7598,
+            "candidate_pairs": 5894208,
+            "held_out_positive_prevalence": 0.0012890620758548052,
+            "candidate_count_per_compound": {
+              "min": 18192.0,
+              "median": 18192.0,
+              "mean": 18192.0,
+              "max": 18192.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 6.0,
+              "mean": 3070.9506172839506,
+              "max": 17834.0
+            },
+            "Precision@10": 0.17623456790123457,
+            "Recall@10": 0.2337256390583156,
+            "Hits@10": 0.5524691358024691,
+            "Enrichment@10": 136.71534614372203,
+            "MicroPrecision@10": 0.17623456790123457,
+            "MicroRecall@10": 0.07515135561989997,
+            "Precision@20": 0.1345679012345679,
+            "Recall@20": 0.28869883954014114,
+            "Hits@20": 0.6141975308641975,
+            "Enrichment@20": 104.39210318504871,
+            "MicroPrecision@20": 0.1345679012345679,
+            "MicroRecall@20": 0.11476704395893657,
+            "Precision@50": 0.08728395061728396,
+            "Recall@50": 0.33772503170007717,
+            "Hits@50": 0.6481481481481481,
+            "Enrichment@50": 67.71120821268757,
+            "MicroPrecision@50": 0.08728395061728395,
+            "MicroRecall@50": 0.18610160568570677
+          },
+          "coverage": 0.9938271604938271,
+          "used_neighbors": {
+            "mean": 4.966049382716049,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 5,
+          "training_positive_edges": 30393,
+          "test_compounds": 324,
+          "sampled_pair": {
+            "AUC": 0.7314942087598589,
+            "AUPR": 0.7345557166404784
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.42288826618154546,
+            "evaluated_compounds": 324,
+            "held_out_positive_pairs": 7598,
+            "candidate_pairs": 5894208,
+            "held_out_positive_prevalence": 0.0012890620758548052,
+            "candidate_count_per_compound": {
+              "min": 18192.0,
+              "median": 18192.0,
+              "mean": 18192.0,
+              "max": 18192.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 4.0,
+              "mean": 2548.0123456790125,
+              "max": 17448.0
+            },
+            "Precision@10": 0.19135802469135801,
+            "Recall@10": 0.2463068726348285,
+            "Hits@10": 0.5895061728395061,
+            "Enrichment@10": 148.44748618057383,
+            "MicroPrecision@10": 0.19135802469135801,
+            "MicroRecall@10": 0.08160042116346407,
+            "Precision@20": 0.14953703703703705,
+            "Recall@20": 0.31695546529619145,
+            "Hits@20": 0.654320987654321,
+            "Enrichment@20": 116.00452750723876,
+            "MicroPrecision@20": 0.14953703703703702,
+            "MicroRecall@20": 0.12753356146354303,
+            "Precision@50": 0.09308641975308642,
+            "Recall@50": 0.38345692033719264,
+            "Hits@50": 0.6944444444444444,
+            "Enrichment@50": 72.21251908396947,
+            "MicroPrecision@50": 0.09308641975308642,
+            "MicroRecall@50": 0.1984732824427481
+          },
+          "coverage": 0.9845679012345679,
+          "used_neighbors": {
+            "mean": 4.919753086419753,
+            "minimum": 0,
+            "maximum": 5
+          }
+        }
+      ],
+      "sampled_pair": {
+        "HC-WNN-adapted": {
+          "AUC": {
+            "mean": 0.7256462558308867,
+            "std": 0.005854274941720452,
+            "folds": [
+              0.7173477660785427,
+              0.727592978119164,
+              0.7315718985358016,
+              0.7202244276610662,
+              0.7314942087598589
+            ]
+          },
+          "AUPR": {
+            "mean": 0.7289436852607468,
+            "std": 0.004270251447802825,
+            "folds": [
+              0.7235247886867628,
+              0.7289006139092289,
+              0.7327611325759145,
+              0.7249761744913498,
+              0.7345557166404784
+            ]
+          }
+        },
+        "final": {
+          "AUPR": {
+            "mean": 0.8406354703147549,
+            "std": 0.009607650230905195,
+            "folds": [
+              0.8245246532225101,
+              0.8435895078228949,
+              0.8538289014980129,
+              0.8375201579345996,
+              0.8437141310957575
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "AUPR": 0.11169178505400812
+        }
+      },
+      "full_candidate": {
+        "HC-WNN-adapted": {
+          "MRR": {
+            "mean": 0.415410493866175,
+            "std": 0.016572837329662277,
+            "folds": [
+              0.42821829175867054,
+              0.39461958114205187,
+              0.43464932037872833,
+              0.39667700986987914,
+              0.42288826618154546
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.3147760710372594,
+            "std": 0.013491559074704883,
+            "folds": [
+              0.3267883267545518,
+              0.32300044655161814,
+              0.31843727704379454,
+              0.28869883954014114,
+              0.31695546529619145
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.6433952528379774,
+            "std": 0.014866214790785304,
+            "folds": [
+              0.6481481481481481,
+              0.6470588235294118,
+              0.653250773993808,
+              0.6141975308641975,
+              0.654320987654321
+            ]
+          }
+        },
+        "final": {
+          "MRR": {
+            "mean": 0.2920772941545101,
+            "std": 0.03784977351942571,
+            "folds": [
+              0.345007467678945,
+              0.3114902997173316,
+              0.23740293359475623,
+              0.26275899553408033,
+              0.3037267742474371
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.18751242665516632,
+            "std": 0.03823505473155569,
+            "folds": [
+              0.24024971635491718,
+              0.2102689816488997,
+              0.13013222639787927,
+              0.161812661599033,
+              0.19509854727510245
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.4678152352558958,
+            "std": 0.07564211621589599,
+            "folds": [
+              0.5740740740740741,
+              0.5046439628482973,
+              0.3560371517027864,
+              0.41358024691358025,
+              0.49074074074074076
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "MRR": -0.1233331997116649,
+          "Recall@20": -0.1272636443820931,
+          "Hits@20": -0.17558001758208158
+        }
+      },
+      "coverage": {
+        "mean": 0.9864063754156633,
+        "std": 0.006349963783183449,
+        "folds": [
+          0.9753086419753086,
+          0.9876160990712074,
+          0.9907120743034056,
+          0.9938271604938271,
+          0.9845679012345679
+        ]
+      }
+    },
+    {
+      "name": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "hc_path": "dataset/ETCM2.0_core_mention10/H_C.txt",
+      "pd_path": "dataset/ETCM2.0_core_mention10/P_D.txt",
+      "split_dir": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5",
+      "assignments_sha256": "97a2d10cd26a9e77ff537d66af689383f2e0261200dbeff4685923144f9b3326",
+      "hc_sha256": "dd14683bc6706dce56c90293a87c023460edcaec0f1eebd3bf4c7db61275cf14",
+      "pd_sha256": "03c5068db00d0d7291c385d9b32a2ac010fdaec103181de254ec4cae214d4793",
+      "folds": [
+        {
+          "fold": 1,
+          "training_positive_edges": 70744,
+          "test_compounds": 1904,
+          "sampled_pair": {
+            "AUC": 0.8202198907611694,
+            "AUPR": 0.817576923944181
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5961979893937688,
+            "evaluated_compounds": 1904,
+            "held_out_positive_pairs": 17687,
+            "candidate_pairs": 969136,
+            "held_out_positive_prevalence": 0.018250276534975483,
+            "candidate_count_per_compound": {
+              "min": 509.0,
+              "median": 509.0,
+              "mean": 509.0,
+              "max": 509.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 1.0,
+              "mean": 20.311449579831933,
+              "max": 503.0
+            },
+            "Precision@10": 0.3451680672268908,
+            "Recall@10": 0.42777314424569984,
+            "Hits@10": 0.7972689075630253,
+            "Enrichment@10": 18.913032170520726,
+            "MicroPrecision@10": 0.34516806722689075,
+            "MicroRecall@10": 0.3715723412675977,
+            "Precision@20": 0.24847689075630253,
+            "Recall@20": 0.5751021820430043,
+            "Hits@20": 0.8776260504201681,
+            "Enrichment@20": 13.614965794086052,
+            "MicroPrecision@20": 0.24847689075630253,
+            "MicroRecall@20": 0.5349691864080963,
+            "Precision@50": 0.1281197478991597,
+            "Recall@50": 0.704947041198692,
+            "Hits@50": 0.9275210084033614,
+            "Enrichment@50": 7.020153785266016,
+            "MicroPrecision@50": 0.12811974789915967,
+            "MicroRecall@50": 0.6896025329337931
+          },
+          "coverage": 0.9936974789915967,
+          "used_neighbors": {
+            "mean": 4.878151260504202,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 2,
+          "training_positive_edges": 70745,
+          "test_compounds": 1903,
+          "sampled_pair": {
+            "AUC": 0.8247275378120664,
+            "AUPR": 0.8229635573891038
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5931787536084174,
+            "evaluated_compounds": 1903,
+            "held_out_positive_pairs": 17686,
+            "candidate_pairs": 968627,
+            "held_out_positive_prevalence": 0.018258834412007926,
+            "candidate_count_per_compound": {
+              "min": 509.0,
+              "median": 509.0,
+              "mean": 509.0,
+              "max": 509.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 1.0,
+              "mean": 20.45086705202312,
+              "max": 503.0
+            },
+            "Precision@10": 0.35307409353652125,
+            "Recall@10": 0.42939178460574456,
+            "Hits@10": 0.7724645296899633,
+            "Enrichment@10": 19.337164989257037,
+            "MicroPrecision@10": 0.3530740935365213,
+            "MicroRecall@10": 0.3799050096121226,
+            "Precision@20": 0.2524172359432475,
+            "Recall@20": 0.575368246488653,
+            "Hits@20": 0.8560168155543878,
+            "Enrichment@20": 13.824389347506502,
+            "MicroPrecision@20": 0.2524172359432475,
+            "MicroRecall@20": 0.5431980097252064,
+            "Precision@50": 0.1297845507094062,
+            "Recall@50": 0.7025906154846275,
+            "Hits@50": 0.9085654230162901,
+            "Enrichment@50": 7.108041388669003,
+            "MicroPrecision@50": 0.1297845507094062,
+            "MicroRecall@50": 0.6982358927965623
+          },
+          "coverage": 0.9973725696269049,
+          "used_neighbors": {
+            "mean": 4.911192853389386,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 3,
+          "training_positive_edges": 70745,
+          "test_compounds": 1904,
+          "sampled_pair": {
+            "AUC": 0.8093370529329734,
+            "AUPR": 0.8080469239702656
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5835718243517127,
+            "evaluated_compounds": 1904,
+            "held_out_positive_pairs": 17686,
+            "candidate_pairs": 969136,
+            "held_out_positive_prevalence": 0.018249244688052037,
+            "candidate_count_per_compound": {
+              "min": 509.0,
+              "median": 509.0,
+              "mean": 509.0,
+              "max": 509.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 21.96060924369748,
+              "max": 505.0
+            },
+            "Precision@10": 0.34600840336134453,
+            "Recall@10": 0.4206064097750966,
+            "Hits@10": 0.7872899159663865,
+            "Enrichment@10": 18.960149270609524,
+            "MicroPrecision@10": 0.34600840336134453,
+            "MicroRecall@10": 0.37249802103358587,
+            "Precision@20": 0.24829306722689076,
+            "Recall@20": 0.5591194066076448,
+            "Hits@20": 0.8587184873949579,
+            "Enrichment@20": 13.60566267103924,
+            "MicroPrecision@20": 0.24829306722689076,
+            "MicroRecall@20": 0.5346036412982019,
+            "Precision@50": 0.12635504201680675,
+            "Recall@50": 0.6887850034277087,
+            "Hits@50": 0.9128151260504201,
+            "Enrichment@50": 6.92385050322289,
+            "MicroPrecision@50": 0.12635504201680672,
+            "MicroRecall@50": 0.6801424855818161
+          },
+          "coverage": 0.9968487394957983,
+          "used_neighbors": {
+            "mean": 4.908613445378151,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 4,
+          "training_positive_edges": 70745,
+          "test_compounds": 1904,
+          "sampled_pair": {
+            "AUC": 0.8191175943461632,
+            "AUPR": 0.8168846312534991
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5890163473898075,
+            "evaluated_compounds": 1904,
+            "held_out_positive_pairs": 17686,
+            "candidate_pairs": 969136,
+            "held_out_positive_prevalence": 0.018249244688052037,
+            "candidate_count_per_compound": {
+              "min": 509.0,
+              "median": 509.0,
+              "mean": 509.0,
+              "max": 509.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 20.160714285714285,
+              "max": 505.0
+            },
+            "Precision@10": 0.3444852941176471,
+            "Recall@10": 0.42983074848277575,
+            "Hits@10": 0.7846638655462185,
+            "Enrichment@10": 18.876687775641756,
+            "MicroPrecision@10": 0.34448529411764706,
+            "MicroRecall@10": 0.3708583060047495,
+            "Precision@20": 0.25047268907563025,
+            "Recall@20": 0.5822816888177399,
+            "Hits@20": 0.8765756302521008,
+            "Enrichment@20": 13.725098948320706,
+            "MicroPrecision@20": 0.25047268907563025,
+            "MicroRecall@20": 0.5392966187945267,
+            "Precision@50": 0.1288655462184874,
+            "Recall@50": 0.7108218373256859,
+            "Hits@50": 0.9296218487394958,
+            "Enrichment@50": 7.061418070790456,
+            "MicroPrecision@50": 0.1288655462184874,
+            "MicroRecall@50": 0.6936559990953296
+          },
+          "coverage": 0.9947478991596639,
+          "used_neighbors": {
+            "mean": 4.859243697478991,
+            "minimum": 0,
+            "maximum": 5
+          }
+        },
+        {
+          "fold": 5,
+          "training_positive_edges": 70745,
+          "test_compounds": 1904,
+          "sampled_pair": {
+            "AUC": 0.811738777609828,
+            "AUPR": 0.8098541504226353
+          },
+          "full_candidate": {
+            "aggregation": "macro_over_compounds",
+            "MRR": 0.5901559322142608,
+            "evaluated_compounds": 1904,
+            "held_out_positive_pairs": 17686,
+            "candidate_pairs": 969136,
+            "held_out_positive_prevalence": 0.018249244688052037,
+            "candidate_count_per_compound": {
+              "min": 509.0,
+              "median": 509.0,
+              "mean": 509.0,
+              "max": 509.0
+            },
+            "first_positive_rank": {
+              "min": 1.0,
+              "median": 2.0,
+              "mean": 20.001575630252102,
+              "max": 505.0
+            },
+            "Precision@10": 0.34096638655462186,
+            "Recall@10": 0.4241925782372246,
+            "Hits@10": 0.7846638655462185,
+            "Enrichment@10": 18.68386294244035,
+            "MicroPrecision@10": 0.34096638655462186,
+            "MicroRecall@10": 0.36706999886916203,
+            "Precision@20": 0.24839810924369748,
+            "Recall@20": 0.5732115516058126,
+            "Hits@20": 0.8602941176470589,
+            "Enrichment@20": 13.611418636209432,
+            "MicroPrecision@20": 0.24839810924369748,
+            "MicroRecall@20": 0.5348298088883863,
+            "Precision@50": 0.12614495798319328,
+            "Recall@50": 0.6991298478760722,
+            "Hits@50": 0.9227941176470589,
+            "Enrichment@50": 6.912338572882507,
+            "MicroPrecision@50": 0.12614495798319328,
+            "MicroRecall@50": 0.6790116476308945
+          },
+          "coverage": 0.993172268907563,
+          "used_neighbors": {
+            "mean": 4.888655462184874,
+            "minimum": 0,
+            "maximum": 5
+          }
+        }
+      ],
+      "sampled_pair": {
+        "HC-WNN-adapted": {
+          "AUC": {
+            "mean": 0.81702817069244,
+            "std": 0.0056738698225641,
+            "folds": [
+              0.8202198907611694,
+              0.8247275378120664,
+              0.8093370529329734,
+              0.8191175943461632,
+              0.811738777609828
+            ]
+          },
+          "AUPR": {
+            "mean": 0.8150652373959371,
+            "std": 0.005448199203852534,
+            "folds": [
+              0.817576923944181,
+              0.8229635573891038,
+              0.8080469239702656,
+              0.8168846312534991,
+              0.8098541504226353
+            ]
+          }
+        },
+        "final": {
+          "AUPR": {
+            "mean": 0.9227030566958346,
+            "std": 0.004621895970641204,
+            "folds": [
+              0.9206704666229054,
+              0.9270597550791321,
+              0.9289284937109779,
+              0.9204769348016998,
+              0.9163796332644576
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "AUPR": 0.10763781929989757
+        }
+      },
+      "full_candidate": {
+        "HC-WNN-adapted": {
+          "MRR": {
+            "mean": 0.5904241693915935,
+            "std": 0.004241067746280167,
+            "folds": [
+              0.5961979893937688,
+              0.5931787536084174,
+              0.5835718243517127,
+              0.5890163473898075,
+              0.5901559322142608
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.573016615112571,
+            "std": 0.007601207203836675,
+            "folds": [
+              0.5751021820430043,
+              0.575368246488653,
+              0.5591194066076448,
+              0.5822816888177399,
+              0.5732115516058126
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.8658462202537347,
+            "std": 0.009296582742790363,
+            "folds": [
+              0.8776260504201681,
+              0.8560168155543878,
+              0.8587184873949579,
+              0.8765756302521008,
+              0.8602941176470589
+            ]
+          }
+        },
+        "final": {
+          "MRR": {
+            "mean": 0.6172053853487991,
+            "std": 0.00772464468945206,
+            "folds": [
+              0.6210572777184072,
+              0.6093935236118632,
+              0.6305586535349731,
+              0.6126842589654985,
+              0.6123332129132538
+            ]
+          },
+          "Recall@20": {
+            "mean": 0.5806946840292599,
+            "std": 0.003726462532613741,
+            "folds": [
+              0.5800533953860264,
+              0.5780020042710741,
+              0.582932163736919,
+              0.5865421443776269,
+              0.5759437123746532
+            ]
+          },
+          "Hits@20": {
+            "mean": 0.8797129256326809,
+            "std": 0.008437416691827094,
+            "folds": [
+              0.8802521008403361,
+              0.8670520231213873,
+              0.8876050420168067,
+              0.8897058823529411,
+              0.8739495798319328
+            ]
+          }
+        },
+        "final_minus_wnn": {
+          "MRR": 0.026781215957205617,
+          "Recall@20": 0.007678068916688985,
+          "Hits@20": 0.013866705378946187
+        }
+      },
+      "coverage": {
+        "mean": 0.9951677912363053,
+        "std": 0.0016737306605438592,
+        "folds": [
+          0.9936974789915967,
+          0.9973725696269049,
+          0.9968487394957983,
+          0.9947478991596639,
+          0.993172268907563
+        ]
+      }
+    }
+  ],
+  "macro": {
+    "HC-WNN-adapted": {
+      "AUPR": 0.7398799725908141,
+      "MRR": 0.4588545481507636,
+      "Recall@20": 0.403115591020879,
+      "coverage": 0.990178300421525
+    },
+    "final": {
+      "AUPR": 0.863250677114307,
+      "MRR": 0.39895952482944663,
+      "Recall@20": 0.35192016191890313
+    },
+    "final_minus_wnn": {
+      "AUPR": 0.12337070452349297,
+      "MRR": -0.059895023321316965,
+      "Recall@20": -0.05119542910197589
+    }
+  }
+}

@@ -1,0 +1,640 @@
+{
+  "created_at": "2026-08-11T16:12:48.122140+08:00",
+  "protocol": "final_method_training_seed_stability_v1",
+  "model_selection_reopened": false,
+  "split_seed": 52026,
+  "validation_seed": 152026,
+  "training_seeds": [
+    52026,
+    12026,
+    32026
+  ],
+  "reference_results": "/home/zry/workspace/HDCTI/paper_artifacts/results/final_matched_ablation.json",
+  "reference_results_sha256": "a6f35a1f8d5cf476f632d8462d0fd313efcc0da26de80875c7da041adc5fd7d3",
+  "records": [
+    {
+      "metrics": {
+        "AUC": 0.729913,
+        "AUPR": 0.71796,
+        "Recall": 0.223681,
+        "Precision": 0.800147,
+        "F1-score": 0.347955
+      },
+      "fold_aupr": [
+        0.7386228907718173,
+        0.7446665427204018,
+        0.7034849931885799,
+        0.710302504491948,
+        0.6927232649224303
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/schpt_full.json",
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "seed": 52026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.731457,
+        "AUPR": 0.731219,
+        "Recall": 0.283701,
+        "Precision": 0.807109,
+        "F1-score": 0.415922
+      },
+      "fold_aupr": [
+        0.7525694344323883,
+        0.7351286073143644,
+        0.7159430096123466,
+        0.7226289188323248,
+        0.7298260748774232
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/dg_schpt_v2_full.json",
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "seed": 52026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.944074,
+        "AUPR": 0.939557,
+        "Recall": 0.385948,
+        "Precision": 0.966039,
+        "F1-score": 0.494169
+      },
+      "fold_aupr": [
+        0.943936782888627,
+        0.9357519370758604,
+        0.9319170372513947,
+        0.9421322229960761,
+        0.9440477963624336
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/schpt_full.json",
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "seed": 52026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.952658,
+        "AUPR": 0.958445,
+        "Recall": 0.666501,
+        "Precision": 0.972836,
+        "F1-score": 0.789983
+      },
+      "fold_aupr": [
+        0.9572412419362191,
+        0.9547801958378626,
+        0.9605085884197513,
+        0.9582846120146582,
+        0.961410223955854
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/dg_schpt_v2_full.json",
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "seed": 52026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.803038,
+        "AUPR": 0.807284,
+        "Recall": 0.421282,
+        "Precision": 0.869547,
+        "F1-score": 0.562564
+      },
+      "fold_aupr": [
+        0.8054726378449079,
+        0.8077275495200542,
+        0.8216990886202835,
+        0.8079157708736131,
+        0.7936068869075114
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/schpt_full.json",
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "seed": 52026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.819281,
+        "AUPR": 0.840635,
+        "Recall": 0.549341,
+        "Precision": 0.872541,
+        "F1-score": 0.674047
+      },
+      "fold_aupr": [
+        0.8245246532225101,
+        0.8435895078228949,
+        0.8538289014980129,
+        0.8375201579345996,
+        0.8437141310957575
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/dg_schpt_v2_full.json",
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "seed": 52026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.91821,
+        "AUPR": 0.901777,
+        "Recall": 0.251744,
+        "Precision": 0.944995,
+        "F1-score": 0.396402
+      },
+      "fold_aupr": [
+        0.910618516679808,
+        0.9035116940843506,
+        0.9093241152843168,
+        0.8945925682666458,
+        0.8908386552826395
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/schpt_full.json",
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "seed": 52026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.931111,
+        "AUPR": 0.922703,
+        "Recall": 0.337563,
+        "Precision": 0.963104,
+        "F1-score": 0.499173
+      },
+      "fold_aupr": [
+        0.9206704666229054,
+        0.9270597550791321,
+        0.9289284937109779,
+        0.9204769348016998,
+        0.9163796332644576
+      ],
+      "source": "/home/zry/workspace/HDCTI/paper_artifacts/results/dg_schpt_v2_full.json",
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "seed": 52026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.722163,
+        "AUPR": 0.70507,
+        "Recall": 0.186951,
+        "Precision": 0.788983,
+        "F1-score": 0.300201
+      },
+      "fold_aupr": [
+        0.7180793867017766,
+        0.7301169648594847,
+        0.683569437477178,
+        0.6882592858887093,
+        0.7053269525908217
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_tcmsuite_baseline.log",
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "seed": 12026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.728333,
+        "AUPR": 0.728089,
+        "Recall": 0.24894,
+        "Precision": 0.816493,
+        "F1-score": 0.380468
+      },
+      "fold_aupr": [
+        0.7288848244132132,
+        0.7456118191047006,
+        0.6997085540870038,
+        0.7414095211361222,
+        0.7248284204945917
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_tcmsuite_final.log",
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "seed": 12026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.946101,
+        "AUPR": 0.940743,
+        "Recall": 0.144377,
+        "Precision": 0.973556,
+        "F1-score": 0.242248
+      },
+      "fold_aupr": [
+        0.9413989940730997,
+        0.9345266298196775,
+        0.9357729085722549,
+        0.9422710705710079,
+        0.9497477431903454
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_tcmsp_baseline.log",
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "seed": 12026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.952263,
+        "AUPR": 0.958272,
+        "Recall": 0.606323,
+        "Precision": 0.976599,
+        "F1-score": 0.740627
+      },
+      "fold_aupr": [
+        0.9575251412330725,
+        0.9564856433415354,
+        0.9595163791157286,
+        0.9567116951238503,
+        0.961121600195919
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_tcmsp_final.log",
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "seed": 12026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.802073,
+        "AUPR": 0.800277,
+        "Recall": 0.341632,
+        "Precision": 0.876857,
+        "F1-score": 0.484104
+      },
+      "fold_aupr": [
+        0.7820752564875272,
+        0.8003731187829594,
+        0.8106004582467616,
+        0.807361731963522,
+        0.8009751236423339
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_symmap_baseline.log",
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "seed": 12026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.819014,
+        "AUPR": 0.841379,
+        "Recall": 0.544287,
+        "Precision": 0.871926,
+        "F1-score": 0.670025
+      },
+      "fold_aupr": [
+        0.820086569362025,
+        0.843288290724898,
+        0.8575419454236901,
+        0.8419624531270833,
+        0.8440150953386438
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_symmap_final.log",
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "seed": 12026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.915641,
+        "AUPR": 0.899499,
+        "Recall": 0.281248,
+        "Precision": 0.944637,
+        "F1-score": 0.42775
+      },
+      "fold_aupr": [
+        0.8944298070699315,
+        0.9051451150936205,
+        0.9066550007910914,
+        0.8963963557054926,
+        0.8948674475765983
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_etcm_mention10_baseline.log",
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "seed": 12026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.928321,
+        "AUPR": 0.922111,
+        "Recall": 0.349267,
+        "Precision": 0.966946,
+        "F1-score": 0.511944
+      },
+      "fold_aupr": [
+        0.9162191943378057,
+        0.9288676759588149,
+        0.9287538335516736,
+        0.923496203615491,
+        0.9132185336870386
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_12026_etcm_mention10_final.log",
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "seed": 12026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.723373,
+        "AUPR": 0.710967,
+        "Recall": 0.230896,
+        "Precision": 0.78547,
+        "F1-score": 0.351391
+      },
+      "fold_aupr": [
+        0.7223496821538864,
+        0.7274682921833977,
+        0.7001985460617819,
+        0.7004823504527944,
+        0.704334443463011
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_tcmsuite_baseline.log",
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "seed": 32026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.732114,
+        "AUPR": 0.729816,
+        "Recall": 0.245002,
+        "Precision": 0.815937,
+        "F1-score": 0.376281
+      },
+      "fold_aupr": [
+        0.747500962500399,
+        0.7423978828163208,
+        0.6996558692733091,
+        0.7397299960699908,
+        0.7197947428508994
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_tcmsuite_final.log",
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "seed": 32026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.945903,
+        "AUPR": 0.940496,
+        "Recall": 0.125415,
+        "Precision": 0.971957,
+        "F1-score": 0.216867
+      },
+      "fold_aupr": [
+        0.9443020168420321,
+        0.9287616515424542,
+        0.9389438149617373,
+        0.9440974186432476,
+        0.9463757474321814
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_tcmsp_baseline.log",
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "seed": 32026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.953027,
+        "AUPR": 0.958117,
+        "Recall": 0.549323,
+        "Precision": 0.979578,
+        "F1-score": 0.688437
+      },
+      "fold_aupr": [
+        0.9562312112755991,
+        0.9551637936800476,
+        0.9580079408265414,
+        0.9577560359202295,
+        0.9634266668386189
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_tcmsp_final.log",
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "seed": 32026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.802753,
+        "AUPR": 0.798256,
+        "Recall": 0.376221,
+        "Precision": 0.864922,
+        "F1-score": 0.519794
+      },
+      "fold_aupr": [
+        0.7925519158874659,
+        0.7848960022113123,
+        0.7995165035639431,
+        0.8019607502358054,
+        0.812353434994641
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_symmap_baseline.log",
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "seed": 32026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.819297,
+        "AUPR": 0.841321,
+        "Recall": 0.535812,
+        "Precision": 0.877529,
+        "F1-score": 0.664761
+      },
+      "fold_aupr": [
+        0.8223959783951076,
+        0.8393101483165499,
+        0.8551894338816777,
+        0.8464812600928551,
+        0.8432269634270294
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_symmap_final.log",
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "seed": 32026,
+      "role": "final"
+    },
+    {
+      "metrics": {
+        "AUC": 0.916188,
+        "AUPR": 0.899468,
+        "Recall": 0.237564,
+        "Precision": 0.945376,
+        "F1-score": 0.379108
+      },
+      "fold_aupr": [
+        0.8951067492002296,
+        0.906051637845894,
+        0.9036903906316944,
+        0.9022192121407597,
+        0.8902703543869737
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_etcm_mention10_baseline.log",
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "seed": 32026,
+      "role": "baseline"
+    },
+    {
+      "metrics": {
+        "AUC": 0.928433,
+        "AUPR": 0.921123,
+        "Recall": 0.36952,
+        "Precision": 0.963022,
+        "F1-score": 0.531588
+      },
+      "fold_aupr": [
+        0.9111729136022596,
+        0.9294111354293412,
+        0.9297640089018807,
+        0.9226372224946382,
+        0.912630194163969
+      ],
+      "source": "/home/zry/workspace/HDCTI/results/batch_runs/training_seed_stability_seed12026_32026/logs/seed_32026_etcm_mention10_final.log",
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "seed": 32026,
+      "role": "final"
+    }
+  ],
+  "seed_summary": [
+    {
+      "seed": 52026,
+      "baseline_macro_AUPR": 0.8416445,
+      "final_macro_AUPR": 0.8632505000000001,
+      "macro_AUPR_delta": 0.021605999999999986,
+      "positive_dataset_count": 4
+    },
+    {
+      "seed": 12026,
+      "baseline_macro_AUPR": 0.83639725,
+      "final_macro_AUPR": 0.8624627500000001,
+      "macro_AUPR_delta": 0.02606549999999999,
+      "positive_dataset_count": 4
+    },
+    {
+      "seed": 32026,
+      "baseline_macro_AUPR": 0.83729675,
+      "final_macro_AUPR": 0.86259425,
+      "macro_AUPR_delta": 0.0252975,
+      "positive_dataset_count": 4
+    }
+  ],
+  "dataset_summary": [
+    {
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "baseline_mean_AUPR": 0.7113323333333333,
+      "baseline_seed_std": 0.0052686574085709145,
+      "final_mean_AUPR": 0.729708,
+      "final_seed_std": 0.0012800971317312741,
+      "mean_AUPR_delta": 0.01837566666666664,
+      "mean_AUPR_delta_bootstrap_CI": [
+        0.01325899999999991,
+        0.02301900000000001
+      ],
+      "positive_seed_count": 3,
+      "seed_AUPR_deltas": [
+        0.01325899999999991,
+        0.02301900000000001,
+        0.018849000000000005
+      ]
+    },
+    {
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "baseline_mean_AUPR": 0.9402653333333334,
+      "baseline_seed_std": 0.0005109170404500444,
+      "final_mean_AUPR": 0.958278,
+      "final_seed_std": 0.00013397263402152712,
+      "mean_AUPR_delta": 0.018012666666666677,
+      "mean_AUPR_delta_bootstrap_CI": [
+        0.017529000000000017,
+        0.018888000000000016
+      ],
+      "positive_seed_count": 3,
+      "seed_AUPR_deltas": [
+        0.018888000000000016,
+        0.017529000000000017,
+        0.017620999999999998
+      ]
+    },
+    {
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "baseline_mean_AUPR": 0.801939,
+      "baseline_seed_std": 0.003868494883887885,
+      "final_mean_AUPR": 0.8411116666666668,
+      "final_seed_std": 0.00033788492452640047,
+      "mean_AUPR_delta": 0.03917266666666667,
+      "mean_AUPR_delta_bootstrap_CI": [
+        0.03335100000000002,
+        0.04306500000000002
+      ],
+      "positive_seed_count": 3,
+      "seed_AUPR_deltas": [
+        0.03335100000000002,
+        0.04110199999999997,
+        0.04306500000000002
+      ]
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "baseline_mean_AUPR": 0.900248,
+      "baseline_seed_std": 0.0010812403371437225,
+      "final_mean_AUPR": 0.921979,
+      "final_seed_std": 0.0006517504634955607,
+      "mean_AUPR_delta": 0.021730999999999983,
+      "mean_AUPR_delta_bootstrap_CI": [
+        0.020926,
+        0.022611999999999965
+      ],
+      "positive_seed_count": 3,
+      "seed_AUPR_deltas": [
+        0.020926,
+        0.022611999999999965,
+        0.02165499999999998
+      ]
+    }
+  ],
+  "overall_mean_AUPR_delta": 0.024322999999999994,
+  "overall_mean_AUPR_delta_bootstrap_CI": [
+    0.021605999999999986,
+    0.02606549999999999
+  ],
+  "bootstrap": {
+    "unit": "paired_training_seed_macro_delta",
+    "iterations": 20000,
+    "seed": 112026,
+    "confidence": 0.95
+  },
+  "checks": {
+    "expected_seed_count": true,
+    "expected_dataset_count": true,
+    "minimum_overall_mean_aupr_delta": true,
+    "minimum_positive_seed_count": true,
+    "minimum_dataset_mean_aupr_delta": true
+  },
+  "diagnostic": "PASS"
+}

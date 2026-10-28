@@ -1,0 +1,703 @@
+{
+  "schema_version": 1,
+  "original_root": "/home/zry/workspace/HDCTI",
+  "archive": "data/processed_inputs.tar.gz",
+  "archive_sha256": "b21a6df1745cae7fa5a2842d01524837bf5c7b304b05c5a6a94fd34094b8a9a0",
+  "archive_bytes": 35447652,
+  "datasets": [
+    "TCMsuite",
+    "TCMSP",
+    "Symmap",
+    "ETCM2.0_core_mention10"
+  ],
+  "split_seeds": [
+    52026,
+    901026
+  ],
+  "relocate_json": [
+    "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+    "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+    "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+    "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+    "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+    "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+    "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+    "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+    "results/mvcl_formal_confirmation_protocol_v1/seal.json"
+  ],
+  "files": [
+    {
+      "path": "dataset/ETCM2.0_core_mention10/C_P.txt",
+      "bytes": 848394,
+      "sha256": "578af491e1171c5b076c45f185db4d97e33eb929ee03748e01fe69103a4bd7fc",
+      "role": "C_P_relation"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/H_C.txt",
+      "bytes": 311346,
+      "sha256": "dd14683bc6706dce56c90293a87c023460edcaec0f1eebd3bf4c7db61275cf14",
+      "role": "H_C_relation"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/ONE_indices.txt",
+      "bytes": 1025256,
+      "sha256": "e122ba588cacf87797f6dbeb2a2ad3eb9450320f4a03b257c2366e6266d129b2",
+      "role": "labelled_positive_input"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/P_D.txt",
+      "bytes": 19660627,
+      "sha256": "03c5068db00d0d7291c385d9b32a2ac010fdaec103181de254ec4cae214d4793",
+      "role": "P_D_relation"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/ZERO_indices.txt",
+      "bytes": 1028272,
+      "sha256": "e400c6b0e52bb9cd472ec44cd9528ea148a93f97957a4bce2abfd64687133728",
+      "role": "unlabelled_candidate_input"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/mappings/compound_id_map.csv",
+      "bytes": 1741237,
+      "sha256": "05d6c7da5fd1871aba578642313f1ff52fd972fd83b57a9162d7248de117d5c5",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/mappings/disease_id_map.csv",
+      "bytes": 1452627,
+      "sha256": "828d328a2c1a6f3a2f8a9d1d2a6c7521e491e46922a7462656a0cc8750b76762",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/mappings/herb_id_map.csv",
+      "bytes": 300607,
+      "sha256": "4a6eef155e988261c5f17290193f08e9d81feb05cbbbf831a8885c1576715030",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/mappings/protein_id_map.csv",
+      "bytes": 74376,
+      "sha256": "1b54ff82050de181f2b4b4bfb5eb031ff40b3b53aa81051e299328ab9461cec9",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+      "bytes": 2405366,
+      "sha256": "97a2d10cd26a9e77ff537d66af689383f2e0261200dbeff4685923144f9b3326",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+      "bytes": 2886,
+      "sha256": "c49281995a3b1e83903e2e8b3cafbcb2c758e8169d71e6c4cb4abcdbd27e6d5f",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/test_fold_0.txt",
+      "bytes": 409593,
+      "sha256": "b6c78c37e73a8bb71338388121270dd8212a2e1e9253a89bf830cd8609dd3a9f",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/test_fold_1.txt",
+      "bytes": 410930,
+      "sha256": "075dd8263fa2ba92c3148ab2261a8202cba312758f60372fc44bb6cf0d47ae22",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/test_fold_2.txt",
+      "bytes": 408630,
+      "sha256": "ab147e4a2d6fe18da73c9d66ea824da9c1b71543f1fa1f2cd264143c4c00b9b5",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/test_fold_3.txt",
+      "bytes": 411198,
+      "sha256": "c2a014694df7701c2231d093c8c2243d01af34fac0f2a7a99833d1441b5bbf43",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_52026_k5/test_fold_4.txt",
+      "bytes": 411263,
+      "sha256": "38f56e0087aa3696d4d2c758a5c92b29e9a4b902a9b14d0d0220809abefce556",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
+      "bytes": 2405317,
+      "sha256": "a3cf759537cff3af6be80943ce0c9a85ec65e46542b3d8165b0e1aabc1532848",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+      "bytes": 2888,
+      "sha256": "d71d9ffdbbf1170d724880acbaa2836d01299f170096571c0a0b57b28c5c834e",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",
+      "bytes": 409336,
+      "sha256": "4aae8250fceec6e1e4066241c00f6a012cba688f8e56d2adbe8118d75210940e",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/test_fold_1.txt",
+      "bytes": 410028,
+      "sha256": "852a8b41b236d79f537cedb61af1e0785c324800a7475ffbd34123df53db3d4b",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/test_fold_2.txt",
+      "bytes": 411267,
+      "sha256": "3f2725459ce729b4594270a26db9d893268fc5595d0fb5658f22e3db75ffbc84",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/test_fold_3.txt",
+      "bytes": 410211,
+      "sha256": "ffb3e17849c98a701ba369c13fa382d1c6b4f1ddad9ee369916df6883c0fc87f",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/test_fold_4.txt",
+      "bytes": 410723,
+      "sha256": "490756547ec5192ee48b512b016045eb34d203c28808b78a07d8e86d8a32838e",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/ETCM2.0_validation/manifest.json",
+      "bytes": 5188,
+      "sha256": "2d8fc6f8b6409a39a22a4edb2b2c23e5c882e764424aaf77079596c4adcb6e7e",
+      "role": "ETCM_annotation_provenance"
+    },
+    {
+      "path": "dataset/ETCM2.0_validation/validation/ETCM2.0_core_mention10/unseen_confirmed.tsv",
+      "bytes": 51713,
+      "sha256": "111a0d755c7a60cea3ddfb17c313dbdb189d46576f98930faec8c926ca8df0b6",
+      "role": "held_out_ETCM_annotation"
+    },
+    {
+      "path": "dataset/Symmap/HI.txt",
+      "bytes": 933637,
+      "sha256": "ca1de7f1bb9892a3b06ab4f29809434fd0b8f80180df63d56c9f83ae9468910f",
+      "role": "H_C_relation"
+    },
+    {
+      "path": "dataset/Symmap/IT.txt",
+      "bytes": 433850,
+      "sha256": "94c0ec3d397a04e6c1aef408b79e4edbc52fa23aa58e1f122de424d317d7ae4b",
+      "role": "C_P_relation"
+    },
+    {
+      "path": "dataset/Symmap/TD.txt",
+      "bytes": 2251740,
+      "sha256": "fe015b84ea079cf95e6881c2827e1f1660ee91d50974bb75e689eb768d5907c8",
+      "role": "P_D_relation"
+    },
+    {
+      "path": "dataset/Symmap/compound_id_all.txt",
+      "bytes": 152164,
+      "sha256": "0249c1e41db0b7582b638570d04c7fd3e217513afbc9d99b0ae08151bd41a470",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/Symmap/disease_id_all.txt",
+      "bytes": 66346,
+      "sha256": "779446bf1c00534c7022ef49814e9a5c115eccedf2f6070d3f21a0973b3a77d8",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/Symmap/herb_id_all.txt",
+      "bytes": 2681,
+      "sha256": "9af2c3d28cb37d81802eab64a04ebaa486d5ec47c43f3a3f2db907b7bdbcbd7d",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/Symmap/one.txt",
+      "bytes": 471893,
+      "sha256": "82ae443111fba583c993d18a7a87a2f569c4e6888dccc98c40914ba58068b249",
+      "role": "labelled_positive_input"
+    },
+    {
+      "path": "dataset/Symmap/protein_id_all.txt",
+      "bytes": 99308,
+      "sha256": "8dc90a34dc42365ea6ee9b77dbcf694db3513baa7be3c47ceca5bf0f1d6655a5",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+      "bytes": 1100402,
+      "sha256": "5c792d6d68f9dfa4c275fc01e2ec7a07dd4f8d0d0049d5fead791609cfacba56",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+      "bytes": 2727,
+      "sha256": "9f089e33f0bff85e09f8c98ad977a3d2ab0ef612602bae05c76cdd3a18293b45",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/test_fold_0.txt",
+      "bytes": 189915,
+      "sha256": "8fe3db81b44e84cd1ee732a6069d120a614d07b8eeb8b48b624683cdc593f8f6",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/test_fold_1.txt",
+      "bytes": 190667,
+      "sha256": "2e46966a7b30fae5bdb21114f2320f79ec0649642c877a25268a3a00bac02426",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/test_fold_2.txt",
+      "bytes": 191058,
+      "sha256": "455de8c579ab2e4c890c4a66dc2095e0c485041f998fac1ebe015cd4bb9e42f5",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/test_fold_3.txt",
+      "bytes": 189519,
+      "sha256": "4c3808b52ede956f3bdf394178897a40ddcd200d19c4f42db3e51efb0587019b",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_52026_k5/test_fold_4.txt",
+      "bytes": 187251,
+      "sha256": "d12d4edfb02aae5edd8e8fd54808dab00f6b4436573d6801de7e71531e947025",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
+      "bytes": 1100423,
+      "sha256": "b0ab4d61819286d2b26691a7adbfc739fb03cba03ee299606414c32ca5df222c",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+      "bytes": 2729,
+      "sha256": "2ac29cbfc96d46585f8c7f007f65ba720a55f22c3a019798a098497493bc8956",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",
+      "bytes": 190551,
+      "sha256": "09616bd0e39c2fa373f3f3229281c2aab44b6076ee8c7282ac874cfcad98828a",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/test_fold_1.txt",
+      "bytes": 190230,
+      "sha256": "5edf694dac3c63baf90c68c4d8f1bec604e50a604a26dd4f87297bdebca643e4",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/test_fold_2.txt",
+      "bytes": 192164,
+      "sha256": "7a8d0719918a24b7e9667ff20b0573cfc91daac4fd07290530fdc2c50aa47ebc",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/test_fold_3.txt",
+      "bytes": 189322,
+      "sha256": "cf7c8b8baa09f0dc0d066af10159889dc828b9b4ce4e9d736d357b0ce7b10430",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/test_fold_4.txt",
+      "bytes": 186164,
+      "sha256": "7d2c84a89d7622ee913dbb2723e1a27526eb5bddcf189b6a9115bd4970db6aaa",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/Symmap/zero.txt",
+      "bytes": 80466242,
+      "sha256": "53a91c770bc0b6a1568cfe6db2de95434f517cf5d445957752c632eeb5f62cdb",
+      "role": "unlabelled_candidate_input"
+    },
+    {
+      "path": "dataset/TCMSP/compound-protein.txt",
+      "bytes": 615150,
+      "sha256": "76d20c540694f566e27656f0a3aa64a877614cad45ea17384fe7b4bd1d17ef6b",
+      "role": "C_P_relation"
+    },
+    {
+      "path": "dataset/TCMSP/compound_id_all.csv",
+      "bytes": 167653,
+      "sha256": "ca19c996af1dca514efab7b1d31332f589d945594831ca75247771c90c560a44",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/TCMSP/disease_id_all.csv",
+      "bytes": 3111,
+      "sha256": "44c62cf64f7f9a98222ed943d6cdce05d0fa3118d9f2edb87ec54de3ffcde2b7",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/TCMSP/herb-compound.txt",
+      "bytes": 356194,
+      "sha256": "9c8eafb5ed19f324ad4673dbbbae4254692ace7c49facaa980034fc33d48e391",
+      "role": "H_C_relation"
+    },
+    {
+      "path": "dataset/TCMSP/herb_id_all.csv",
+      "bytes": 4409,
+      "sha256": "180bd9e416ce11a7072932e5beb3a8292191c15daa3e27a5d2dc1c66d32eb947",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/TCMSP/one1.txt",
+      "bytes": 615151,
+      "sha256": "1d9f5c14b15e3f5362b4734d786dd0d3bf1fc6c0d19591ac10cd516198b5c268",
+      "role": "labelled_positive_input"
+    },
+    {
+      "path": "dataset/TCMSP/protein_id_all.csv",
+      "bytes": 18872,
+      "sha256": "0b79fddf0ac093e58bc603619c3faf4c6e54cbfa57f99a8889900b20d65a839a",
+      "role": "entity_mapping"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+      "bytes": 1501972,
+      "sha256": "f06f8856802bd58a495da05e217aa90bf1c6d36d9949bdbd641b4b84d054a5b6",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+      "bytes": 2674,
+      "sha256": "4df42e99fb43e692b2774d3acbbce847e035f541e1072edce1e72dcb0ec6e77f",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/test_fold_0.txt",
+      "bytes": 255281,
+      "sha256": "20de66c868e32ab9a8da0c76f05a457ea958a6bd54951b045403f2b9508d7f2a",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/test_fold_1.txt",
+      "bytes": 255963,
+      "sha256": "8a488a7dc199814434f274c5b4cce2d9108bb4e6393cf91696ece016bdb95ed6",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/test_fold_2.txt",
+      "bytes": 255581,
+      "sha256": "65303d9b0e24d20e373bf8a30bbf41c74885ab28d0dd132f6513e3b837cd0cd0",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/test_fold_3.txt",
+      "bytes": 256744,
+      "sha256": "5a2d8e28082c263c615f8d91557ce5cc62d4a81c5c10661cae6b26a2f875d9fa",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_52026_k5/test_fold_4.txt",
+      "bytes": 253967,
+      "sha256": "996e5ef4608a8b774aec458cef9ab77bfc9c31c9ef54321b6d4ee6f2b56731d0",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
+      "bytes": 1501817,
+      "sha256": "2b315af2523f730b8aa21f0279f300dadc146fc0d2ff78f41e9717f4c4e1e830",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+      "bytes": 2676,
+      "sha256": "14f93e9a442aaee74f12d9eb87afc3b9c338310721d0f1299bada5d1ce402f40",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",
+      "bytes": 256404,
+      "sha256": "7166e099570a894c26e977d550c7019dd5f8035e148c2adcf21bab8caf3b745f",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/test_fold_1.txt",
+      "bytes": 255788,
+      "sha256": "c51b675c8fb8d386b98ceddeab895b119a80433912a54b70f7c26e944cf9029a",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/test_fold_2.txt",
+      "bytes": 255572,
+      "sha256": "9fbbddc23e69b9b6ca24b0e9cf8a93bc452daab25b56d2b9c5a3bdbccc192781",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/test_fold_3.txt",
+      "bytes": 256318,
+      "sha256": "ff560ba1af978c9015a1096113e808531d718645de42a06eed02f481f1bd4e84",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/test_fold_4.txt",
+      "bytes": 253299,
+      "sha256": "fdcdca3104f0470c865f0ab2ecd6d4336f14e065b613851d2f36e317c8f886b7",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMSP/target-disease.txt",
+      "bytes": 1470426,
+      "sha256": "8db65e911a97c3fd8ee71a16a70b686e4ae97f99906b52d93690d32a22791b52",
+      "role": "P_D_relation"
+    },
+    {
+      "path": "dataset/TCMsuite/C_P.txt",
+      "bytes": 453570,
+      "sha256": "e108b43d5c60c4dbb0d373ec657f634645992ab28a60d0f975a02866f8fb4154",
+      "role": "C_P_relation"
+    },
+    {
+      "path": "dataset/TCMsuite/H_C.txt",
+      "bytes": 80876,
+      "sha256": "f2d9c2f2ac3f07ebefe08645a9c8bfedf73d221fa16d7cb4a256521157ec14c1",
+      "role": "H_C_relation"
+    },
+    {
+      "path": "dataset/TCMsuite/ONE_indices.txt",
+      "bytes": 540908,
+      "sha256": "ae3cee8b057948fd65a067d32363195fc43b49421ffa29fa406cf3fcd8f0cbf2",
+      "role": "labelled_positive_input"
+    },
+    {
+      "path": "dataset/TCMsuite/P_D.txt",
+      "bytes": 511515,
+      "sha256": "91bc0e235e500849f18d9efc0fb15fc8148142f8d5333eb212538f378ef8e7b3",
+      "role": "P_D_relation"
+    },
+    {
+      "path": "dataset/TCMsuite/ZERO_indices.txt",
+      "bytes": 13504362,
+      "sha256": "56267b9b88a023c4a018cda01c8d1cf41a673d6d26dfa7b6808c2fc99889461e",
+      "role": "unlabelled_candidate_input"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/fold_assignments.tsv",
+      "bytes": 1258782,
+      "sha256": "ad3d3a232b9956774d480dd1a4a339a66f066e30a3a7d885cbc46e4535cc19bc",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/manifest.json",
+      "bytes": 2789,
+      "sha256": "33746f7e02ab12937a75a76e1e8b8ea6ee0a48a38fbe7396ce57db197ed6c94b",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/test_fold_0.txt",
+      "bytes": 218020,
+      "sha256": "0e4c4a0f4cd7bd46fcc290f55b026518c80c6a4143354416f3d0f23342898ee9",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/test_fold_1.txt",
+      "bytes": 213050,
+      "sha256": "de20b7badd84952e0a0b2d907e7faa54220e5ace9dd65b1a383900202b074aa1",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/test_fold_2.txt",
+      "bytes": 211618,
+      "sha256": "609f48a1dd7706aff63aac9dd8aa98f27195506e64f65d6d3bf10bf93d13c456",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/test_fold_3.txt",
+      "bytes": 216737,
+      "sha256": "53a080f1cd4d2f5bf4193e2fbc64f1c3ebe1379a880d73291a4b22c75c0b3367",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_52026_k5/test_fold_4.txt",
+      "bytes": 224653,
+      "sha256": "26696ec2e21363f215b22642d3cf09ba6844d06adda17d8a9d9d28aa73792a66",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
+      "bytes": 1258907,
+      "sha256": "b00ead1760de5469ce17efc28b1d5627fd5a6e0b8fb0e4a4948229dfdae7363d",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
+      "bytes": 2791,
+      "sha256": "a59f85f31e84ba39bc654fd587275a1271091723fef853fb667b20d639d1ff1c",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",
+      "bytes": 217578,
+      "sha256": "045856c161988dab1c4d9a190420070ad001898bc52f55154fa3884cf5ee411e",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/test_fold_1.txt",
+      "bytes": 213447,
+      "sha256": "668718604620a495b75142a72e77c96dfe42c789066fe4ba55a352fd1e9d1ffc",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/test_fold_2.txt",
+      "bytes": 210995,
+      "sha256": "c150bf2998f015f112b841382bc2a0bf1e7f547a2aefab0abf7a86ed67ef2540",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/test_fold_3.txt",
+      "bytes": 217788,
+      "sha256": "ab503e2cfb272d0340eba658699f8108054ecb4ed9382330502a0035cf3eab35",
+      "role": "frozen_split"
+    },
+    {
+      "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/test_fold_4.txt",
+      "bytes": 224395,
+      "sha256": "a671f9ae93c05f78ef53dfc0447376c8839391ed859424bb0bd1b481f9d98fd1",
+      "role": "frozen_split"
+    },
+    {
+      "path": "results/batch_runs/mvcl_etcm_relation_scaled_v1/seal.json",
+      "bytes": 2336,
+      "sha256": "031b9624900ac63f9b7f69744404f83347fdd9153b3df1aa132e47694b08a135",
+      "role": "frozen_comparison_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/etcm_mention10/candidate/fold_1/report.json",
+      "bytes": 5616,
+      "sha256": "7f7ccf4b8b71b0fff92334063cc45592ee4430a5b7d4ea8553694061712e0706",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/etcm_mention10/candidate/fold_2/report.json",
+      "bytes": 5615,
+      "sha256": "7e60c2d4c088c2e7b9685f34215143218e955f9b57c6354b11dffa6ac56a2d6e",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/etcm_mention10/candidate/fold_3/report.json",
+      "bytes": 5616,
+      "sha256": "ca3843c1a43819cf28f1887c5897a4f73ac3db2a2105d656f36c9c3734b993da",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/etcm_mention10/candidate/fold_4/report.json",
+      "bytes": 5618,
+      "sha256": "6e7974a6a7f19b1a89ce203abc25d4ed9cd1be509353f6f7a96c845992a3094c",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/etcm_mention10/candidate/fold_5/report.json",
+      "bytes": 5594,
+      "sha256": "90bd6174223f89525991a0dd17d8bfe2a7c30a0ac1d1de2d79a443e86563b343",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/symmap/candidate/fold_1/report.json",
+      "bytes": 5597,
+      "sha256": "af8b3b527e8d980a9dfdb535a5f07240d2c598fa1302bcc36b0eb14cc65b43e5",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/symmap/candidate/fold_2/report.json",
+      "bytes": 5596,
+      "sha256": "ab238af1b4dbbfff35734a4791bd8ad63c051ed2c711a0e5cce84049e4534b81",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/symmap/candidate/fold_3/report.json",
+      "bytes": 5594,
+      "sha256": "c0b418738528c5f2a2535e3306e84f64283e967d7f44aaa3ff67b28cf1fb3705",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/symmap/candidate/fold_4/report.json",
+      "bytes": 5597,
+      "sha256": "dbe41e9043a49345539192ff7339eca53496b7080d7847547a014ce7a6780832",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/symmap/candidate/fold_5/report.json",
+      "bytes": 5597,
+      "sha256": "28d65ecab57aa263985571c6eb78a1a8ea773549b5be7570296181d443572b1d",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsp/candidate/fold_1/report.json",
+      "bytes": 5573,
+      "sha256": "8abc1178a28af228d295437eb538b724282b080e84cf1d6b3b1ac229bb1cc762",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsp/candidate/fold_2/report.json",
+      "bytes": 5584,
+      "sha256": "3b4a6ab452d3050147dd6a472393262961a584346f997623183ba85bb433b521",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsp/candidate/fold_3/report.json",
+      "bytes": 5588,
+      "sha256": "bd487c7901f34964e09a6c8a3bfbcb054c7941eb13145ed7971fec5dee57b6f7",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsp/candidate/fold_4/report.json",
+      "bytes": 5587,
+      "sha256": "74dd81784a959896b9c0d8714f2884b7591c573722c3b604aceba592ba82b53a",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsp/candidate/fold_5/report.json",
+      "bytes": 5587,
+      "sha256": "b0c276d5caa6cc0b23ed1d59efd09e5340f1d4a0e8b6011575f574f555e49ae0",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsuite/candidate/fold_1/report.json",
+      "bytes": 5597,
+      "sha256": "10591740a93757621283cf060aaf5e28a50a732563ab2a0b7693d031d867775f",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsuite/candidate/fold_2/report.json",
+      "bytes": 5598,
+      "sha256": "1a960af65398e673e6370be92ce363570d3c9d6d8c0518b46a49c83f78687878",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsuite/candidate/fold_3/report.json",
+      "bytes": 5600,
+      "sha256": "d1cbe2fac42872951413162f887e9f6c8f62d617db7a88c1687b31a808b62f58",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsuite/candidate/fold_4/report.json",
+      "bytes": 5600,
+      "sha256": "ba803bda847fcaeac2de458161c02d1621ba30be81a68f8fbe82b313079b7747",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/batch_runs/sacti_outer_lockbox_seed901026/ranking/tcmsuite/candidate/fold_5/report.json",
+      "bytes": 5600,
+      "sha256": "520a7d3064ea29662a15fc16e02fb46fe8d3c2a241cc3e075c92673050a88dcf",
+      "role": "matched_partition_provenance"
+    },
+    {
+      "path": "results/mvcl_formal_confirmation_protocol_v1/seal.json",
+      "bytes": 11321,
+      "sha256": "faaa8743bfe47036790d879e966cad6bc54f687166b5d392da615005cd2e90ba",
+      "role": "historical_MVCL_protocol"
+    },
+    {
+      "path": "results/mvcl_sacti_four_library_matched_v1/summary.json",
+      "bytes": 43871,
+      "sha256": "9f7bf4d6731d8bcc8e45894d0a41a80f36caea44001e5706f435b54bfd4c1a3a",
+      "role": "frozen_comparison_provenance"
+    }
+  ],
+  "scope": "Processed numerical inputs only; no raw ETCM HTML/JSON pages or trained checkpoints."
+}

@@ -1,0 +1,448 @@
+{
+  "created_at": "2026-08-04T13:53:34.530842+08:00",
+  "protocol": "frozen_base_hctx_router_five_unit_descriptive_v1",
+  "analysis_role": "descriptive_c0p0_through_c4p4; confirmatory_gate_uses_only_c1p1_through_c4p4",
+  "sources": {
+    "historical_summary": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_outer_20260804_124039/summary.json",
+    "historical_summary_sha256": "0cc3377fa531cd46ceaee3f46dbeb44a3f2e3699d3473d1899eaee5ada1a7720",
+    "repeated_summary": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/summary.json",
+    "repeated_summary_sha256": "87442a0596690ced09523fa7004dbd1d05802af921c0e1d343b6b189b93dfc09"
+  },
+  "dataset_count": 4,
+  "unit_count": 20,
+  "overall_macro_aupr_delta": {
+    "mean": 0.10399266941635059,
+    "std": 0.03561266724460815
+  },
+  "positive_macro_units": 20,
+  "datasets": [
+    {
+      "display_name": "TCM-Suite",
+      "units": 5,
+      "baseline_macro_aupr": {
+        "mean": 0.5667558561184872,
+        "std": 0.0042722540893721265
+      },
+      "candidate_macro_aupr": {
+        "mean": 0.6149788729376608,
+        "std": 0.003966632342045865
+      },
+      "delta": {
+        "warm_warm": {
+          "mean": 0.01831315106397624,
+          "std": 0.0022613229979674613
+        },
+        "cold_warm": {
+          "mean": 0.17457891621271854,
+          "std": 0.01804988120233904
+        },
+        "warm_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "cold_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "macro": {
+          "mean": 0.048223016819173695,
+          "std": 0.004947358618854095
+        }
+      },
+      "positive_macro_units": 5,
+      "unit_results": [
+        {
+          "unit": "c0p0",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_outer_20260804_124039/tcmsuite/report.json",
+          "report_sha256": "2b603c09151c1ec683fda06c25446b01c55234f557ddee6305109ba0e1cec617",
+          "baseline_macro_aupr": 0.5718526220763931,
+          "candidate_macro_aupr": 0.6177324580544037,
+          "deltas": {
+            "warm_warm": 0.01881827094632671,
+            "cold_warm": 0.16470107296571573,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.0458798359780106
+          }
+        },
+        {
+          "unit": "c1p1",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsuite_c1p1/report.json",
+          "report_sha256": "5dc134fbd99bf3ea3d2ef40f200bb91f20aaa400c375e4eb889ff94bb30d22e5",
+          "baseline_macro_aupr": 0.560992455874341,
+          "candidate_macro_aupr": 0.6164927777340803,
+          "deltas": {
+            "warm_warm": 0.019259503702083958,
+            "cold_warm": 0.20274178373687302,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.0555003218597393
+          }
+        },
+        {
+          "unit": "c2p2",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsuite_c2p2/report.json",
+          "report_sha256": "a7e183ae3227b7e5ef05c73ce4bc2ef4124165dee44930f4a1618c936aab3f9d",
+          "baseline_macro_aupr": 0.5649049343473924,
+          "candidate_macro_aupr": 0.6070907018347503,
+          "deltas": {
+            "warm_warm": 0.015216630559516053,
+            "cold_warm": 0.15352643938991573,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.04218576748735792
+          }
+        },
+        {
+          "unit": "c3p3",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsuite_c3p3/report.json",
+          "report_sha256": "85e8570bafcd43102f94b824cb2497987dbf790b4c8e0df3e2cde6b5fa6712c6",
+          "baseline_macro_aupr": 0.5715833883950168,
+          "candidate_macro_aupr": 0.6166922277878087,
+          "deltas": {
+            "warm_warm": 0.01653994313365681,
+            "cold_warm": 0.1638954144375112,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.04510883939279198
+          }
+        },
+        {
+          "unit": "c4p4",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsuite_c4p4/report.json",
+          "report_sha256": "1ef01ec653d533fb73e76a101c70b3c554fd8aacda9b525c6140fae078a8963a",
+          "baseline_macro_aupr": 0.5644458798992927,
+          "candidate_macro_aupr": 0.6168861992772614,
+          "deltas": {
+            "warm_warm": 0.021731406978297674,
+            "cold_warm": 0.18802987053357695,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.05244031937796867
+          }
+        }
+      ]
+    },
+    {
+      "display_name": "TCMSP",
+      "units": 5,
+      "baseline_macro_aupr": {
+        "mean": 0.5615961118293503,
+        "std": 0.017449278740116345
+      },
+      "candidate_macro_aupr": {
+        "mean": 0.6956670170095048,
+        "std": 0.008400409036910137
+      },
+      "delta": {
+        "warm_warm": {
+          "mean": 0.006732851179183164,
+          "std": 0.002646566725564971
+        },
+        "cold_warm": {
+          "mean": 0.5295507695414344,
+          "std": 0.051531102249794784
+        },
+        "warm_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "cold_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "macro": {
+          "mean": 0.1340709051801544,
+          "std": 0.012500410112323663
+        }
+      },
+      "positive_macro_units": 5,
+      "unit_results": [
+        {
+          "unit": "c0p0",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_outer_20260804_124039/tcmsp/report.json",
+          "report_sha256": "f158bfc47b637e99122d22d36c966f97ec755e45c8c33e376ba690f703250686",
+          "baseline_macro_aupr": 0.591204436975174,
+          "candidate_macro_aupr": 0.7097450985966379,
+          "deltas": {
+            "warm_warm": 0.005624220976973016,
+            "cold_warm": 0.46853842550888264,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.11854066162146393
+          }
+        },
+        {
+          "unit": "c1p1",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsp_c1p1/report.json",
+          "report_sha256": "8ea945b213313587f56f7874d59fa7752d39233d09f721230ddf68afa1bede96",
+          "baseline_macro_aupr": 0.5489535442913513,
+          "candidate_macro_aupr": 0.6991878792783064,
+          "deltas": {
+            "warm_warm": 0.004102007809796415,
+            "cold_warm": 0.5968353321380238,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.15023433498695504
+          }
+        },
+        {
+          "unit": "c2p2",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsp_c2p2/report.json",
+          "report_sha256": "d659cdaef495035edeb4c8423f82bdfd43e71a4de5e12c5218063fb7807d95a9",
+          "baseline_macro_aupr": 0.5630563995665023,
+          "candidate_macro_aupr": 0.6948005448901665,
+          "deltas": {
+            "warm_warm": 0.010509954480349526,
+            "cold_warm": 0.516466626814307,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.13174414532366419
+          }
+        },
+        {
+          "unit": "c3p3",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsp_c3p3/report.json",
+          "report_sha256": "50a5519c75067a2c0efe0678871b2f3dc978a00efadb5da4a133fe7999361e6b",
+          "baseline_macro_aupr": 0.539852981474666,
+          "candidate_macro_aupr": 0.6864327579544282,
+          "deltas": {
+            "warm_warm": 0.00420366163530328,
+            "cold_warm": 0.5821154442837455,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.14657977647976217
+          }
+        },
+        {
+          "unit": "c4p4",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/tcmsp_c4p4/report.json",
+          "report_sha256": "0621155daef42ac719886e829b517e8ea07a65b06edf78c03d0de34a25d10fe4",
+          "baseline_macro_aupr": 0.5649131968390583,
+          "candidate_macro_aupr": 0.688168804327985,
+          "deltas": {
+            "warm_warm": 0.009224410993493581,
+            "cold_warm": 0.48379801896221325,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.12325560748892672
+          }
+        }
+      ]
+    },
+    {
+      "display_name": "SymMap2.0",
+      "units": 5,
+      "baseline_macro_aupr": {
+        "mean": 0.5527282045904625,
+        "std": 0.006081309300951455
+      },
+      "candidate_macro_aupr": {
+        "mean": 0.6539345894974053,
+        "std": 0.008208934838627136
+      },
+      "delta": {
+        "warm_warm": {
+          "mean": 0.023039297074345533,
+          "std": 0.0022205649109772884
+        },
+        "cold_warm": {
+          "mean": 0.3817862425534263,
+          "std": 0.013256660673300018
+        },
+        "warm_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "cold_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "macro": {
+          "mean": 0.10120638490694293,
+          "std": 0.00374473752858573
+        }
+      },
+      "positive_macro_units": 5,
+      "unit_results": [
+        {
+          "unit": "c0p0",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_outer_20260804_124039/symmap/report.json",
+          "report_sha256": "35a5e83076fb4cb5695a0079eb97a1b0016d9ef3bee856c2888648dac3a27de5",
+          "baseline_macro_aupr": 0.5597406441617216,
+          "candidate_macro_aupr": 0.658773719722026,
+          "deltas": {
+            "warm_warm": 0.02407995204331348,
+            "cold_warm": 0.3720523501979043,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.09903307556030438
+          }
+        },
+        {
+          "unit": "c1p1",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/symmap_c1p1/report.json",
+          "report_sha256": "016c8d4f39334c90d205414b32b7a824a3be4f4d3235dc6f5ce43e438045919c",
+          "baseline_macro_aupr": 0.5604524631776285,
+          "candidate_macro_aupr": 0.66765091681429,
+          "deltas": {
+            "warm_warm": 0.02645532191931621,
+            "cold_warm": 0.4023384926273299,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.10719845363666147
+          }
+        },
+        {
+          "unit": "c2p2",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/symmap_c2p2/report.json",
+          "report_sha256": "480ffcb60fb2e38960d3aa88575432ce0cbfb3a1815def6f16d611f5abddf95d",
+          "baseline_macro_aupr": 0.5463346766774406,
+          "candidate_macro_aupr": 0.6503156478152983,
+          "deltas": {
+            "warm_warm": 0.02308384918821549,
+            "cold_warm": 0.39284003536321466,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.10398097113785765
+          }
+        },
+        {
+          "unit": "c3p3",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/symmap_c3p3/report.json",
+          "report_sha256": "a9a673a379437fd47425ab2665dacfb1214f5b0133e8daec7eadb1fd1eb42470",
+          "baseline_macro_aupr": 0.5489991635676761,
+          "candidate_macro_aupr": 0.647071206605156,
+          "deltas": {
+            "warm_warm": 0.02172937893349902,
+            "cold_warm": 0.37055879321642105,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.09807204303747996
+          }
+        },
+        {
+          "unit": "c4p4",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/symmap_c4p4/report.json",
+          "report_sha256": "759b70620207ca6f09b22f48f5e357fad73a99fcb2f73f1dc996366622eea0ff",
+          "baseline_macro_aupr": 0.5481140753678453,
+          "candidate_macro_aupr": 0.6458614565302565,
+          "deltas": {
+            "warm_warm": 0.019847983287383464,
+            "cold_warm": 0.3711415413622614,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.09774738116241122
+          }
+        }
+      ]
+    },
+    {
+      "display_name": "ETCM2.0-mention10",
+      "units": 5,
+      "baseline_macro_aupr": {
+        "mean": 0.5538401475759687,
+        "std": 0.010650391575455918
+      },
+      "candidate_macro_aupr": {
+        "mean": 0.6863105183351,
+        "std": 0.01546955947664489
+      },
+      "delta": {
+        "warm_warm": {
+          "mean": 0.009275057437896517,
+          "std": 0.0025371891019448397
+        },
+        "cold_warm": {
+          "mean": 0.5206064255986286,
+          "std": 0.028595503390115705
+        },
+        "warm_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "cold_cold": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "macro": {
+          "mean": 0.13247037075913132,
+          "std": 0.006677674075167623
+        }
+      },
+      "positive_macro_units": 5,
+      "unit_results": [
+        {
+          "unit": "c0p0",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_outer_20260804_124039/etcm_mention10/report.json",
+          "report_sha256": "2e06db52fdacbbaad5e200c2d74f0326f8630a7e3d36949205226ec3a1661c24",
+          "baseline_macro_aupr": 0.5551184067703105,
+          "candidate_macro_aupr": 0.6853504524354144,
+          "deltas": {
+            "warm_warm": 0.010398652217577187,
+            "cold_warm": 0.510529530442838,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.13023204566510382
+          }
+        },
+        {
+          "unit": "c1p1",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/etcm_mention10_c1p1/report.json",
+          "report_sha256": "fa9dffed5656f003e6e8965ab0f5d1699f054f84923922e3cf26740816475b10",
+          "baseline_macro_aupr": 0.5623575605473279,
+          "candidate_macro_aupr": 0.7028900736196567,
+          "deltas": {
+            "warm_warm": 0.005930235855157839,
+            "cold_warm": 0.5561998164341575,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.14053251307232884
+          }
+        },
+        {
+          "unit": "c2p2",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/etcm_mention10_c2p2/report.json",
+          "report_sha256": "f5e6d2fdf2dd4c3487725ee40c986975ea359dd70953e305f115150dc5489c43",
+          "baseline_macro_aupr": 0.5679192477432216,
+          "candidate_macro_aupr": 0.7016502227340159,
+          "deltas": {
+            "warm_warm": 0.012157432205382013,
+            "cold_warm": 0.5227664677577952,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.13373097499079434
+          }
+        },
+        {
+          "unit": "c3p3",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/etcm_mention10_c3p3/report.json",
+          "report_sha256": "2d63ba0f0cb1620d5df24215bdd32a5d6aec60bd374e752eb35e439d6c702f62",
+          "baseline_macro_aupr": 0.5396947651724721,
+          "candidate_macro_aupr": 0.6606773358419349,
+          "deltas": {
+            "warm_warm": 0.011311940258898812,
+            "cold_warm": 0.4726183424189526,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.12098257066946283
+          }
+        },
+        {
+          "unit": "c4p4",
+          "report": "/home/zry/workspace/HDCTI/results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/outer/etcm_mention10_c4p4/report.json",
+          "report_sha256": "6862f1e553a6c2d6f1a8ff2bf2941992774b306429ad5e07916a3ca4b5a324f4",
+          "baseline_macro_aupr": 0.5441107576465115,
+          "candidate_macro_aupr": 0.6809845070444782,
+          "deltas": {
+            "warm_warm": 0.006577026652466733,
+            "cold_warm": 0.5409179709393999,
+            "warm_cold": 0.0,
+            "cold_cold": 0.0,
+            "macro": 0.1368737493979667
+          }
+        }
+      ]
+    }
+  ]
+}
