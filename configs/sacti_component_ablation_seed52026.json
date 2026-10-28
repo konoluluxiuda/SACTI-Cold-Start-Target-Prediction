@@ -1,0 +1,95 @@
+{
+  "protocol": "sacti_v1_frozen_seed52026_component_ablation",
+  "registered_at": "2026-09-02T01:10:00+08:00",
+  "model_selection_reopened": false,
+  "report_regardless_of_direction": true,
+  "split_strategy": "compound_cold_start",
+  "split_seed": 52026,
+  "training_seed": 52026,
+  "validation_seed": 152026,
+  "fold_count": 5,
+  "outer_test": true,
+  "external_baselines_tsv": "paper_artifacts/results/cold_external_baselines.tsv",
+  "roles": {
+    "no_transfer": {
+      "display_name": "Context experts only",
+      "overrides": {
+        "sacti.support.id.gate": "True",
+        "sacti.context.expert": "True",
+        "sacti.prototype": "False",
+        "sacti.jaccard": "False"
+      }
+    },
+    "prototype_only": {
+      "display_name": "+ Prototype transfer",
+      "overrides": {
+        "sacti.support.id.gate": "True",
+        "sacti.context.expert": "True",
+        "sacti.prototype": "True",
+        "sacti.jaccard": "False"
+      }
+    },
+    "jaccard_only": {
+      "display_name": "+ Jaccard transfer",
+      "overrides": {
+        "sacti.support.id.gate": "True",
+        "sacti.context.expert": "True",
+        "sacti.prototype": "False",
+        "sacti.jaccard": "True"
+      }
+    },
+    "full": {
+      "display_name": "Full SACTI",
+      "overrides": {
+        "sacti.support.id.gate": "True",
+        "sacti.context.expert": "True",
+        "sacti.prototype": "True",
+        "sacti.jaccard": "True"
+      }
+    },
+    "no_support_gate": {
+      "display_name": "Full without support gate",
+      "overrides": {
+        "sacti.support.id.gate": "False",
+        "sacti.context.expert": "True",
+        "sacti.prototype": "True",
+        "sacti.jaccard": "True"
+      }
+    },
+    "no_context_expert": {
+      "display_name": "Full without H-C context expert",
+      "overrides": {
+        "sacti.support.id.gate": "True",
+        "sacti.context.expert": "False",
+        "sacti.prototype": "True",
+        "sacti.jaccard": "True"
+      }
+    }
+  },
+  "datasets": [
+    {
+      "name": "TCM-Suite",
+      "slug": "tcmsuite",
+      "source_config": "configs/SACTI_tcmsuite_inner_pilot.conf",
+      "source_config_sha256": "d3f45e556430130ebdacabc1cc56bed7572b4d11d783ee069fc63a8fbbe3ba87"
+    },
+    {
+      "name": "TCMSP",
+      "slug": "tcmsp",
+      "source_config": "configs/SACTI_tcmsp_inner_pilot.conf",
+      "source_config_sha256": "47c00ecc1913051288aa2f5365c51203115ed0cf1dcf50ff8efec4f18ed5e858"
+    },
+    {
+      "name": "SymMap2.0",
+      "slug": "symmap",
+      "source_config": "configs/SACTI_symmap_inner_pilot.conf",
+      "source_config_sha256": "a0694df1ebbae8b658e066ece316dbadb762c2c5bfd0e521af0e6c5c9be77a12"
+    },
+    {
+      "name": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "source_config": "configs/SACTI_etcm_mention10_inner_pilot.conf",
+      "source_config_sha256": "61a6055462b0e1222e47c7b8bf8daa5fc4c5260685e932458d76feb8e7cb838c"
+    }
+  ]
+}

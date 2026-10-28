@@ -1,0 +1,993 @@
+{
+  "created_at": "2026-09-02T17:05:41.922380+08:00",
+  "protocol": "sacti_v1_frozen_seed52026_component_ablation",
+  "split_strategy": "compound_cold_start",
+  "split_seed": 52026,
+  "training_seed": 52026,
+  "outer_test_scored": true,
+  "model_selection_reopened": false,
+  "rows": [
+    {
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "stages": {
+        "no_transfer": {
+          "metrics": {
+            "AUC": 0.764535,
+            "AUPR": 0.779791,
+            "Recall": 0.67336,
+            "Precision": 0.726436,
+            "F1-score": 0.698631
+          },
+          "fold_aupr": [
+            0.7837663836648319,
+            0.7853623238202594,
+            0.7854432546916456,
+            0.7823891265771316,
+            0.7619919056038547
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_transfer.log"
+        },
+        "prototype_only": {
+          "metrics": {
+            "AUC": 0.767035,
+            "AUPR": 0.784427,
+            "Recall": 0.675833,
+            "Precision": 0.726639,
+            "F1-score": 0.700053
+          },
+          "fold_aupr": [
+            0.787123051014029,
+            0.7884507052126579,
+            0.7940875032934472,
+            0.7865564688156169,
+            0.7659186347244
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_prototype_only.log"
+        },
+        "jaccard_only": {
+          "metrics": {
+            "AUC": 0.767461,
+            "AUPR": 0.785223,
+            "Recall": 0.676268,
+            "Precision": 0.726926,
+            "F1-score": 0.700415
+          },
+          "fold_aupr": [
+            0.788183737370798,
+            0.7888615656034422,
+            0.7949284337103146,
+            0.7879992227561587,
+            0.7661433000201797
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_jaccard_only.log"
+        },
+        "full": {
+          "metrics": {
+            "AUC": 0.768486,
+            "AUPR": 0.787323,
+            "Recall": 0.677482,
+            "Precision": 0.727001,
+            "F1-score": 0.7011
+          },
+          "fold_aupr": [
+            0.7907126839659606,
+            0.7910757098985697,
+            0.7958524783864682,
+            0.7905555685622454,
+            0.7684169730966801
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_full.log"
+        },
+        "no_support_gate": {
+          "metrics": {
+            "AUC": 0.76378,
+            "AUPR": 0.780354,
+            "Recall": 0.678329,
+            "Precision": 0.716607,
+            "F1-score": 0.696774
+          },
+          "fold_aupr": [
+            0.7838800350267141,
+            0.7839137612371507,
+            0.7847880706596821,
+            0.782830165957364,
+            0.7663584275039986
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_support_gate.log"
+        },
+        "no_context_expert": {
+          "metrics": {
+            "AUC": 0.599203,
+            "AUPR": 0.674692,
+            "Recall": 0.5511,
+            "Precision": 0.6656,
+            "F1-score": 0.602392
+          },
+          "fold_aupr": [
+            0.7059365958283312,
+            0.6685210015761921,
+            0.6425195562635674,
+            0.6678471362657247,
+            0.6886352580039381
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsuite_no_context_expert.log"
+        }
+      },
+      "effects": {
+        "support_gate": {
+          "aupr_delta": 0.006969000000000003,
+          "fold_aupr_deltas": [
+            0.006832648939246511,
+            0.007161948661418949,
+            0.011064407726786074,
+            0.007725402604881415,
+            0.002058545592681482
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "context_expert": {
+          "aupr_delta": 0.11263100000000004,
+          "fold_aupr_deltas": [
+            0.08477608813762938,
+            0.12255470832237758,
+            0.15333292212290084,
+            0.12270843229652073,
+            0.07978171509274201
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "joint_transfer": {
+          "aupr_delta": 0.007531999999999983,
+          "fold_aupr_deltas": [
+            0.006946300301128749,
+            0.00571338607831029,
+            0.010409223694822667,
+            0.008166441985113848,
+            0.006425067492825454
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_without_jaccard": {
+          "aupr_delta": 0.0046359999999999735,
+          "fold_aupr_deltas": [
+            0.003356667349197151,
+            0.0030883813923985315,
+            0.008644248601801685,
+            0.004167342238485361,
+            0.003926729120545369
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "jaccard_without_prototype": {
+          "aupr_delta": 0.005431999999999992,
+          "fold_aupr_deltas": [
+            0.004417353705966187,
+            0.003499241783182838,
+            0.009485179018669077,
+            0.005610096179027191,
+            0.0041513944163250605
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_given_jaccard": {
+          "aupr_delta": 0.0020999999999999908,
+          "fold_aupr_deltas": [
+            0.0025289465951625623,
+            0.0022141442951274515,
+            0.0009240446761535903,
+            0.0025563458060866573,
+            0.002273673076500393
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "jaccard_given_prototype": {
+          "aupr_delta": 0.0028960000000000097,
+          "fold_aupr_deltas": [
+            0.0035896329519315984,
+            0.002625004685911758,
+            0.0017649750930209818,
+            0.003999099746628487,
+            0.0024983383722800845
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_jaccard_interaction": {
+          "aupr_delta": -0.0025359999999999827,
+          "fold_aupr_deltas": [
+            -0.0008277207540345888,
+            -0.00087423709727108,
+            -0.007720203925648095,
+            -0.0016109964323987036,
+            -0.001653056044044976
+          ],
+          "positive_folds": 0,
+          "negative_folds": 5
+        }
+      }
+    },
+    {
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "stages": {
+        "no_transfer": {
+          "metrics": {
+            "AUC": 0.967456,
+            "AUPR": 0.966857,
+            "Recall": 0.902517,
+            "Precision": 0.942235,
+            "F1-score": 0.921938
+          },
+          "fold_aupr": [
+            0.9676699429476456,
+            0.9697121558556544,
+            0.963694703062811,
+            0.9644592361585241,
+            0.9687491080321169
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_transfer.log"
+        },
+        "prototype_only": {
+          "metrics": {
+            "AUC": 0.968358,
+            "AUPR": 0.968206,
+            "Recall": 0.902856,
+            "Precision": 0.942881,
+            "F1-score": 0.922422
+          },
+          "fold_aupr": [
+            0.9709878352103976,
+            0.9704215542332135,
+            0.9651081224054109,
+            0.9649946098589944,
+            0.9695174436742797
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_prototype_only.log"
+        },
+        "jaccard_only": {
+          "metrics": {
+            "AUC": 0.967817,
+            "AUPR": 0.968041,
+            "Recall": 0.902945,
+            "Precision": 0.942273,
+            "F1-score": 0.922179
+          },
+          "fold_aupr": [
+            0.9692883756314583,
+            0.9712389774663612,
+            0.9652770509041648,
+            0.9645586528262898,
+            0.9698426670028534
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_jaccard_only.log"
+        },
+        "full": {
+          "metrics": {
+            "AUC": 0.968351,
+            "AUPR": 0.968634,
+            "Recall": 0.902695,
+            "Precision": 0.942736,
+            "F1-score": 0.92227
+          },
+          "fold_aupr": [
+            0.9687390847095984,
+            0.9714985177268991,
+            0.9652461939474588,
+            0.9667649466974924,
+            0.9709231663883606
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_full.log"
+        },
+        "no_support_gate": {
+          "metrics": {
+            "AUC": 0.967453,
+            "AUPR": 0.968179,
+            "Recall": 0.900182,
+            "Precision": 0.943833,
+            "F1-score": 0.921485
+          },
+          "fold_aupr": [
+            0.9682307848299838,
+            0.9712184013040659,
+            0.9657137800005678,
+            0.9652698327792554,
+            0.9704599677790253
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_support_gate.log"
+        },
+        "no_context_expert": {
+          "metrics": {
+            "AUC": 0.777049,
+            "AUPR": 0.86369,
+            "Recall": 0.787191,
+            "Precision": 0.711858,
+            "F1-score": 0.747532
+          },
+          "fold_aupr": [
+            0.8636280572068921,
+            0.8662458339102452,
+            0.8677878160041722,
+            0.8644437823188418,
+            0.8563458800381611
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/tcmsp_no_context_expert.log"
+        }
+      },
+      "effects": {
+        "support_gate": {
+          "aupr_delta": 0.0004549999999999832,
+          "fold_aupr_deltas": [
+            0.0005082998796145377,
+            0.0002801164228332098,
+            -0.000467586053109037,
+            0.0014951139182369788,
+            0.00046319860933530244
+          ],
+          "positive_folds": 4,
+          "negative_folds": 1
+        },
+        "context_expert": {
+          "aupr_delta": 0.10494400000000004,
+          "fold_aupr_deltas": [
+            0.10511102750270629,
+            0.10525268381665387,
+            0.0974583779432866,
+            0.10232116437865058,
+            0.11457728635019948
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "joint_transfer": {
+          "aupr_delta": 0.0017770000000000286,
+          "fold_aupr_deltas": [
+            0.0010691417619527188,
+            0.0017863618712447016,
+            0.0015514908846477882,
+            0.0023057105389682198,
+            0.0021740583562437354
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_without_jaccard": {
+          "aupr_delta": 0.0013490000000000446,
+          "fold_aupr_deltas": [
+            0.0033178922627519203,
+            0.0007093983775591228,
+            0.0014134193425998642,
+            0.0005353737004702985,
+            0.0007683356421628318
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "jaccard_without_prototype": {
+          "aupr_delta": 0.0011840000000000739,
+          "fold_aupr_deltas": [
+            0.0016184326838126761,
+            0.00152682161070683,
+            0.001582347841353804,
+            9.941666776569491e-05,
+            0.0010935589707364857
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_given_jaccard": {
+          "aupr_delta": 0.0005929999999999547,
+          "fold_aupr_deltas": [
+            -0.0005492909218599573,
+            0.0002595402605378716,
+            -3.085695670601574e-05,
+            0.002206293871202525,
+            0.0010804993855072498
+          ],
+          "positive_folds": 3,
+          "negative_folds": 2
+        },
+        "jaccard_given_prototype": {
+          "aupr_delta": 0.00042799999999998395,
+          "fold_aupr_deltas": [
+            -0.0022487505007992015,
+            0.0010769634936855788,
+            0.00013807154204792393,
+            0.0017703368384979212,
+            0.0014057227140809037
+          ],
+          "positive_folds": 4,
+          "negative_folds": 1
+        },
+        "prototype_jaccard_interaction": {
+          "aupr_delta": -0.0007560000000000899,
+          "fold_aupr_deltas": [
+            -0.0038671831846118776,
+            -0.0004498581170212512,
+            -0.00144427629930588,
+            0.0016709201707322263,
+            0.000312163743344418
+          ],
+          "positive_folds": 2,
+          "negative_folds": 3
+        }
+      }
+    },
+    {
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "stages": {
+        "no_transfer": {
+          "metrics": {
+            "AUC": 0.823365,
+            "AUPR": 0.841859,
+            "Recall": 0.726989,
+            "Precision": 0.78137,
+            "F1-score": 0.753162
+          },
+          "fold_aupr": [
+            0.8270697666608495,
+            0.8358290797134489,
+            0.8575944064817369,
+            0.8449969429178312,
+            0.843803326165772
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_transfer.log"
+        },
+        "prototype_only": {
+          "metrics": {
+            "AUC": 0.824918,
+            "AUPR": 0.844317,
+            "Recall": 0.730226,
+            "Precision": 0.781491,
+            "F1-score": 0.754948
+          },
+          "fold_aupr": [
+            0.8295763669075845,
+            0.8390868555427256,
+            0.8590587367428446,
+            0.8472551867894288,
+            0.8466085466891031
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_prototype_only.log"
+        },
+        "jaccard_only": {
+          "metrics": {
+            "AUC": 0.82392,
+            "AUPR": 0.843513,
+            "Recall": 0.72841,
+            "Precision": 0.780827,
+            "F1-score": 0.75367
+          },
+          "fold_aupr": [
+            0.8292323412019377,
+            0.8379225757072074,
+            0.8586111358935746,
+            0.8466477299649261,
+            0.8451511481067805
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_jaccard_only.log"
+        },
+        "full": {
+          "metrics": {
+            "AUC": 0.824868,
+            "AUPR": 0.844403,
+            "Recall": 0.731174,
+            "Precision": 0.77818,
+            "F1-score": 0.753874
+          },
+          "fold_aupr": [
+            0.8305395603085596,
+            0.8398230273660664,
+            0.8561299820556779,
+            0.8479877159215596,
+            0.8475331824291241
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_full.log"
+        },
+        "no_support_gate": {
+          "metrics": {
+            "AUC": 0.823854,
+            "AUPR": 0.84189,
+            "Recall": 0.72891,
+            "Precision": 0.77767,
+            "F1-score": 0.75242
+          },
+          "fold_aupr": [
+            0.8291427477778243,
+            0.8363800298311985,
+            0.8542116223386667,
+            0.8464141597779884,
+            0.8433033497425362
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_support_gate.log"
+        },
+        "no_context_expert": {
+          "metrics": {
+            "AUC": 0.828244,
+            "AUPR": 0.854464,
+            "Recall": 0.987339,
+            "Precision": 0.508804,
+            "F1-score": 0.67154
+          },
+          "fold_aupr": [
+            0.8424920097511713,
+            0.86082814778276,
+            0.8611048721530649,
+            0.8599588055366465,
+            0.8479376743325386
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/symmap_no_context_expert.log"
+        }
+      },
+      "effects": {
+        "support_gate": {
+          "aupr_delta": 0.0025129999999999875,
+          "fold_aupr_deltas": [
+            0.001396812530735314,
+            0.0034429975348678754,
+            0.0019183597170112643,
+            0.001573556143571242,
+            0.004229832686587942
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "context_expert": {
+          "aupr_delta": -0.010060999999999987,
+          "fold_aupr_deltas": [
+            -0.011952449442611757,
+            -0.021005120416693557,
+            -0.0049748900973869414,
+            -0.01197108961508686,
+            -0.0004044919034145167
+          ],
+          "positive_folds": 0,
+          "negative_folds": 5
+        },
+        "joint_transfer": {
+          "aupr_delta": 0.0025439999999999907,
+          "fold_aupr_deltas": [
+            0.003469793647710051,
+            0.003993947652617513,
+            -0.0014644244260589856,
+            0.0029907730037284086,
+            0.0037298562633520937
+          ],
+          "positive_folds": 4,
+          "negative_folds": 1
+        },
+        "prototype_without_jaccard": {
+          "aupr_delta": 0.00245799999999996,
+          "fold_aupr_deltas": [
+            0.0025066002467349913,
+            0.0032577758292766656,
+            0.0014643302611077047,
+            0.002258243871597565,
+            0.002805220523331098
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "jaccard_without_prototype": {
+          "aupr_delta": 0.0016539999999999333,
+          "fold_aupr_deltas": [
+            0.002162574541088147,
+            0.0020934959937585207,
+            0.0010167294118377246,
+            0.0016507870470948705,
+            0.0013478219410084646
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_given_jaccard": {
+          "aupr_delta": 0.0008900000000000574,
+          "fold_aupr_deltas": [
+            0.001307219106621904,
+            0.0019004516588589926,
+            -0.00248115383789671,
+            0.0013399859566335381,
+            0.002382034322343629
+          ],
+          "positive_folds": 4,
+          "negative_folds": 1
+        },
+        "jaccard_given_prototype": {
+          "aupr_delta": 8.60000000000305e-05,
+          "fold_aupr_deltas": [
+            0.0009631934009750598,
+            0.0007361718233408476,
+            -0.0029287546871666903,
+            0.0007325291321308436,
+            0.0009246357400209959
+          ],
+          "positive_folds": 4,
+          "negative_folds": 1
+        },
+        "prototype_jaccard_interaction": {
+          "aupr_delta": -0.0015679999999999028,
+          "fold_aupr_deltas": [
+            -0.0011993811401130872,
+            -0.001357324170417673,
+            -0.003945484099004415,
+            -0.0009182579149640269,
+            -0.00042318620098746873
+          ],
+          "positive_folds": 0,
+          "negative_folds": 5
+        }
+      }
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "stages": {
+        "no_transfer": {
+          "metrics": {
+            "AUC": 0.940395,
+            "AUPR": 0.936401,
+            "Recall": 0.837195,
+            "Precision": 0.892475,
+            "F1-score": 0.863912
+          },
+          "fold_aupr": [
+            0.9350478747240418,
+            0.9386312928554055,
+            0.9425104025863597,
+            0.9352436808445959,
+            0.9305719893076732
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_transfer.log"
+        },
+        "prototype_only": {
+          "metrics": {
+            "AUC": 0.942802,
+            "AUPR": 0.940315,
+            "Recall": 0.83914,
+            "Precision": 0.89462,
+            "F1-score": 0.865944
+          },
+          "fold_aupr": [
+            0.9386818663856371,
+            0.9425853200356245,
+            0.9460092046721996,
+            0.9389497087151111,
+            0.9353491655676145
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_prototype_only.log"
+        },
+        "jaccard_only": {
+          "metrics": {
+            "AUC": 0.943456,
+            "AUPR": 0.940767,
+            "Recall": 0.842261,
+            "Precision": 0.893771,
+            "F1-score": 0.867225
+          },
+          "fold_aupr": [
+            0.9395019397473244,
+            0.9423403380664566,
+            0.9464116872622298,
+            0.9393352722890871,
+            0.9362473702207487
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_jaccard_only.log"
+        },
+        "full": {
+          "metrics": {
+            "AUC": 0.944848,
+            "AUPR": 0.942788,
+            "Recall": 0.839649,
+            "Precision": 0.897264,
+            "F1-score": 0.867456
+          },
+          "fold_aupr": [
+            0.940721056550064,
+            0.9447836665366659,
+            0.948204258264965,
+            0.9418474022170644,
+            0.9383852080758678
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_full.log"
+        },
+        "no_support_gate": {
+          "metrics": {
+            "AUC": 0.944771,
+            "AUPR": 0.942744,
+            "Recall": 0.840034,
+            "Precision": 0.896976,
+            "F1-score": 0.867522
+          },
+          "fold_aupr": [
+            0.9406066697483821,
+            0.944546604636791,
+            0.9483852586249365,
+            0.9418479759254704,
+            0.9383321826789304
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_support_gate.log"
+        },
+        "no_context_expert": {
+          "metrics": {
+            "AUC": 0.746425,
+            "AUPR": 0.839007,
+            "Recall": 0.725945,
+            "Precision": 0.846992,
+            "F1-score": 0.781809
+          },
+          "fold_aupr": [
+            0.837200700140619,
+            0.8469197814367094,
+            0.8371790743876159,
+            0.8396821027078305,
+            0.8340514344467882
+          ],
+          "source": "./results/batch_runs/sacti_component_ablation_20260902_132025/logs/etcm_mention10_no_context_expert.log"
+        }
+      },
+      "effects": {
+        "support_gate": {
+          "aupr_delta": 4.399999999993298e-05,
+          "fold_aupr_deltas": [
+            0.00011438680168185389,
+            0.0002370618998749352,
+            -0.00018100035997148378,
+            -5.737084060042363e-07,
+            5.3025396937411706e-05
+          ],
+          "positive_folds": 3,
+          "negative_folds": 2
+        },
+        "context_expert": {
+          "aupr_delta": 0.10378100000000001,
+          "fold_aupr_deltas": [
+            0.10352035640944501,
+            0.09786388509995647,
+            0.11102518387734917,
+            0.10216529950923392,
+            0.10433377362907958
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "joint_transfer": {
+          "aupr_delta": 0.0063869999999999205,
+          "fold_aupr_deltas": [
+            0.005673181826022167,
+            0.006152373681260426,
+            0.005693855678605364,
+            0.006603721372468563,
+            0.00781321876819463
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_without_jaccard": {
+          "aupr_delta": 0.003913999999999973,
+          "fold_aupr_deltas": [
+            0.0036339916615952816,
+            0.0039540271802189775,
+            0.0034988020858399693,
+            0.003706027870515216,
+            0.00477717625994134
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "jaccard_without_prototype": {
+          "aupr_delta": 0.004365999999999981,
+          "fold_aupr_deltas": [
+            0.004454065023282605,
+            0.0037090452110510874,
+            0.0039012846758701425,
+            0.004091591444491227,
+            0.005675380913075512
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_given_jaccard": {
+          "aupr_delta": 0.0020209999999999395,
+          "fold_aupr_deltas": [
+            0.0012191168027395616,
+            0.0024433284702093383,
+            0.0017925710027352215,
+            0.0025121299279773357,
+            0.002137837855119118
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "jaccard_given_prototype": {
+          "aupr_delta": 0.0024729999999999475,
+          "fold_aupr_deltas": [
+            0.002039190164426885,
+            0.0021983465010414482,
+            0.0021950535927653947,
+            0.0028976935019533467,
+            0.0030360425082532894
+          ],
+          "positive_folds": 5,
+          "negative_folds": 0
+        },
+        "prototype_jaccard_interaction": {
+          "aupr_delta": -0.0018930000000000335,
+          "fold_aupr_deltas": [
+            -0.00241487485885572,
+            -0.0015106987100096392,
+            -0.0017062310831047478,
+            -0.0011938979425378804,
+            -0.0026393384048222224
+          ],
+          "positive_folds": 0,
+          "negative_folds": 5
+        }
+      }
+    }
+  ],
+  "effect_summary": {
+    "support_gate": {
+      "macro_aupr_delta": 0.0024952499999999767,
+      "positive_datasets": 4,
+      "positive_folds": 17,
+      "negative_folds": 3,
+      "fold_count": 20
+    },
+    "context_expert": {
+      "macro_aupr_delta": 0.07782375000000002,
+      "positive_datasets": 3,
+      "positive_folds": 15,
+      "negative_folds": 5,
+      "fold_count": 20
+    },
+    "joint_transfer": {
+      "macro_aupr_delta": 0.004559999999999981,
+      "positive_datasets": 4,
+      "positive_folds": 19,
+      "negative_folds": 1,
+      "fold_count": 20
+    },
+    "prototype_without_jaccard": {
+      "macro_aupr_delta": 0.003089249999999988,
+      "positive_datasets": 4,
+      "positive_folds": 20,
+      "negative_folds": 0,
+      "fold_count": 20
+    },
+    "jaccard_without_prototype": {
+      "macro_aupr_delta": 0.003158999999999995,
+      "positive_datasets": 4,
+      "positive_folds": 20,
+      "negative_folds": 0,
+      "fold_count": 20
+    },
+    "prototype_given_jaccard": {
+      "macro_aupr_delta": 0.0014009999999999856,
+      "positive_datasets": 4,
+      "positive_folds": 17,
+      "negative_folds": 3,
+      "fold_count": 20
+    },
+    "jaccard_given_prototype": {
+      "macro_aupr_delta": 0.001470749999999993,
+      "positive_datasets": 4,
+      "positive_folds": 18,
+      "negative_folds": 2,
+      "fold_count": 20
+    },
+    "prototype_jaccard_interaction": {
+      "macro_aupr_delta": -0.0016882500000000022,
+      "positive_datasets": 0,
+      "positive_folds": 2,
+      "negative_folds": 18,
+      "fold_count": 20
+    }
+  },
+  "external_baselines": [
+    {
+      "dataset": "TCM-Suite",
+      "method": "Dual-HGNN-CTI",
+      "aupr": 0.729257,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "TCMSP",
+      "method": "Dual-HGNN-CTI",
+      "aupr": 0.939348,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "SymMap2.0",
+      "method": "Dual-HGNN-CTI",
+      "aupr": 0.83054,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "method": "Dual-HGNN-CTI",
+      "aupr": 0.91073,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "TCM-Suite",
+      "method": "LightGCN-CTI",
+      "aupr": 0.568966,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "TCMSP",
+      "method": "LightGCN-CTI",
+      "aupr": 0.662029,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "SymMap2.0",
+      "method": "LightGCN-CTI",
+      "aupr": 0.595482,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "method": "LightGCN-CTI",
+      "aupr": 0.608434,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "TCM-Suite",
+      "method": "R-GCN-CTI",
+      "aupr": 0.670161,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "TCMSP",
+      "method": "R-GCN-CTI",
+      "aupr": 0.910556,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "SymMap2.0",
+      "method": "R-GCN-CTI",
+      "aupr": 0.812299,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "method": "R-GCN-CTI",
+      "aupr": 0.809541,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "TCM-Suite",
+      "method": "HGT-CTI",
+      "aupr": 0.696228,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "TCMSP",
+      "method": "HGT-CTI",
+      "aupr": 0.934128,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "SymMap2.0",
+      "method": "HGT-CTI",
+      "aupr": 0.83969,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "method": "HGT-CTI",
+      "aupr": 0.846547,
+      "source": "./paper_artifacts/results/cold_external_baselines.tsv"
+    }
+  ],
+  "external_baselines_sha256": "98a41b7581591f4b29b849aa29f98230c82f2f36474408bd0a5565b6b4458016",
+  "reporting_rule": "This frozen component ablation is descriptive. Every result is reported regardless of direction and does not reopen model selection."
+}

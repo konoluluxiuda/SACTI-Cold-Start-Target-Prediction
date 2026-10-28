@@ -1,0 +1,74 @@
+{
+  "protocol": "sacti_v1_unseen_outer_lockbox_seed901026",
+  "registered_at": "2026-09-01T20:43:20+08:00",
+  "model_selection_reopened": false,
+  "split_seed_unseen_at_registration": true,
+  "split_strategy": "compound_cold_start",
+  "split_seed": 901026,
+  "training_seed": 52026,
+  "validation_seed": 152026,
+  "fold_count": 5,
+  "outer_test": true,
+  "ranking": {
+    "enabled": true,
+    "candidate_scope": "all_model_proteins",
+    "filter": "outer_train_positive_pairs",
+    "ks": [10, 20],
+    "export_top": 0
+  },
+  "bootstrap": {
+    "iterations": 20000,
+    "seed": 901027,
+    "confidence": 0.95
+  },
+  "interpretation_thresholds": {
+    "minimum_macro_aupr_delta": 0.0,
+    "minimum_macro_mrr_delta": 0.0,
+    "minimum_macro_recall_at_20_delta": 0.0,
+    "minimum_positive_aupr_dataset_count": 3,
+    "minimum_positive_mrr_dataset_count": 3,
+    "minimum_positive_recall_at_20_dataset_count": 3,
+    "minimum_dataset_aupr_delta": -0.01,
+    "minimum_dataset_mrr_delta": -0.02,
+    "minimum_dataset_recall_at_20_delta": -0.03,
+    "minimum_positive_aupr_fold_count": 10
+  },
+  "datasets": [
+    {
+      "name": "TCM-Suite",
+      "slug": "tcmsuite",
+      "split_dir": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5",
+      "baseline_config": "configs/HDCTI_tcmsuite_final_inner_matched.conf",
+      "baseline_config_sha256": "590403d58eb24c41cbdc265c2d24129c54ec95f0bde3721de7195872bc93af94",
+      "candidate_config": "configs/SACTI_tcmsuite_inner_pilot.conf",
+      "candidate_config_sha256": "d3f45e556430130ebdacabc1cc56bed7572b4d11d783ee069fc63a8fbbe3ba87"
+    },
+    {
+      "name": "TCMSP",
+      "slug": "tcmsp",
+      "split_dir": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5",
+      "baseline_config": "configs/HDCTI_tcmsp_final_inner_matched.conf",
+      "baseline_config_sha256": "ef2a4825a95cffa4e855110a4b77708a88e3e1ecdb3bcc823034ad80ddd794e7",
+      "candidate_config": "configs/SACTI_tcmsp_inner_pilot.conf",
+      "candidate_config_sha256": "47c00ecc1913051288aa2f5365c51203115ed0cf1dcf50ff8efec4f18ed5e858"
+    },
+    {
+      "name": "SymMap2.0",
+      "slug": "symmap",
+      "split_dir": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5",
+      "baseline_config": "configs/HDCTI_symmap_final_inner_matched.conf",
+      "baseline_config_sha256": "e64d12db4b897e8fb54a340fcac68b14f189682ed80ed64e3b98bd434a3724d3",
+      "candidate_config": "configs/SACTI_symmap_inner_pilot.conf",
+      "candidate_config_sha256": "a0694df1ebbae8b658e066ece316dbadb762c2c5bfd0e521af0e6c5c9be77a12"
+    },
+    {
+      "name": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "split_dir": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5",
+      "baseline_config": "configs/HDCTI_etcm_mention10_final_inner_matched.conf",
+      "baseline_config_sha256": "74229ecc86e36137aee41e92858625bc6ef94b8d0a4ea5a369f3e6812021542b",
+      "candidate_config": "configs/SACTI_etcm_mention10_inner_pilot.conf",
+      "candidate_config_sha256": "61a6055462b0e1222e47c7b8bf8daa5fc4c5260685e932458d76feb8e7cb838c"
+    }
+  ]
+}

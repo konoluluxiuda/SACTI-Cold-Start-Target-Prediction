@@ -1,0 +1,11 @@
+# Versions used for the frozen TensorFlow 2.21 paper experiments.
+tensorflow==2.21.0
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+scikit-learn==1.7.2
+networkx==3.4.2
+mkl-service==2.7.2
+
+# Optional: required only to regenerate manuscript figures.
+matplotlib==3.8.4

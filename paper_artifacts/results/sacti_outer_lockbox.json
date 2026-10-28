@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-09-01T22:09:52.472231+08:00",
+  "protocol": "sacti_v1_unseen_outer_lockbox_seed901026",
+  "model_selection_reopened": false,
+  "lockbox_consumed": true,
+  "split_seed": 901026,
+  "training_seed": 52026,
+  "validation_seed": 152026,
+  "seal_sha256": "07c1896f54a7bf9e6cabd6545efa12103c0e5afee6bf9062e7af37d1dc9543bb",
+  "rows": [
+    {
+      "dataset": "TCM-Suite",
+      "slug": "tcmsuite",
+      "metrics": {
+        "AUPR": {
+          "baseline_mean": 0.7363469085844514,
+          "candidate_mean": 0.7875280994509909,
+          "delta": 0.051181190866539716,
+          "fold_deltas": [
+            0.0498779393803338,
+            0.04553532715667119,
+            0.07314327897084749,
+            0.043615187000185074,
+            0.043734221824661024
+          ],
+          "positive_fold_count": 5
+        },
+        "MRR": {
+          "baseline_mean": 0.13534383708596204,
+          "candidate_mean": 0.20724707832652833,
+          "delta": 0.07190324124056631,
+          "fold_deltas": [
+            0.0844635085377082,
+            0.12397923568564483,
+            0.1079617964343876,
+            0.02551619980535713,
+            0.01759546573973378
+          ],
+          "positive_fold_count": 5
+        },
+        "Recall@20": {
+          "baseline_mean": 0.07281058139334257,
+          "candidate_mean": 0.10610153730844463,
+          "delta": 0.03329095591510206,
+          "fold_deltas": [
+            0.014924295878924312,
+            0.062434466331145196,
+            0.059117467075790235,
+            0.0023102373173668755,
+            0.027668312972283685
+          ],
+          "positive_fold_count": 5
+        }
+      },
+      "logs": {
+        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsuite_baseline.log",
+        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsuite_candidate.log"
+      }
+    },
+    {
+      "dataset": "TCMSP",
+      "slug": "tcmsp",
+      "metrics": {
+        "AUPR": {
+          "baseline_mean": 0.9596803386565605,
+          "candidate_mean": 0.968892378858734,
+          "delta": 0.009212040202173522,
+          "fold_deltas": [
+            0.01287312978292876,
+            0.013676807545594416,
+            0.00540305343241354,
+            0.0075342269309274235,
+            0.006572983319003467
+          ],
+          "positive_fold_count": 5
+        },
+        "MRR": {
+          "baseline_mean": 0.5619149456197305,
+          "candidate_mean": 0.5697095749853318,
+          "delta": 0.00779462936560118,
+          "fold_deltas": [
+            0.0015356133752636447,
+            0.022621417398571375,
+            0.02686139627611328,
+            0.0005113253565367515,
+            -0.012556605578479152
+          ],
+          "positive_fold_count": 4
+        },
+        "Recall@20": {
+          "baseline_mean": 0.5845693199022547,
+          "candidate_mean": 0.5576807891926349,
+          "delta": -0.026888530709619808,
+          "fold_deltas": [
+            -0.04155048315308396,
+            0.015693470728912806,
+            -0.02810692015505667,
+            -0.0384480450830369,
+            -0.04203067588583431
+          ],
+          "positive_fold_count": 1
+        }
+      },
+      "logs": {
+        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsp_baseline.log",
+        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/tcmsp_candidate.log"
+      }
+    },
+    {
+      "dataset": "SymMap2.0",
+      "slug": "symmap",
+      "metrics": {
+        "AUPR": {
+          "baseline_mean": 0.8424506327996207,
+          "candidate_mean": 0.8476960662826507,
+          "delta": 0.005245433483029971,
+          "fold_deltas": [
+            0.0018579463818380049,
+            0.0018716763251696023,
+            0.005991551376515081,
+            0.011285197344881426,
+            0.005220795986745741
+          ],
+          "positive_fold_count": 5
+        },
+        "MRR": {
+          "baseline_mean": 0.3378121572638101,
+          "candidate_mean": 0.42808249126089626,
+          "delta": 0.09027033399708616,
+          "fold_deltas": [
+            0.017109406441343677,
+            0.02896682630439279,
+            0.12838971844022784,
+            0.17721452369489699,
+            0.09967119510456951
+          ],
+          "positive_fold_count": 5
+        },
+        "Recall@20": {
+          "baseline_mean": 0.21519741521521554,
+          "candidate_mean": 0.31964893361949215,
+          "delta": 0.10445151840427662,
+          "fold_deltas": [
+            0.06343664667738519,
+            0.05607748158891934,
+            0.11516956865007577,
+            0.18010137227307033,
+            0.10747252283193248
+          ],
+          "positive_fold_count": 5
+        }
+      },
+      "logs": {
+        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/symmap_baseline.log",
+        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/symmap_candidate.log"
+      }
+    },
+    {
+      "dataset": "ETCM2.0-mention10",
+      "slug": "etcm_mention10",
+      "metrics": {
+        "AUPR": {
+          "baseline_mean": 0.922747421813261,
+          "candidate_mean": 0.9422827446937516,
+          "delta": 0.019535322880490556,
+          "fold_deltas": [
+            0.02386336386134369,
+            0.01907141520393152,
+            0.02106621431374034,
+            0.011224667040308667,
+            0.022450953983128574
+          ],
+          "positive_fold_count": 5
+        },
+        "MRR": {
+          "baseline_mean": 0.6071308657857875,
+          "candidate_mean": 0.6210653696942738,
+          "delta": 0.013934503908486162,
+          "fold_deltas": [
+            0.012718832301656713,
+            0.01225260292496344,
+            0.012952844135882269,
+            0.002962632225312567,
+            0.02878560795461582
+          ],
+          "positive_fold_count": 5
+        },
+        "Recall@20": {
+          "baseline_mean": 0.5725209945664282,
+          "candidate_mean": 0.5882711944144398,
+          "delta": 0.015750199848011605,
+          "fold_deltas": [
+            0.010075249699602162,
+            0.009748505376053429,
+            0.04326605204703149,
+            -0.013664552303892852,
+            0.02932574442126379
+          ],
+          "positive_fold_count": 4
+        }
+      },
+      "logs": {
+        "baseline": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/etcm_mention10_baseline.log",
+        "candidate": "./results/batch_runs/sacti_outer_lockbox_seed901026/logs/etcm_mention10_candidate.log"
+      }
+    }
+  ],
+  "macro": {
+    "AUPR": {
+      "baseline": 0.8653063254634734,
+      "candidate": 0.8865998223215319,
+      "delta": 0.02129349685805844,
+      "positive_dataset_count": 4,
+      "positive_fold_count": 20,
+      "stratified_fold_bootstrap_CI": [
+        0.018797988266904028,
+        0.0243629926388414
+      ]
+    },
+    "MRR": {
+      "baseline": 0.4105504514388226,
+      "candidate": 0.45652612856675756,
+      "delta": 0.045975677127934954,
+      "positive_dataset_count": 4,
+      "positive_fold_count": 19,
+      "stratified_fold_bootstrap_CI": [
+        0.029476736622731318,
+        0.06235176756511887
+      ]
+    },
+    "Recall@20": {
+      "baseline": 0.36127457776931027,
+      "candidate": 0.3929256136337529,
+      "delta": 0.031651035864442616,
+      "positive_dataset_count": 3,
+      "positive_fold_count": 15,
+      "stratified_fold_bootstrap_CI": [
+        0.019241132585444028,
+        0.04471572240010354
+      ]
+    }
+  },
+  "checks": {
+    "expected_dataset_count": true,
+    "expected_fold_count": true,
+    "ranking_protocol_matched": true,
+    "seal_precedes_training": true,
+    "outer_results_unseen_before_seal": true,
+    "minimum_macro_aupr_delta": true,
+    "minimum_macro_mrr_delta": true,
+    "minimum_macro_recall_at_20_delta": true,
+    "minimum_positive_aupr_dataset_count": true,
+    "minimum_positive_mrr_dataset_count": true,
+    "minimum_positive_recall_at_20_dataset_count": true,
+    "minimum_dataset_aupr_delta": true,
+    "minimum_dataset_mrr_delta": true,
+    "minimum_dataset_recall_at_20_delta": true,
+    "minimum_positive_aupr_fold_count": true
+  },
+  "interpretation": "SUPPORTS_SACTI_REPLACEMENT"
+}

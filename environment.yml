@@ -1,0 +1,16 @@
+name: HDCTI_tfnew
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - mkl-service=2.7.2
+  - pip:
+      - tensorflow==2.21.0
+      - numpy==2.2.6
+      - scipy==1.15.3
+      - pandas==2.3.3
+      - scikit-learn==1.7.2
+      - networkx==3.4.2
+      - matplotlib==3.8.4

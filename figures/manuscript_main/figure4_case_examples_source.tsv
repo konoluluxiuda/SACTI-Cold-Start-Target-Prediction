@@ -1,0 +1,5 @@
+selection_group	compound_id	compound_name	protein_id	gene_symbol	evidence_count	activity_count	reference_count	SACTI_rank
+recovered	147	(+)-Catechin	106	CA4	3	3	8	1
+recovered	16547	Cytisine	172	CHRNA7	3	3	7	1
+missed	17498	Dopamine	255	DRD4	13	12	15	36
+missed	13593	Allopseudococain	890	SLC6A2	12	12	20	29
