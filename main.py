@@ -7,16 +7,20 @@ import argparse
 import os
 
 
+def build_parser():
+    parser = argparse.ArgumentParser(description='Run a SACTI target-prediction experiment.')
+    parser.add_argument(
+        '--config',
+        default=os.environ.get('SACTI_CONFIG', 'configs/SACTI_tcmsuite_inner_pilot.conf'),
+        help='Path to the experiment configuration file.',
+    )
+    return parser
+
+
 if __name__ == '__main__':
     import time
     s = time.time()
-    parser = argparse.ArgumentParser(description='Run an HDCTI experiment.')
-    parser.add_argument(
-        '--config',
-        default=os.environ.get('HDCTI_CONFIG', 'HDCTI.conf'),
-        help='Path to the experiment configuration file.',
-    )
-    args = parser.parse_args()
+    args = build_parser().parse_args()
 
     try:
         conf = ModelConf(args.config)

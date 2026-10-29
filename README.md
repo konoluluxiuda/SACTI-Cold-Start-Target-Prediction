@@ -1,6 +1,6 @@
-# SACTI: Herb-Context Transfer for Compound Cold-Start Target Prediction
+# Herb-Context Transfer for Compound Cold-Start Target Prediction
 
-Implementation, processed numerical inputs, fixed compound-disjoint folds and
+SACTI implementation, processed numerical inputs, fixed compound-disjoint folds and
 frozen result summaries for the SACTI manuscript. The included data package
 supports training from the processed relations; raw database pages are not
 needed for this workflow. Trained checkpoint binaries are not included.
@@ -36,6 +36,9 @@ python -m unittest discover -s tests -p test_release_data.py -v
 python -m unittest discover -s tests -p test_sacti_model_smoke.py -v
 ```
 
+Alternatively, `conda env create -f environment.yml` creates the named `SACTI`
+environment. Activate it with `conda activate SACTI`.
+
 `verify_inputs.py` checks all 40 released outer folds, compound isolation,
 the exact 20 historical confirmation train/validation/test partitions, and
 the 685 ETCM2.0 evidence pairs. The model smoke test runs short synthetic
@@ -46,6 +49,10 @@ For a first-fold, inner-validation training run on the processed TCM-Suite data:
 ```bash
 python main.py --config configs/SACTI_tcmsuite_inner_pilot.conf
 ```
+
+The shell launcher is `bash run_sacti.sh <configuration>`. Without an explicit
+configuration, both launchers use `SACTI_CONFIG` when set, otherwise the
+TCM-Suite inner-validation pilot above.
 
 To replay the full five-fold SACTI versus predecessor comparison:
 

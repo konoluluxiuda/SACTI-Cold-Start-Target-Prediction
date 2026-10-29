@@ -3,6 +3,11 @@
 This repository contains the implementation and reproducibility materials for
 the current SACTI manuscript.
 
+The project title is *Herb-Context Transfer for Compound Cold-Start Target
+Prediction*. Its runtime environment, command-line entry point and launcher
+use SACTI naming. Names of published comparator models and upstream copyright
+notices retain their original identities; they do not name the SACTI project.
+
 | Location | Role in the paper |
 |---|---|
 | `SACTI.py`, `HDR.py`, `rating.py`, `base/`, `util/` | Final model, shared data loading and required model dependencies |

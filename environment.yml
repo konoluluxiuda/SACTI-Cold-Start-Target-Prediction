@@ -1,4 +1,4 @@
-name: HDCTI_tfnew
+name: SACTI
 channels:
   - conda-forge
   - defaults

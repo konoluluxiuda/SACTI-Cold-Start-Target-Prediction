@@ -39,13 +39,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5729,
-      "sha256": "44d0130b849a6120a1506476f682871a8ff22f4280079a8e994ee8eb97efe494"
+      "bytes": 6055,
+      "sha256": "2fcbca7f82b4235cfb85210841ed8a37783d44ba081458e8619196e88c77e8ed"
     },
     {
       "path": "REPOSITORY_SCOPE.md",
-      "bytes": 1824,
-      "sha256": "9387f517f555e2f0ef8bf448891ce4f88ade7302d66ef81243c1653ac2cf31be"
+      "bytes": 2132,
+      "sha256": "a1684df368ac3540b720618eefdc2449cc909ed25788a27dd2004348dc37a2a3"
     },
     {
       "path": "RGCNCTI.py",
@@ -264,8 +264,8 @@
     },
     {
       "path": "environment.yml",
-      "bytes": 296,
-      "sha256": "650bb763f67b7f6615afa2890bbc0d60156319a65f0fd4663919829879a6b087"
+      "bytes": 290,
+      "sha256": "38e0a31b2cef33469f6555197e2eeafdb1083a1ca0b5498275ac88f703c744c1"
     },
     {
       "path": "figures/manuscript_main/figure2_lockbox_source.tsv",
@@ -299,8 +299,8 @@
     },
     {
       "path": "main.py",
-      "bytes": 1084,
-      "sha256": "edc1de38182cbc8e68e7598449b025ae93146b8bb5baa33874110e66ac514c7e"
+      "bytes": 1178,
+      "sha256": "3547a61ff8dcae27419fb488c8209caea91d1d83cbbd7cc95cfd8074d9895c31"
     },
     {
       "path": "paper_artifacts/results/MANIFEST.json",
@@ -369,8 +369,8 @@
     },
     {
       "path": "reproducibility/release_checks.json",
-      "bytes": 2840,
-      "sha256": "6d4776cbe749ccc39a0e1a41ab4423a321b434280f33c78123794886d29045de"
+      "bytes": 3368,
+      "sha256": "fa204ed56a31e6062d8d296f503799124e287cb4b16382e00082b3191ed92c1d"
     },
     {
       "path": "requirements-mvcl.txt",
@@ -385,12 +385,12 @@
     {
       "path": "run_cold_start_external_baselines_full.sh",
       "bytes": 7374,
-      "sha256": "97b13d8ee980cb8d32b2a450fe9e14bd8ecffea2993348b6d598b5d865da22aa"
+      "sha256": "997eb21083d6236d5fb48d9db27ff2d511968cca4894b7561bede10b7d9dcb89"
     },
     {
-      "path": "run_hdcti.sh",
-      "bytes": 911,
-      "sha256": "18d51398b29d31ace1cce4c426f10a0e5cf6d35834c63e97a0c2d5b3b05b2d16"
+      "path": "run_sacti.sh",
+      "bytes": 940,
+      "sha256": "45fa91b0a8428dd4b535ef7004c5e83b3d90eabad6a38f807be51b6d4ffd80d4"
     },
     {
       "path": "tests/__init__.py",
@@ -416,6 +416,11 @@
       "path": "tests/test_non_neural_cold_start_baselines.py",
       "bytes": 4226,
       "sha256": "3f7dfa79223b9857d5bef301750003da332c89a19d0ee2885ecfb41805098098"
+    },
+    {
+      "path": "tests/test_project_entry_points.py",
+      "bytes": 2413,
+      "sha256": "5946dcc0fc092705fe421b06eaaf181785af0c1df457aae80f2b9ea675e3fde7"
     },
     {
       "path": "tests/test_release_data.py",
@@ -545,12 +550,12 @@
     {
       "path": "tools/run_sacti_component_ablation.py",
       "bytes": 16186,
-      "sha256": "8d1cb4e6282baec9d03075c65f8e016c2e9197beda1773bb6ff326e023773012"
+      "sha256": "a91eb5f24fb2a4a1477f5082edb9cb7db5868ccb0156c26d0874c2abe8fa336a"
     },
     {
       "path": "tools/run_sacti_outer_lockbox.py",
       "bytes": 27785,
-      "sha256": "666ea444910248cad1ac47af3ff8f4ed97254279ab6a049953f9ee55fe31f659"
+      "sha256": "d59ca4e82eaf6f5472eba19ccc56db47ef3616b6abd5b4d17344df323a727523"
     },
     {
       "path": "tools/seal_mvcl_confirmation.py",

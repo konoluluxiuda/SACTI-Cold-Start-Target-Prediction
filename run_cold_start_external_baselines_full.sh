@@ -26,12 +26,12 @@ if [[ "${1:-}" == "--dry-run" ]]; then
 fi
 if [[ $# -gt 0 ]]; then
     printf 'Usage: %s [--dry-run]\n' "$0" >&2
-    printf 'Resume/summarize by setting HDCTI_BATCH_DIR to an existing run directory.\n' >&2
+    printf 'Resume/summarize by setting SACTI_BATCH_DIR to an existing run directory.\n' >&2
     exit 2
 fi
 
 RUN_TIMESTAMP="$(date '+%Y%m%d_%H%M%S')"
-RUN_DIR="${HDCTI_BATCH_DIR:-$REPOSITORY_ROOT/results/batch_runs/cold_start_external_baselines_full_$RUN_TIMESTAMP}"
+RUN_DIR="${SACTI_BATCH_DIR:-$REPOSITORY_ROOT/results/batch_runs/cold_start_external_baselines_full_$RUN_TIMESTAMP}"
 RESULTS_TSV="$RUN_DIR/results.tsv"
 SUMMARY_MD="$RUN_DIR/summary.md"
 ENVIRONMENT_FILE="$RUN_DIR/environment.txt"
@@ -148,7 +148,7 @@ for job in "${JOBS[@]}"; do
     config_hash="$(sha256sum "$config_path" | awk '{print $1}')"
     printf '\n[%d/%d] Starting %s %s\nConfig: %s\nLog: %s\n' \
         "$job_index" "${#JOBS[@]}" "$dataset" "$method" "$config_path" "$log_path"
-    ./run_hdcti.sh "$config_path" 2>&1 | tee "$log_path"
+    ./run_sacti.sh "$config_path" 2>&1 | tee "$log_path"
     exit_code=${PIPESTATUS[0]}
     duration_seconds=$(( $(date +%s) - start_seconds ))
     auc="$(extract_metric "$log_path" 'AUC')"
@@ -177,7 +177,7 @@ write_summary
 printf '\nBatch results: %s\n' "$SUMMARY_MD"
 if [[ "$failed_jobs" -gt 0 ]]; then
     printf '%d job(s) failed. Resume with:\n' "$failed_jobs" >&2
-    printf '  HDCTI_BATCH_DIR=%q %q\n' "$RUN_DIR" "$0" >&2
+    printf '  SACTI_BATCH_DIR=%q %q\n' "$RUN_DIR" "$0" >&2
     exit 1
 fi
 printf 'All frozen cold-start external baseline jobs completed successfully.\n'

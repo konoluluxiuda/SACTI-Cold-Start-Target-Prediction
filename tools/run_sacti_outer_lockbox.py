@@ -292,7 +292,7 @@ def run_training(manifest, jobs, python, resume):
             index, len(jobs), job['dataset'], job['role']
         ))
         status = run_and_tee(
-            [str(ROOT / 'run_hdcti.sh'), job['config']],
+            [str(ROOT / 'run_sacti.sh'), job['config']],
             job['training_log'],
             environment,
         )

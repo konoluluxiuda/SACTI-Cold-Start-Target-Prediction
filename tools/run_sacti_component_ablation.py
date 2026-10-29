@@ -154,7 +154,7 @@ def run_jobs(manifest, jobs, python, resume):
             index, len(jobs), job['dataset'], job['display_name']
         ))
         status = run_and_tee(
-            [str(ROOT / 'run_hdcti.sh'), job['config']],
+            [str(ROOT / 'run_sacti.sh'), job['config']],
             job['training_log'],
             environment,
         )

@@ -5,12 +5,12 @@ export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:/usr/lib/wsl/lib:${LD_LIBRARY_PATH:-}"
 export NVIDIA_TF32_OVERRIDE="0"
 export TF_CPP_MIN_LOG_LEVEL="${TF_CPP_MIN_LOG_LEVEL:-1}"
 unset TF_GPU_ALLOCATOR
-CONFIG_PATH="${1:-${HDCTI_CONFIG:-HDCTI.conf}}"
+CONFIG_PATH="${1:-${SACTI_CONFIG:-configs/SACTI_tcmsuite_inner_pilot.conf}}"
 # Enable this only when TensorFlow reports BFC allocator fragmentation OOM.
 # It can segfault with TensorFlow 2.6.x on newer GPUs/WSL.
 # export TF_GPU_ALLOCATOR="cuda_malloc_async"
 
-if [[ "${HDCTI_VERBOSE_TF:-0}" == "1" ]]; then
+if [[ "${SACTI_VERBOSE_TF:-0}" == "1" ]]; then
     python main.py --config "$CONFIG_PATH"
 else
     python main.py --config "$CONFIG_PATH" 2> >(

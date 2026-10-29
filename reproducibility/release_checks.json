@@ -45,6 +45,17 @@
   "ETCM_replay_protocol": "PASS; 685 pairs, 332 compounds, 509 candidates",
   "frozen_tables_regenerated": 4,
   "full_experiments_retrained": false,
+  "project_naming": {
+    "title": "Herb-Context Transfer for Compound Cold-Start Target Prediction",
+    "method": "SACTI",
+    "conda_environment": "SACTI",
+    "shell_launcher": "run_sacti.sh",
+    "configuration_environment_variable": "SACTI_CONFIG",
+    "default_configuration": "configs/SACTI_tcmsuite_inner_pilot.conf",
+    "entry_point_and_protocol_tests": "PASS; 10 tests",
+    "external_baseline_configuration_checks": "PASS; 16 configurations",
+    "upstream_attribution_and_comparator_identity_preserved": true
+  },
   "current_paper_scope_cleanup": {
     "historical_result_files_removed": 27,
     "obsolete_launchers_and_helpers_removed": 11,
