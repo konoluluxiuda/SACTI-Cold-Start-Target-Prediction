@@ -126,13 +126,13 @@
       "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
       "bytes": 2405317,
       "sha256": "a3cf759537cff3af6be80943ce0c9a85ec65e46542b3d8165b0e1aabc1532848",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
       "bytes": 2888,
       "sha256": "d71d9ffdbbf1170d724880acbaa2836d01299f170096571c0a0b57b28c5c834e",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/ETCM2.0_core_mention10/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",
@@ -270,13 +270,13 @@
       "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
       "bytes": 1100423,
       "sha256": "b0ab4d61819286d2b26691a7adbfc739fb03cba03ee299606414c32ca5df222c",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
       "bytes": 2729,
       "sha256": "2ac29cbfc96d46585f8c7f007f65ba720a55f22c3a019798a098497493bc8956",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/Symmap/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",
@@ -402,13 +402,13 @@
       "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
       "bytes": 1501817,
       "sha256": "2b315af2523f730b8aa21f0279f300dadc146fc0d2ff78f41e9717f4c4e1e830",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
       "bytes": 2676,
       "sha256": "14f93e9a442aaee74f12d9eb87afc3b9c338310721d0f1299bada5d1ce402f40",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/TCMSP/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",
@@ -522,13 +522,13 @@
       "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/fold_assignments.tsv",
       "bytes": 1258907,
       "sha256": "b00ead1760de5469ce17efc28b1d5627fd5a6e0b8fb0e4a4948229dfdae7363d",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/manifest.json",
       "bytes": 2791,
       "sha256": "a59f85f31e84ba39bc654fd587275a1271091723fef853fb667b20d639d1ff1c",
-      "role": "frozen_comparison_provenance"
+      "role": "frozen_split"
     },
     {
       "path": "dataset/TCMsuite/splits/strict_compound_cold_start_seed_901026_k5/test_fold_0.txt",

@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""Generate the four SACTI main-manuscript figures from frozen artifacts."""
+"""Generate the SACTI result figures (Figures 2-4) from frozen artifacts."""
 
 import csv
 import argparse
 import json
-import shutil
 from pathlib import Path
 
 import matplotlib as mpl
 mpl.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -75,90 +73,10 @@ def save(fig, stem):
     )
 
 
-def box(ax, x, y, w, h, text, face, edge, size=7, weight="normal"):
-    patch = FancyBboxPatch(
-        (x, y), w, h, boxstyle="round,pad=0.01,rounding_size=0.018",
-        transform=ax.transAxes, facecolor=face, edgecolor=edge, linewidth=0.9,
-    )
-    ax.add_patch(patch)
-    ax.text(x + w / 2, y + h / 2, text, transform=ax.transAxes,
-            ha="center", va="center", fontsize=size, color=INK,
-            fontweight=weight)
 
 
-def arrow(ax, x1, y1, x2, y2, color=MUTED):
-    ax.add_patch(FancyArrowPatch(
-        (x1, y1), (x2, y2), transform=ax.transAxes, arrowstyle="-|>",
-        mutation_scale=8, linewidth=1.0, color=color,
-    ))
 
 
-def draw_method():
-    fig = plt.figure(figsize=(7.2, 4.5))
-    gs = fig.add_gridspec(2, 1, height_ratios=[1, 2.5], hspace=0.12)
-    protocol = fig.add_subplot(gs[0])
-    model = fig.add_subplot(gs[1])
-    for ax in (protocol, model):
-        ax.set_xlim(0, 1)
-        ax.set_ylim(0, 1)
-        ax.axis("off")
-
-    protocol.text(0.0, 1.0, "a", fontweight="bold", fontsize=9, va="top")
-    protocol.text(0.035, 0.98, "Compound-disjoint nested evaluation",
-                  fontsize=8.5, fontweight="bold", va="top", color=INK)
-    box(protocol, 0.04, 0.18, 0.25, 0.42,
-        "Model training\nC-P support available", "#E8F0F4", BLUE)
-    box(protocol, 0.375, 0.18, 0.25, 0.42,
-        "Inner validation\ncompound-disjoint", "#F4F0E5", GOLD)
-    box(protocol, 0.71, 0.18, 0.25, 0.42,
-        "Outer test\nall compound C-P held out", "#F5E8E9", RED,
-        weight="bold")
-    arrow(protocol, 0.29, 0.39, 0.375, 0.39)
-    arrow(protocol, 0.625, 0.39, 0.71, 0.39)
-    protocol.text(0.835, 0.08, "H-C provenance remains observable",
-                  ha="center", color=BLUE, fontsize=6.6, fontweight="bold")
-
-    model.text(0.0, 1.0, "b", fontweight="bold", fontsize=9, va="top")
-    model.text(0.035, 0.98, "Independent SACTI computation graph",
-               fontsize=8.5, fontweight="bold", va="top", color=INK)
-
-    box(model, 0.02, 0.62, 0.10, 0.14, "H-C\nincidence", "#DCEAF0", BLUE)
-    box(model, 0.02, 0.23, 0.10, 0.14, "P-D\nincidence", "#E5E9F0", PURPLE)
-    box(model, 0.17, 0.58, 0.16, 0.22,
-        "Sparse H-C\nresidual context\nencoder", "#EAF3F2", TEAL, weight="bold")
-    box(model, 0.17, 0.19, 0.16, 0.22,
-        "Sparse P-D\nresidual context\nencoder", "#EEEAF3", PURPLE, weight="bold")
-    arrow(model, 0.12, 0.69, 0.17, 0.69, BLUE)
-    arrow(model, 0.12, 0.30, 0.17, 0.30, PURPLE)
-
-    box(model, 0.385, 0.68, 0.12, 0.12, "Compound ID\n$z_c$", "#F1F3F4", MUTED)
-    box(model, 0.385, 0.48, 0.12, 0.12, "H-C context\n$h_c$", "#E5F2EF", TEAL)
-    box(model, 0.385, 0.22, 0.12, 0.12, "Protein\n$z_p$", "#EEEAF3", PURPLE)
-    arrow(model, 0.33, 0.69, 0.385, 0.54, TEAL)
-    arrow(model, 0.33, 0.30, 0.385, 0.28, PURPLE)
-
-    box(model, 0.56, 0.68, 0.14, 0.13,
-        "Supported-ID expert\n$q_c z_c^Tz_p$", "#F1F3F4", MUTED)
-    box(model, 0.545, 0.45, 0.17, 0.15,
-        "Candidate H-C expert\n$(h_c\\odot w)^Tz_p$", "#E4F1ED", TEAL,
-        size=6.4, weight="bold")
-    box(model, 0.545, 0.16, 0.17, 0.18,
-        "Fold-local LOCO transfer\nherb prototype $r_H$\nH-C neighbour $r_J$",
-        "#F1EAF4", PURPLE, size=6.0, weight="bold")
-    arrow(model, 0.505, 0.74, 0.56, 0.745)
-    arrow(model, 0.505, 0.54, 0.545, 0.525, TEAL)
-    arrow(model, 0.505, 0.28, 0.545, 0.525, PURPLE)
-
-    box(model, 0.79, 0.34, 0.19, 0.32,
-        "Unified score\n\n$q_c z_c^Tz_p$\n$+\\ (h_c\\odot w)^Tz_p$\n$+\\ \\alpha r_H+\\beta r_J$",
-        "#F5E8E9", RED, size=7, weight="bold")
-    arrow(model, 0.70, 0.745, 0.81, 0.66)
-    arrow(model, 0.715, 0.525, 0.79, 0.51, TEAL)
-    arrow(model, 0.70, 0.25, 0.81, 0.34, PURPLE)
-    model.text(0.63, 0.08, "No PageRank, full-node attention or HDCTI model inheritance",
-               ha="center", fontsize=6.5, color=MUTED)
-    save(fig, "figure1_method_overview")
-    plt.close(fig)
 
 
 def draw_lockbox():
@@ -203,8 +121,6 @@ def draw_lockbox():
         writer.writeheader()
         writer.writerows(source_rows)
     # Preserve the historical source-data alias for older manuscript snapshots.
-    shutil.copyfile(OUTPUT / "figure2_lockbox_source.tsv",
-                    OUTPUT / "figure2_ablation_source.tsv")
     save(fig, "figure2_matched_ablation")
     plt.close(fig)
 
@@ -467,7 +383,7 @@ def draw_etcm_validation(include_retrieval=False, case_source_note=None):
             if row == 4 and col >= 2:
                 cell.set_facecolor("#FCF1E6")
     cases_ax.text(
-        0, -0.035, case_source_note or "Post-hoc cases; source details in Supplementary Table S5. Rank is not evidence strength.",
+        0, -0.035, case_source_note or "Post-hoc cases; evidence sources are identified in panel c. Rank is not evidence strength.",
         transform=cases_ax.transAxes, fontsize=6, color=MUTED,
     )
 
@@ -529,29 +445,20 @@ def draw_etcm_validation(include_retrieval=False, case_source_note=None):
 
 
 def main():
+    global OUTPUT
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--figure', choices=('all', '3', '4'), default='all')
-    parser.add_argument('--sync-submission', action='store_true',
-                        help='Copy the selected Figure 3/4 PDFs to the submission directory.')
+    parser.add_argument('--figure', choices=('all', '2', '3', '4'), default='all')
+    parser.add_argument('--output-dir', type=Path, default=OUTPUT)
     args = parser.parse_args()
+    OUTPUT = args.output_dir.resolve()
+    OUTPUT.mkdir(parents=True, exist_ok=True)
     configure()
-    if args.figure == 'all':
-        draw_method()
+    if args.figure in ('all', '2'):
         draw_lockbox()
     if args.figure in ('all', '3'):
         draw_controls()
     if args.figure in ('all', '4'):
-        draw_etcm_validation(include_retrieval=True)
         draw_etcm_validation()
-    if args.sync_submission:
-        if args.figure in ('all', '4'):
-            shutil.copyfile(OUTPUT / 'figureS1_etcm_extended.pdf',
-                            ROOT / 'manuscript/jbi_elsarticle_submission/figures/figureS1_etcm_extended.pdf')
-        stems = {'3': 'figure3_external_baselines', '4': 'figure4_etcm_validation'}
-        for number, stem in stems.items():
-            if args.figure in ('all', number):
-                shutil.copyfile(OUTPUT / f'{stem}.pdf',
-                                ROOT / f'manuscript/jbi_elsarticle_submission/figures/{stem}.pdf')
     print(f"SACTI manuscript figures written to: {OUTPUT}")
 
 

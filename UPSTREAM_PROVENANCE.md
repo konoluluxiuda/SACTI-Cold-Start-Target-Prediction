@@ -26,24 +26,21 @@ The following areas retain substantial upstream structure or implementation:
 
 These components are not claimed as new contributions of the derived work.
 
-## Derived Research Contributions
+## Current Paper Implementation
 
-The current paper pipeline adds or materially changes:
+`SACTI.py` defines a separate model class with sparse residual membership
+encoders, protein identity--disease context fusion, support-gated identity
+scoring, herb-context matching and two fold-local LOCO transfer scores.
+`HDCTI.py` remains necessary for the matched predecessor and Dual-HGNN control.
+The runtime entry point, data loader and recommender abstractions retain
+upstream code and are covered by the original MIT notice.
 
-1. strict, reusable pair-stratified and compound-cold split manifests;
-2. fold-local graph/statistic construction and type-safe bipartite PageRank;
-3. fixed random seeds, inner-validation early stopping, checkpoint restoration,
-   and five-fold metric aggregation;
-4. Hctx-P candidate-level herb-context interaction;
-5. SDIS support-conditioned suppression of an unreliable compound-ID branch;
-6. SCHPT leave-one-compound-out, prior-smoothed herb-target prototype transfer;
-7. same-input external baselines, data preparation utilities, result manifests,
-   and hash-verified paper artifacts.
-
-The exact final method is defined in
-`docs/FINAL_METHOD_SPECIFICATION.md`. Historical experiments and failed
-candidates remain available through Git history but are intentionally omitted
-from the paper release tree.
+The current implementation also includes compound-disjoint partitions,
+inner-validation checkpoint selection, controlled neural comparisons,
+annotation-recovery evaluation and checksum-verified processed inputs.
+See `REPOSITORY_SCOPE.md` and the frozen `configs/` files for the current
+paper workflow. Historical results outside that scope are omitted from the
+current release tree.
 
 ## Citation and Reuse
 

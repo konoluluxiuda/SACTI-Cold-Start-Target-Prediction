@@ -3,7 +3,7 @@ import argparse
 import json
 from pathlib import Path
 
-from tools.validate_hctx_ablation_configs import parse_config, sha256_file
+from tools.experiment_io import parse_config_values as parse_config, sha256_file
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]

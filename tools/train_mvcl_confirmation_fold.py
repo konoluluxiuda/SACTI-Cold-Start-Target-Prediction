@@ -46,6 +46,7 @@ def run(args):
     model = RelationScaledMVCL(data, **config['model']).to(args.device)
     bundle_files = [p for p in args.data.iterdir() if p.is_file()]
     code = [Path(__file__), ROOT/'tools/mvcl_confirmation_inputs.py', ROOT/'tools/prepare_mvcl_confirmation_data.py',
+            ROOT/'tools/experiment_io.py',
             ROOT/'tools/run_mvcl_cti_pilot.py', *sorted((ROOT/'util').glob('mvcl*.py'))]
     hashes = {str(p.resolve()): digest(p) for p in bundle_files}
     seal = dict(protocol='mvcl_scaled_confirmation_fold_v1', dataset=args.dataset, fold=args.fold,

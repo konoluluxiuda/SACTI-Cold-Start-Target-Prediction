@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tools.run_dg_schpt_pilot import parse_config
+from tools.experiment_io import parse_config
 from tools.run_sacti_component_ablation import build_jobs, summarize
 
 

@@ -1,106 +1,7 @@
 {
-  "schema_version": 1,
-  "source_plan": "configs/paper_result_bundle_sources.json",
-  "source_plan_sha256": "af20117b254c6e59c443e840df327554edcc3e1040d6f411fc11c29ccef438f1",
+  "schema_version": 2,
+  "scope": "Frozen outputs used by the current SACTI manuscript, tables and plots only.",
   "files": [
-    {
-      "name": "random_no_context",
-      "path": "paper_artifacts/results/random_no_context.tsv",
-      "sha256": "897711d0a20f6c182dddbf678892ba268a6fb6aceef18fd85b88fc2ff7cbb5dd",
-      "original_source": "results/batch_runs/no_dense_hctx_ablation_20260722_164221/results.tsv",
-      "size_bytes": 1860
-    },
-    {
-      "name": "random_hctx_chcr",
-      "path": "paper_artifacts/results/random_hctx_chcr.tsv",
-      "sha256": "dad58154867b3628a08431af69c4d9e225eff889d92d761a80d56ab8fb955e35",
-      "original_source": "results/batch_runs/no_dense_chcr_full_20260717_171403/results.tsv",
-      "size_bytes": 3500
-    },
-    {
-      "name": "random_external_baselines",
-      "path": "paper_artifacts/results/random_external_baselines.tsv",
-      "sha256": "bf03faffbec11ad809f4b63f418d45c6ad2c66c7df973ffbae48472eb4095770",
-      "original_source": "results/batch_runs/external_baselines_full_20260728_152020/results.tsv",
-      "size_bytes": 4445
-    },
-    {
-      "name": "random_hgt",
-      "path": "paper_artifacts/results/random_hgt.tsv",
-      "sha256": "64cff4189c0a8b7166b4d27dadac9097a17eff320c96066581a0eb9b50776a64",
-      "original_source": "results/batch_runs/hgt_cti_full_20260728_181436/results.tsv",
-      "size_bytes": 1424
-    },
-    {
-      "name": "cold_no_context",
-      "path": "paper_artifacts/results/cold_no_context.tsv",
-      "sha256": "2fec5c8fbc21aa6d3f4607f5a74d1e1976f7be35e05f2f2dd9241bccbd7f2183",
-      "original_source": "results/batch_runs/cold_start_hctx_ablation_20260730_133133/results.tsv",
-      "size_bytes": 1573
-    },
-    {
-      "name": "cold_hctx_sdis",
-      "path": "paper_artifacts/results/cold_hctx_sdis.tsv",
-      "sha256": "7ff2251f39d50a339f86ad03a86a27035979800432aafbb2e64329f3f75b93b0",
-      "original_source": "results/batch_runs/sdis_full_20260718_212240/results.tsv",
-      "size_bytes": 2867
-    },
-    {
-      "name": "cold_calibration",
-      "path": "paper_artifacts/results/cold_calibration.tsv",
-      "sha256": "416d9182fcbe04938665acc8bcf404c75323f70a038390b829b872a06bb3b931",
-      "original_source": "results/batch_runs/sdis_full_20260718_212240/calibration/results.tsv",
-      "size_bytes": 5356
-    },
-    {
-      "name": "support_state_five_unit",
-      "path": "paper_artifacts/results/support_state_five_unit.json",
-      "sha256": "8d76d7f237d21bf8199b8b5012dc3d161019a9bab5a3ae2b725f0bf2592327a1",
-      "original_source": "results/batch_runs/frozen_base_hctx_router_repeated_outer_20260804_132807/five_unit_summary.json",
-      "size_bytes": 16900
-    },
-    {
-      "name": "schpt_full",
-      "path": "paper_artifacts/results/schpt_full.json",
-      "sha256": "4687d84d6a998bed4a8b69f856072f647af05fd9af0ddf94f5c839732d6298be",
-      "original_source": "results/batch_runs/schpt_full_20260805_152323/summary.json",
-      "size_bytes": 8713
-    },
-    {
-      "name": "dg_schpt_v2_full",
-      "path": "paper_artifacts/results/dg_schpt_v2_full.json",
-      "sha256": "a54a860c59d139a35383a56c26f0c21b3c72086dd6d68ddfc58c1caab7c27d95",
-      "original_source": "results/batch_runs/dg_schpt_v2_full_20260808_142207/summary.json",
-      "size_bytes": 9461
-    },
-    {
-      "name": "final_matched_ablation",
-      "path": "paper_artifacts/results/final_matched_ablation.json",
-      "sha256": "a6f35a1f8d5cf476f632d8462d0fd313efcc0da26de80875c7da041adc5fd7d3",
-      "original_source": "results/batch_runs/final_matched_ablation_20260810_233227/summary.json",
-      "size_bytes": 21026
-    },
-    {
-      "name": "final_method_statistics",
-      "path": "paper_artifacts/results/final_method_statistics.json",
-      "sha256": "afab4dad2da3408d8d7b6277bd9c5daa8cd1bd65958f9222a9b48546ed431dde",
-      "original_source": "results/final_method_statistics/summary.json",
-      "size_bytes": 9997
-    },
-    {
-      "name": "full_candidate_heuristics",
-      "path": "paper_artifacts/results/full_candidate_heuristics.json",
-      "sha256": "70c14f53d43a9290f5ea5316c904c42e8bd0d97d643c5054cf8d37288632e758",
-      "original_source": "results/full_candidate_ranking_gate/heuristics/summary.json",
-      "size_bytes": 240953
-    },
-    {
-      "name": "dg_schpt_v2_ranking",
-      "path": "paper_artifacts/results/dg_schpt_v2_ranking.json",
-      "sha256": "a179949f0c7bd47f3db2b42e15aaf1cc5350a0912c4785ed061547833bb32697",
-      "original_source": "results/batch_runs/dg_schpt_v2_ranking_20260808_150634/summary.json",
-      "size_bytes": 10332
-    },
     {
       "name": "cold_external_baselines",
       "path": "paper_artifacts/results/cold_external_baselines.tsv",
@@ -109,95 +10,11 @@
       "size_bytes": 6127
     },
     {
-      "name": "training_seed_stability",
-      "path": "paper_artifacts/results/training_seed_stability.json",
-      "sha256": "92d3a4ef4f9f1d98b0ebf5423a6cdb05344210cb631255ef676f29ae1843c582",
-      "original_source": "results/batch_runs/training_seed_stability_seed12026_32026/summary.json",
-      "size_bytes": 17606
-    },
-    {
-      "name": "final_lockbox_confirmation",
-      "path": "paper_artifacts/results/final_lockbox_confirmation.json",
-      "sha256": "9f2bbf3f41526b90a0f0afdf1ad46c5c58bdf5efb4879fa65e8565ea175cc3a2",
-      "original_source": "results/batch_runs/final_lockbox_split122026/summary.json",
-      "size_bytes": 5047
-    },
-    {
-      "name": "final_lockbox_seal",
-      "path": "paper_artifacts/results/final_lockbox_seal.json",
-      "sha256": "405f3bd3a1e47dc53f067aac7a86c0a1f14f4d68fb7c7ee885fa94aa633fb94f",
-      "original_source": "results/batch_runs/final_lockbox_split122026/lockbox_seal.json",
-      "size_bytes": 9898
-    },
-    {
-      "name": "adapted_hc_wnn_baseline",
-      "path": "paper_artifacts/results/adapted_hc_wnn_baseline.json",
-      "sha256": "b754742cd0164fe9cd41890bcd4c65aabd1619c13626d3a1126e4acd9157f822",
-      "original_source": "results/adapted_hc_wnn_baseline/summary.json",
-      "size_bytes": 56921
-    },
-    {
-      "name": "sdis_mechanism_ranking_audit",
-      "path": "paper_artifacts/results/sdis_mechanism_ranking_audit.json",
-      "sha256": "fd1eb2de2fcdbd8c47dff670a06e2907b3a3785e58e189ee0b125543ed029737",
-      "original_source": "results/sdis_mechanism_ranking_audit/summary.json",
-      "size_bytes": 21696
-    },
-    {
-      "name": "dg_schpt_factorial_ablation",
-      "path": "paper_artifacts/results/dg_schpt_factorial_ablation.json",
-      "sha256": "09fa307eba25725f9ce96ec5ac0f5b3aef021f840a75f011034b50362d493584",
-      "original_source": "results/batch_runs/dg_schpt_factorial_20260811_203047/summary.json",
-      "size_bytes": 6848
-    },
-    {
-      "name": "side_information_quality_audit",
-      "path": "paper_artifacts/results/side_information_quality_audit.json",
-      "sha256": "837f57ae2410f66978f82d6ef46f4b583964a4eb234b0152de9da68874b5c9a7",
-      "original_source": "results/side_information_quality_audit/summary.json",
-      "size_bytes": 38883
-    },
-    {
       "name": "unified_evaluation_protocol",
       "path": "paper_artifacts/results/unified_evaluation_protocol.json",
       "sha256": "2e14da03f26329a3345ca926cfb5489cf7961b5a86d081fbcc244c70202f091a",
       "original_source": "results/unified_evaluation_protocol/summary.json",
       "size_bytes": 25487
-    },
-    {
-      "name": "negative_ratio_sensitivity",
-      "path": "paper_artifacts/results/negative_ratio_sensitivity.json",
-      "sha256": "a446e662edb611757b0c46a844d06f0f801e10ee54b9552a56a85927be4e0f64",
-      "original_source": "results/batch_runs/negative_ratio_sensitivity_frozen/summary.json",
-      "size_bytes": 41342
-    },
-    {
-      "name": "etcm_pruning_sensitivity",
-      "path": "paper_artifacts/results/etcm_pruning_sensitivity.json",
-      "sha256": "5ada2e7c6693afe83333fb96a7bc8c7fa615abbeb1c28c071e0356a66b481a02",
-      "original_source": "results/batch_runs/etcm_pruning_sensitivity_frozen/summary.json",
-      "size_bytes": 3980
-    },
-    {
-      "name": "etcm_final_topk_cases",
-      "path": "paper_artifacts/results/etcm_final_topk_cases.json",
-      "sha256": "8d7ad1c21e501b3ae6f2c55bfbeb8e6c70e62cfd57e882baea3166feac7f7364",
-      "original_source": "results/etcm_final_topk_cases/report.json",
-      "size_bytes": 5157
-    },
-    {
-      "name": "etcm_final_topk_validation_reuse",
-      "path": "paper_artifacts/results/etcm_final_topk_validation_reuse.json",
-      "sha256": "9910d69a47adba6f708c6b4713ba90d3b1aa08788b661e45bed182a37d8acb47",
-      "original_source": "results/etcm_final_topk_cases/validation_reuse/report.json",
-      "size_bytes": 1249
-    },
-    {
-      "name": "cold_external_baseline_statistics",
-      "path": "paper_artifacts/results/cold_external_baseline_statistics.json",
-      "sha256": "7541fb1f208401a5ba715f6c87ea0e3fd0092ba8c3fb07c3050d68a2e1bcf804",
-      "original_source": "results/cold_external_baseline_statistics/summary.json",
-      "size_bytes": 18333
     },
     {
       "name": "etcm_confirmed_target_evaluation",
@@ -228,13 +45,6 @@
       "size_bytes": 15006
     },
     {
-      "name": "etcm_confirmed_target_evidence_strength_audit",
-      "path": "paper_artifacts/results/etcm_confirmed_target_evidence_strength_audit.json",
-      "sha256": "bdc25bb3054040322b904624925f925d39e95c91edafc2feef2d3bbcf9612b53",
-      "original_source": "results/etcm_confirmed_target_evidence_strength_audit/summary.json",
-      "size_bytes": 10098
-    },
-    {
       "name": "etcm_confirmed_target_pair_ranks",
       "path": "paper_artifacts/results/etcm_confirmed_target_pair_ranks.tsv",
       "sha256": "fa9c371bf8d8087b3a04667d43ba4f395eb266153e764bf5f3a3eee73dc4e322",
@@ -247,6 +57,13 @@
       "sha256": "111a0d755c7a60cea3ddfb17c313dbdb189d46576f98930faec8c926ca8df0b6",
       "original_source": "dataset/ETCM2.0_validation/validation/ETCM2.0_core_mention10/unseen_confirmed.tsv",
       "size_bytes": 51713
+    },
+    {
+      "name": "mvcl_confirmation",
+      "path": "paper_artifacts/results/mvcl_confirmation.json",
+      "sha256": "072d42bd86769884ce732bf8ecde2b47b3d5a7e08adb30cb273c7186b2fca4c4",
+      "original_source": "results/batch_runs/mvcl_confirmation_seed901026_v1/summary.json",
+      "size_bytes": 306537
     }
   ]
 }

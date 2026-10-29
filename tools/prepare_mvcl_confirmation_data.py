@@ -15,7 +15,7 @@ from util.config import ModelConf
 from util.dataSplit import DataSplit
 from util.mvcl_cti_data import build_mvcl_data
 from util.mvcl_features import fixed_node_features
-from tools.prepare_mvcl_cti_data import relation_matrix
+from tools.experiment_io import relation_matrix
 from tools.evaluate_non_neural_cold_start_baselines import ordered_ids, read_relation_pairs
 from tools.evaluate_checkpoint_ranking import records_sha256
 from tools.summarize_mvcl_sacti_matched import read, digest, require
@@ -124,7 +124,7 @@ def main():
                 ids = dict(herb=ordered_ids(h for h, _ in hc), disease=ordered_ids(v for _, v in pd),
                     compound=ordered_ids([c for _, c in hc]+[c for c, _ in full_cp]+[str(r[0]) for r in records]),
                     protein=ordered_ids([p for p, _ in pd]+[p for _, p in full_cp]+[str(r[1]) for r in records]))
-                for f in (Path(__file__), ROOT/'rating.py', ROOT/'util/dataSplit.py', ROOT/'tools/prepare_mvcl_cti_data.py'):
+                for f in (Path(__file__), ROOT/'rating.py', ROOT/'util/dataSplit.py', ROOT/'tools/experiment_io.py'):
                     sources[str(f)] = digest(f)
                 args.output.mkdir(parents=True, exist_ok=False)
                 (args.output/'preparation_state.json').write_text('{"complete": false}\n')

@@ -21,6 +21,8 @@ four datasets under `dataset/`. It updates machine-specific paths in the
 runtime split metadata and MVCL protocol while preserving all numerical input
 files. `data/installed_manifest.json` records original and installed hashes.
 Historical result metadata retain their original paths as provenance only.
+The uploaded file groups and four-dataset relation counts are listed in
+[data/README.md](data/README.md).
 
 ## SACTI environment and training
 
@@ -111,6 +113,8 @@ the distinction between this relation-only adaptation and the original model.
 
 `paper_artifacts/results/` contains archived numerical results and a checksum
 manifest. `figures/manuscript_main/*_source.tsv` contains plot source tables.
+Only outputs used by the current paper are retained here. The matched MVCL
+comparison is `paper_artifacts/results/mvcl_confirmation.json`.
 To regenerate the four frozen result tables without model training:
 
 ```bash
@@ -121,3 +125,4 @@ python tools/build_manuscript_tables.py --output results/replay_tables.md
 annotation-recovery inputs. [UPSTREAM_PROVENANCE.md](UPSTREAM_PROVENANCE.md)
 documents code reused from HDCTI under its MIT license. The code license does
 not replace source databases' terms or attribution requirements.
+See [REPOSITORY_SCOPE.md](REPOSITORY_SCOPE.md) for the purpose of each directory.

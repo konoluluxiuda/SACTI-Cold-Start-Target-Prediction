@@ -86,6 +86,7 @@ def main():
         ROOT/'tools/prepare_mvcl_confirmation_data.py',ROOT/'tools/mvcl_confirmation_inputs.py',
         ROOT/'tools/evaluate_mvcl_confirmation.py',ROOT/'tools/evaluate_mvcl_ranking.py',
         ROOT/'tools/run_mvcl_cti_pilot.py',ROOT/'tools/summarize_mvcl_sacti_matched.py',
+        ROOT/'tools/experiment_io.py',
         ROOT/'util/checkpoint_ranking.py',ROOT/'tools/evaluate_non_neural_cold_start_baselines.py',
         *sorted((ROOT/'util').glob('mvcl*.py'))]
     for f in files:
